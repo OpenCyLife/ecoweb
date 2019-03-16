@@ -1,0 +1,91 @@
+body {
+    font: 100% Helvetica, sans-serif;
+    background-color: #ebe9d9;
+  }
+h1{
+    text-align: center;
+    vertical-align: middle;
+    font-family:trebuchet, helvetica, sans-serif;
+    color:#282825; 
+}
+#logoHeader{
+    width:80px;
+    height:80px;
+    border-radius:50px
+}
+#ecoTitle{
+    text-align: center;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #3a8eba;
+    border-radius: 50px;
+    width: 10%;
+}
+#ecoTitle:hover{
+    text-align: center;
+    border-width: 1px;
+    border-style: dashed;
+    border-color: #f00020;
+    color: #f00020;
+    border-radius: 50px;
+    width: 10%;
+}
+#pageTitle{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    vertical-align: center;
+    font-family:trebuchet, helvetica, sans-serif;
+    color:#282825;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #3a8eba;
+    border-radius: 50px;
+    width: 100%;     
+}
+h2, h3{
+    text-align: center;
+    font-family: trebuchet, helvetica, sans-serif;
+    color:#282825;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #3a8eba;
+    border-radius: 50px;
+}
+#mission{
+    color:#282825;
+    text-align: center;
+    border-bottom:1px dashed #3a8eba;
+}
+.items{
+    color:#282825;
+}
+.infos{
+    text-align: center;
+    font-family: trebuchet, helvetica, sans-serif;
+    color:#282825;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #3a8eba;
+    border-radius: 50px; 
+}
+#titleInfos{
+    text-decoration: underline;
+    text-decoration-color:#3a8eba;  
+    text-align: center;
+    font-family: trebuchet, helvetica, sans-serif;
+    color:#282825;
+    border-width: 0px;
+    border-style: solid;
+}
+#listInfos{
+    list-style-type: none;
+    letter-spacing: 5px;
+    text-decoration: underline;
+    line-height:30px;
+    text-align: justify;
+}
+.textItems{
+    display: inline-flex;
+}
