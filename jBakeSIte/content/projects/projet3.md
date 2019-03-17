@@ -3,7 +3,7 @@ date=2019-03-16
 type=project
 tags=projet
 status=published
-image=/images/image_logo_3.png
+image=/images/project/image_logo_3.png
 ~~~~~~
 
 ## Un petit projet sans prétention

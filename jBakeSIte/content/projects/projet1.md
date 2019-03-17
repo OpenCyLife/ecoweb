@@ -3,7 +3,7 @@ date=2019-01-01
 type=project
 tags=projet
 status=published
-image=/images/image_logo_1.jpg
+image=/images/project/image_logo_1.jpg
 exerpt=La super intro de mon super projet !!!
 ~~~~~~
 

@@ -5,13 +5,18 @@
 	<div class="page-header">
 		<h1>${content.title}</h1>
 	</div>
+	
+	<div>
+		${content.body}
+	</div>
+	
 	<div class="document_list">
 		<#list documents as document>
 			<#if (document.status == "published")>
 				<div class="document">
 					<div class="document_header">
 						<div class="document_intro">
-							<a href="${document.uri}"><h1><#escape x as x?xml>${document.title}</#escape></h1></a>
+							<a href="${document.uri}"><h2><#escape x as x?xml>${document.title}</#escape></h2></a>
 							<p>${document.date?string("dd MMMM yyyy")}</p>
 						</div>
 					</div>

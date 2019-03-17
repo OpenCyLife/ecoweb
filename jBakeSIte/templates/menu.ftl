@@ -12,10 +12,7 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>home.html">Home</a></li>
-            <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>structure.html">La strucutre</a></li>
-            <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>nos_valeurs.html">Nos valeurs</a></li>
-			<li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>poles.html">Les poles</a></li>
+            <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>/">Home</a></li>
 			<li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>projects.html">Nos projets</a></li>
 			<li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>documents.html">La base documentaire</a></li>
             <li class="dropdown">

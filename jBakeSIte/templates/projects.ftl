@@ -3,18 +3,27 @@
 	<#include "menu.ftl">
 
 	<div class="page-header">
-		<h1>Les projets</h1>
+		<h1>${content.title}</h1>
 	</div>
+	
+	<div>
+		${content.body}
+	</div>
+	
 	<div class="project_list">
 		<#list projects as project>
 			<#if (project.status == "published")>
 				<div class="project">
 					<div class="project_header">
 					<div class="project_image">
-						<img src="${project.image!images/no_image.png}" width="150px" />
+						<#if (project.image??)>
+							<img src="${project.image}" width="150px" />
+						<#else>
+							<img src="images/no_image.png" width="150px" />
+						</#if>
 						</div>
 						<div class="project_intro">
-							<a href="${project.uri}"><h1><#escape x as x?xml>${project.title}</#escape></h1></a>
+							<a href="${project.uri}"><h2><#escape x as x?xml>${project.title}</#escape></h2></a>
 							<p>${project.date?string("dd MMMM yyyy")}</p>
 						</div>
 					</div>

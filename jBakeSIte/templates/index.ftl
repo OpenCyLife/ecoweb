@@ -2,19 +2,17 @@
 	
 	<#include "menu.ftl">
 
-	<div class="page-header">
-		<h1>Blog</h1>
-	</div>
-	<#list posts as post>
-  		<#if (post.status == "published")>
-  			<a href="${post.uri}"><h1><#escape x as x?xml>${post.title}</#escape></h1></a>
-  			<p>${post.date?string("dd MMMM yyyy")}</p>
-  			<p>${post.body}</p>
+	<#list blocks as block>
+  		<#if (block.status == "published")>
+  			<#if (block.title)??>
+				<h2>${block.title}</h2>
+			<#else></#if>
+			
+			<div class=class="textItems">
+				${block.body}
+			</div>
   		</#if>
   	</#list>
 	
-	<hr />
-	
-	<p>Older posts are available in the <a href="${content.rootpath}${config.archive_file}">archive</a>.</p>
 
 <#include "footer.ftl">

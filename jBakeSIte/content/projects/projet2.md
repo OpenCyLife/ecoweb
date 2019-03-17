@@ -3,7 +3,7 @@ date=2019-03-14
 type=project
 tags=projet
 status=published
-image=/images/image_logo_2.png
+image=/images/project/image_logo_2.png
 ~~~~~~
 
 ## Notre projet est mieux ! 

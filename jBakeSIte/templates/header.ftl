@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="utf-8"/>
-    <title><#if (content.title)??><#escape x as x?xml>${content.title}</#escape><#else>JBake</#if></title>
+    <title><#if (content.title)??><#escape x as x?xml>${content.title}</#escape><#else>Open CY Life</#if></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
+    <meta name="description" content="Open CY Life">
     <meta name="author" content="">
     <meta name="keywords" content="">
     <meta name="generator" content="JBake">
@@ -14,6 +14,7 @@
     <link href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>css/asciidoctor.css" rel="stylesheet">
     <link href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>css/base.css" rel="stylesheet">
     <link href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>css/prettify.css" rel="stylesheet">
+    <link href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>css/style.css" rel="stylesheet">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -26,13 +27,11 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
     <link rel="shortcut icon" href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>favicon.ico">
-	
-	<style type="text/css">
-      .project .project_image, .project .project_intro {
-      display: inline-block;
-      }
-    </style>
   </head>
   <body onload="prettyPrint()">
     <div id="wrap">
-   
+		<div id="pageTitle">
+			<img src="images/logo.jpg" id="logoHeader"/>
+			<h1>OPEN CYLIFE</h1>
+			<p id="ecoTitle">Site éco-concu</p>
+		</div>   
