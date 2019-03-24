@@ -1,5 +1,5 @@
 title=Pôle R&D
-date=2019-01-01
+date=2019-02-23
 type=pole
 tags=pole
 status=published

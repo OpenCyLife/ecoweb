@@ -1,5 +1,5 @@
 title=Pôle structuration
-date=2019-01-01
+date=2019-02-29
 type=pole
 tags=pole
 status=published
