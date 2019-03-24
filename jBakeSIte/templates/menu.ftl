@@ -15,6 +15,7 @@
             <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>/">Home</a></li>
 			<li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>projects.html">Nos projets</a></li>
 			<li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>documents.html">La base documentaire</a></li>
+			<li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>poles.html">les pôles</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
               <ul class="dropdown-menu">
