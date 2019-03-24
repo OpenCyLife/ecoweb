@@ -24,9 +24,9 @@ h1{
 #ecoTitle:hover{
     text-align: center;
     border-width: 1px;
-    border-style: dashed;
-    border-color: #f00020;
-    color: #f00020;
+    border-style: solid;
+    border-color: #282825;
+    color: #3a8eba;
     border-radius: 50px;
     width: 10%;
 }
