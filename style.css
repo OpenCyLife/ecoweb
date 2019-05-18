@@ -9,8 +9,8 @@ h1{
     color:#282825; 
 }
 #logoHeader{
-    width:80px;
-    height:80px;
+    width:70px;
+    height:70px;
     border-radius:50px
 }
 #ecoTitle{
@@ -53,13 +53,38 @@ h2, h3{
     border-color: #3a8eba;
     border-radius: 50px;
 }
-#mission{
+/* #mission{
     color:#282825;
     text-align: center;
     border-bottom:1px dashed #3a8eba;
-}
+} */
 .items{
+    display: flex;
+    flex-direction: column;
     color:#282825;
+    text-align: center;
+    margin-left: 1%;
+}
+.title{
+   
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-evenly;
+   font-family: trebuchet, helvetica, sans-serif;
+   font-size: 25px;
+   letter-spacing: 1px;
+   color:#282825;
+   /* bordure */
+   border-width: 1px;
+   border-style: solid;
+   border-color: #3a8eba;
+   border-radius: 50px;
+   height: 45px;
+   width: 40%;
+   margin-top: 15px;
+   margin-left: 30%;
+   margin-bottom: 15px;
 }
 .infos{
     text-align: center;
@@ -86,6 +111,21 @@ h2, h3{
     line-height:30px;
     text-align: justify;
 }
+#listActions{
+    width: 85%;
+    margin: auto;  
+}
 .textItems{
-    display: inline-flex;
+    width: 85%;
+    margin: auto;   
+}
+#listEco{
+    text-align: justify
+}
+.iconsTitle{
+    widows: 40px;
+    height:40px;
+    border-radius:50px;
+    align-items: center;
+    
 }
