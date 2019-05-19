@@ -19,7 +19,7 @@ h1{
     border-style: solid;
     border-color: #3a8eba;
     border-radius: 50px;
-    width: 10%;
+    width: 15%;
 }
 #ecoTitle:hover{
     text-align: center;
@@ -28,7 +28,7 @@ h1{
     border-color: #282825;
     color: #3a8eba;
     border-radius: 50px;
-    width: 10%;
+    width: 15%;
 }
 #pageTitle{
     display: flex;
@@ -53,11 +53,6 @@ h2, h3{
     border-color: #3a8eba;
     border-radius: 50px;
 }
-/* #mission{
-    color:#282825;
-    text-align: center;
-    border-bottom:1px dashed #3a8eba;
-} */
 .items{
     display: flex;
     flex-direction: column;
@@ -117,7 +112,8 @@ h2, h3{
 }
 .textItems{
     width: 85%;
-    margin: auto;   
+    margin: auto;
+    line-height: 160%;   
 }
 #listEco{
     text-align: justify
@@ -128,4 +124,20 @@ h2, h3{
     border-radius:50px;
     align-items: center;
     
+}
+.textEcosystem{
+    width: 85%;
+    margin: auto;
+    text-align:left;
+    line-height: 160%;
+}
+.ecoSolution{
+    text-align: center;
+}
+#textInvit{
+    width: 85%;
+    margin: auto;
+    text-align:left;
+    text-decoration: underline;
+    line-height: 160%;
 }
