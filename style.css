@@ -1,6 +1,6 @@
 body {
     font: 100% Helvetica, sans-serif;
-    background-color: #ebe9d9;
+
   }
 h1{
     text-align: center;
@@ -9,10 +9,21 @@ h1{
     color:#282825;
     letter-spacing: 2px; 
 }
+#headerTitle{
+    font-family:trebuchet, helvetica, sans-serif;
+    color:#282825;
+    font-size: 30px;
+}
 #logoHeader{
-    width:70px;
-    height:70px;
-    border-radius:50px
+    width:150px;
+    height:150px;
+}
+.headerPoles{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 60%;
+    margin-left: 23%;
 }
 #pageTitle{
     display: flex;
@@ -21,13 +32,9 @@ h1{
     flex-direction: row;
     vertical-align: center;
     font-family:trebuchet, helvetica, sans-serif;
-    color:#282825;
-    border-width: 3px;
-    border-style: solid;
-    border-color: #3a8eba;
-    border-radius: 50px;
+    color:#ffffff;
     width: 100%;
-    margin-bottom: 3%;    
+    height: 200px; 
 }
 #ecoTitle{
     text-align: center;
@@ -188,6 +195,7 @@ h1{
     outline : none;
 
 }
+
 
 
 
