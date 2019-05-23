@@ -2,26 +2,24 @@ body {
     font: 100% Helvetica, sans-serif;
 
   }
-h1{
-    text-align: center;
-    vertical-align: middle;
-    font-family:trebuchet, helvetica, sans-serif;
-    color:#282825;
-    letter-spacing: 2px; 
-}
 #headerTitle{
     font-family:trebuchet, helvetica, sans-serif;
     color:#282825;
     font-size: 30px;
+    margin-top: 50px;
 }
-#logoHeader{
-    width:150px;
-    height:150px;
+#logoOpen{
+    width:250px;
+    height:100px;
+}
+#logoEco{
+    width:100px;
+    height:100px;
 }
 .headerPoles{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 60%;
     margin-left: 23%;
 }
@@ -36,23 +34,6 @@ h1{
     width: 100%;
     height: 200px; 
 }
-#ecoTitle{
-    text-align: center;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #3a8eba;
-    border-radius: 50px;
-    width: 15%;
-}
-#ecoTitle:hover{
-    text-align: center;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #282825;
-    color: #3a8eba;
-    border-radius: 50px;
-    width: 15%;
-}
 .items{
     display: flex;
     align-items: center;
@@ -61,15 +42,6 @@ h1{
     text-align: center;
     margin-left: 1%;
 }
-/* h2, h3{
-    text-align: center;
-    font-family: trebuchet, helvetica, sans-serif;
-    color:#282825;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #3a8eba;
-    border-radius: 50px;
-} */
 .title{
    
    display: flex;
@@ -92,8 +64,8 @@ h1{
    padding-inline-end: 30px;
 }
 .iconsTitle{
-    widows: 40px;
-    height:40px;
+    width:30px;
+    height:30px;
     border-radius:50px;
     align-items: center;
 }
@@ -194,6 +166,38 @@ h1{
     align-items: center;
     outline : none;
 
+}
+.poleMission{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 1px solid;
+    border-color: #282825;
+    width: 100%;
+    height: auto;
+    background-color: #f7f7f7;
+    vertical-align: middle;
+    margin: auto;
+    padding-bottom: 3%;
+}
+.poleTitle{
+    font-family:trebuchet, helvetica, sans-serif;
+    color:#282825;
+    font-size: 35px;
+    font-weight: lighter;
+    text-align: center;
+}
+.poleBody{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-evenly;
+    align-items: center;  
+    
+}
+.poleIcons{
+    width:100px;
+    height:100px;
+    align-items: center;
 }
 
 
