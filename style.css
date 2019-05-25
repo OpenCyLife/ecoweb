@@ -10,11 +10,11 @@ body {
 }
 #logoOpen{
     width:250px;
-    height:100px;
+    height:120px;
 }
 #logoEco{
-    width:100px;
-    height:100px;
+    width:120px;
+    height:120px;
 }
 .headerPoles{
     display: flex;
@@ -159,14 +159,6 @@ body {
     margin-top: 2%;
     margin-bottom: 3%;
 }
-.iconsPartners{
-    widows: 70px;
-    height:70px;
-    border-radius:50px;
-    align-items: center;
-    outline : none;
-
-}
 .poleColor{
     display: flex;
     flex-direction: column;
@@ -227,20 +219,60 @@ body {
     flex-direction: row;
     align-items: center; 
     justify-content: space-between;
+
 }
 .itemsBody{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: baseline; 
+    justify-content: center; 
+    align-content: flex-start;
 }
-#actionBody{
+.actionBody{
     display: flex;
     flex-direction: column;
     justify-content: start;
 }
-
-
+#containerPartners{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 300PX;
+}
+.partenaires{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-around;
+    width: 100vh;
+}
+.iconsPartners{
+    widows: 100px;
+    height:100px;
+}
+.poleContact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vh;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left:15%;
+}
+.contactIcons{
+    width:100px;
+    height:100px;
+    align-items: center;
+}
+#contact{
+    font-family:trebuchet, helvetica, sans-serif;
+    color:#1f6ce5;
+    font-size: 35px;
+    font-weight: lighter;
+    text-align: center;
+    text-decoration: none;
+}
 
 
 
