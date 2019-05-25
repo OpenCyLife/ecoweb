@@ -167,7 +167,7 @@ body {
     outline : none;
 
 }
-.poleMission{
+.poleColor{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -179,6 +179,20 @@ body {
     vertical-align: middle;
     margin: auto;
     padding-bottom: 3%;
+    line-height: 170%;
+}
+.poleWhite{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 1px solid;
+    border-color: #282825;
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    margin: auto;
+    padding-bottom: 3%;
+    line-height: 170%;
 }
 .poleTitle{
     font-family:trebuchet, helvetica, sans-serif;
@@ -190,15 +204,42 @@ body {
 .poleBody{
     display: flex;
     flex-direction: row; 
-    justify-content: space-evenly;
-    align-items: center;  
-    
+    justify-content: space-around;
+    align-items: center;     
 }
 .poleIcons{
-    width:100px;
-    height:100px;
+    width:120px;
+    height:120px;
     align-items: center;
 }
+.actionTitle{
+    font-family:trebuchet, helvetica, sans-serif;
+    color:#282825;
+    font-size: 20px;
+}
+.validateIcons{
+    width:50px;
+    height:50px;
+    align-items: center;
+}
+.actionItems{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: space-between;
+}
+.itemsBody{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: baseline; 
+}
+#actionBody{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
 
 
 
