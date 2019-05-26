@@ -17,13 +17,13 @@
       <div class="headerPoles">
         <P>Mission</P>
           <p>|</p>
-        <p>Nos principes</p>  
+        <p><a href="#principes"style="text-decoration:none; outline: none; color:black">Nos principes</a> </p> 
           <p>|</p>
-        <p>Nos actions</p>
+        <p><a href="#actions"style="text-decoration:none; outline: none; color:black">Nos actions</a> </p>
           <p>|</p>
-        <p>Notre écosystème</p>
+        <p><a href="#ecosystem"style="text-decoration:none; outline: none; color:black">Notre écosystème</a> </p>
           <p>|</p>
-        <a href="#poles">Nos pôles</a>
+        <p><a href="#poles"style="text-decoration:none; outline: none; color:black">Nos pôles</a> </p>
       </div>
     </div>
 <!-- Pole Mission -->
@@ -39,7 +39,7 @@
 <!-- Pole Principes -->
     <div class="poleWhite">
       <div class="poleTitle">
-        <p>Nos principes</p>
+        <p id="principes">Nos principes</p>
       </div>
       <div class="poleBody">
           <p>Nous évaluons pour chacune de nos action, d’une part son cycle de vie complet ( conception, fabrication, <br>utilisation, transformation) et d’autre part son impact sur l’écosystème concerné. <br>Nous privilégions le temps long : Concertation large, formulation précise de la problématique et application <br>d’une solution par itération ( Boucle experimentation-rectification).<br>
@@ -50,7 +50,7 @@
 <!-- Pole Actions -->
     <div class="poleColor">
       <div class="poleTitle">
-        <p>Nos actions</p>
+        <p id="actions">Nos actions</p>
       </div>
       <div class="poleBody">
         <div class="actionBody">
@@ -82,7 +82,7 @@
 <!-- Ecosysteme -->
     <div class="poleWhite">
       <div class="poleTitle">
-        <p>Notre écosystème</p>
+        <p id="ecosystem">Notre écosystème</p>
       </div>
       <div class="poleBody">
         <p>Nous évaluons pour chacune de nos actions, d'une part son cycle de vie complète (conception, fabrication, <br>
@@ -122,9 +122,20 @@
         <p id="poles">Nos pôles</p>
       </div>
       <div class="poleBody">
-        <p>Les problématiques sur lesquelles nous travaillons sont à la fois systémiques et urgentes.<br>
-        Les solutions doivent donc impliquer dès leur conception toutes les parties prenantes: <br>
-        <strong>Ecoles, entreprises, associations, individus, pouvoirs publics...</strong></p>
+        <div class="containerPole">
+            <p>Les problématiques sur lesquelles nous travaillons sont à la fois systémiques et urgentes.<br>
+              Les solutions doivent donc impliquer dès leur conception toutes les parties prenantes: <br>
+              <strong>Ecoles, entreprises, associations, individus, pouvoirs publics...</strong></p>
+          <div class="poleThemes">
+            <p>Pôle structuration</p>
+            <p>Pôle sensibilisation</p>
+            <p>Pôle R&D</p>            
+          </div>
+          <div class="poleThemes">
+            <p>Pôle accompagnement</p>
+            <p>Pôle ressources</p>
+          </div>
+        </div>
         <img src="images/poles.svg" class="poleIcons"/> 
       </div>
     </div>
@@ -142,7 +153,7 @@
 <!-- Contact -->
     <div class="poleContact">
       <img src="images/contact.svg" class="contactIcons"/> 
-      <a href="https://www.open-cy.life/" target=_blank><p id="contact">Contact</p></a>
+      <a href="https://www.open-cy.life/" target=_blank style="text-decoration:none; outline: none"><p id="contact">Contact</p></a>
     </div> 
   </body>
 </html>
