@@ -1,7 +1,17 @@
 body {
     font: 100% Helvetica, sans-serif;
-
-  }
+}
+#pageTitle{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    vertical-align: center;
+    font-family:trebuchet, helvetica, sans-serif;
+    color:#282825;
+    width: 100%;
+    margin-bottom: 3%;    
+}
 #headerTitle{
     font-family:trebuchet, helvetica, sans-serif;
     color:#282825;
