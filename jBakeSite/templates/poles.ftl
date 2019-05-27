@@ -16,7 +16,14 @@
 				<div class="document">
 					<div class="document_header">
 						<div class="document_intro">
-							<a href="${pole.uri}"><h2><#escape x as x?xml>${pole.title}</#escape></h2></a>
+						
+						
+							<a href="${pole.uri}"><h2>
+							<#if pole.icone??>
+								<i class="${pole.icone}"></i>
+							</#if>
+							<#escape x as x?xml>${pole.title}</#escape>
+							</h2></a>
 							<p>${pole.date?string("dd MMMM yyyy")}</p>
 						</div>
 					</div>
