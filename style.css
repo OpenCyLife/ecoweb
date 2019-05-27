@@ -1,9 +1,13 @@
 body {
     font: 100% Helvetica, sans-serif;
 }
+.header{
+    display: flex;
+    flex-direction: column;
+}
 #pageTitle{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
     vertical-align: center;
@@ -18,13 +22,18 @@ body {
     font-size: 30px;
     margin-top: 50px;
 }
+#eco{
+    display: flex;
+    flex-direction: column;
+    margin-top:5%;
+}
 #logoOpen{
-    width:250px;
+    width:350px;
     height:120px;
 }
 #logoEco{
-    width:120px;
-    height:120px;
+    width:140px;
+    height:140px;
 }
 .headerPoles{
     display: flex;
@@ -41,8 +50,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    border: 1px solid;
-    border-color: #282825;
+    border-top:1px solid #282825;
     width: 100%;
     height: auto;
     background-color: #f7f7f7;
@@ -55,8 +63,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    border: 1px solid;
-    border-color: #282825;
+    border-top:1px solid #282825;
     width: 100%;
     height: auto;
     vertical-align: middle;
@@ -81,6 +88,8 @@ body {
     width:120px;
     height:120px;
     align-items: center;
+    margin-right: 0;
+    vertical-align: text-bottom;
 }
 .actionTitle{
     font-family:trebuchet, helvetica, sans-serif;
@@ -139,7 +148,7 @@ body {
     width: 100vh;
     margin-top: 50px;
     margin-bottom: 50px;
-    margin-left:15%;
+    margin-left:13%;
 }
 .contactIcons{
     width:100px;
@@ -163,7 +172,7 @@ body {
     flex-direction: row;
     align-items: stretch;
     justify-content: space-evenly;
-    width: 750px;
+    width: 800px;
 }
 .poleThemes > p{
     border-width: 1px;
@@ -178,5 +187,30 @@ body {
     line-height: 40px;
     
 }
-
+.poleTest{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    margin: auto;
+    padding-bottom: 3%;
+    line-height: 170%;
+    border-top:solid #282825 1px;
+}
+.poleFollow{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-top:1px solid #282825;
+    border-bottom:1px solid #282825;
+    width: 100%;
+    height: auto;
+    background-color: #f7f7f7;
+    vertical-align: middle;
+    margin: auto;
+    padding-bottom: 3%;
+    line-height: 170%;
+}
 
