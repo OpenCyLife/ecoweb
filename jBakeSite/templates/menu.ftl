@@ -14,7 +14,7 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>/">Home</a></li>
+            <!-- <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>/">Home</a></li> -->
             <li><a href="/#principes"style="text-decoration:none; outline: none; color:black">Nos principes</a></li>
             <li><a href="/#actions"style="text-decoration:none; outline: none; color:black">Nos actions</a></li>
             <li><a href="/#ecosystem"style="text-decoration:none; outline: none; color:black">Notre écosystème</a></li>
