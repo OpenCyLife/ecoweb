@@ -8,10 +8,6 @@
 	</div>
 	<#else></#if>
 
-	<p><em>${content.date?string("dd MMMM yyyy")}</em></p>
-
 	<p>${content.body}</p>
-
-	<hr />
 
 <#include "footer.ftl">

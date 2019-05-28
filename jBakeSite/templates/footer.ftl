@@ -5,7 +5,7 @@
     <div id="footer">
       <div class="container">
       	<div id="contact">
-      		<img src="images/contact.svg" class="contactIcons"/> 
+      		<img src="/images/contact.svg" class="contactIcons"/> 
       		<a href="https://www.open-cy.life/" target=_blank style="text-decoration:none; outline: none">Contact</a>
       	</div>
         <p class="muted credit">&copy; 2019 | Mixed with <a href="http://getbootstrap.com/">Bootstrap v3.1.1</a> | Baked with <a href="http://jbake.org">JBake ${version}</a></p>

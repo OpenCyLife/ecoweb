@@ -35,6 +35,6 @@
 			<div id="pageTitle">
 				<img src="/images/opencylife.png" id="logoOpen"/>
 				<h1 id="headerTitle">Et toi, tu veux quel futur ?</h1>
-				<img src="/images/siteco.png" id="logoEco"/>
+				<img src="/images/siteco-small.png" id="logoEco"/>
 			</div>
 		</div>

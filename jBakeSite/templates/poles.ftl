@@ -24,7 +24,6 @@
 							</#if>
 							<#escape x as x?xml>${pole.title}</#escape>
 							</h2></a>
-							<p>${pole.date?string("dd MMMM yyyy")}</p>
 						</div>
 					</div>
 					<#if pole.exerpt??>
