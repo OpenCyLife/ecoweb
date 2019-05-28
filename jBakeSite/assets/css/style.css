@@ -1,115 +1,176 @@
 body {
-	font: 100% Helvetica, sans-serif;
-	background-color: #ebe9d9;
+    font: 100% Helvetica, sans-serif;
 }
-
-h1 {
-	text-align: center;
-	vertical-align: middle;
-	font-family: trebuchet, helvetica, sans-serif;
-	color: #282825;
+#pageTitle{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    vertical-align: center;
+    font-family:trebuchet, helvetica, sans-serif;
+    color:#282825;
+    width: 100%;
+    margin-bottom: 3%;    
 }
-
-#logoHeader {
-	width: 80px;
-	height: 80px;
-	border-radius: 50px
+#headerTitle{
+    font-family:trebuchet, helvetica, sans-serif;
+    color:#282825;
+    font-size: 30px;
+    margin-top: 50px;
 }
-
-#ecoTitle {
-	text-align: center;
-	border-width: 1px;
-	border-style: solid;
-	border-color: #3a8eba;
-	border-radius: 50px;
-	width: 10%;
+#logoOpen{
+    width:250px;
+    height:120px;
 }
-
-#ecoTitle:hover {
-	text-align: center;
-	border-width: 1px;
-	border-style: dashed;
-	border-color: #f00020;
-	color: #f00020;
-	border-radius: 50px;
-	width: 10%;
+#logoEco{
+    width:120px;
+    height:120px;
 }
-
-#pageTitle {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	flex-direction: row;
-	vertical-align: center;
-	font-family: trebuchet, helvetica, sans-serif;
-	color: #282825;
-	border-width: 3px;
-	border-style: solid;
-	border-color: #3a8eba;
-	border-radius: 50px;
-	width: 100%;
+.headerPoles{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
+    margin-left: 23%;
 }
-
-h2, h3 {
-	text-align: center;
-	font-family: trebuchet, helvetica, sans-serif;
-	color: #282825;
-	border-width: 1px;
-	border-style: solid;
-	border-color: #3a8eba;
-	border-radius: 50px;
+.headerPoles > p{
+    font: 100% Helvetica, sans-serif;
+    color:black;    
 }
-
-#mission {
-	color: #282825;
-	text-align: center;
-	border-bottom: 1px dashed #3a8eba;
+.poleColor{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 1px solid;
+    border-color: #282825;
+    width: 100%;
+    height: auto;
+    background-color: #f7f7f7;
+    vertical-align: middle;
+    margin: auto;
+    padding-bottom: 3%;
+    line-height: 170%;
 }
-
-.items {
-	color: #282825;
+.poleWhite{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 1px solid;
+    border-color: #282825;
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    margin: auto;
+    padding-bottom: 3%;
+    line-height: 170%;
 }
-
-.infos {
-	text-align: center;
-	font-family: trebuchet, helvetica, sans-serif;
-	color: #282825;
-	border-width: 1px;
-	border-style: solid;
-	border-color: #3a8eba;
-	border-radius: 50px;
+.poleTitle{
+    font-family:trebuchet, helvetica, sans-serif;
+    color:#282825;
+    font-size: 35px;
+    font-weight: lighter;
+    text-align: center;
 }
-
-#titleInfos {
-	text-decoration: underline;
-	text-decoration-color: #3a8eba;
-	text-align: center;
-	font-family: trebuchet, helvetica, sans-serif;
-	color: #282825;
-	border-width: 0px;
-	border-style: solid;
+.poleBody{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around;
+    align-items: center;     
 }
-
-#listInfos {
-	list-style-type: none;
-	letter-spacing: 5px;
-	text-decoration: underline;
-	line-height: 30px;
-	text-align: justify;
+.poleIcons{
+    width:120px;
+    height:120px;
+    align-items: center;
 }
-
-.textItems {
-	display: inline-flex;
+.actionTitle{
+    font-family:trebuchet, helvetica, sans-serif;
+    color:#282825;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0%;
 }
-
-.project .project_image, .project .project_intro {
-	display: inline-block;
+.validateIcons{
+    width:60px;
+    height:60px;
+    align-items: center;
 }
-
-#pageTitle {
-	margin-top:55px;
+.actionItems{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: space-between;
 }
-
-#wrap .container {
-	padding-top:0px!important;
+.itemsBody{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center; 
+    align-content: center;
+    margin-left: 10%;
+}
+.actionBody{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+}
+#containerPartners{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 300PX;
+}
+.partenaires{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-around;
+    width: 100vh;
+}
+.iconsPartners{
+    height:100px;
+}
+.poleContact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vh;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left:15%;
+}
+.contactIcons{
+    width:100px;
+    height:100px;
+    align-items: center;
+}
+#contact{
+    font-family:trebuchet, helvetica, sans-serif;
+    color:#1f6ce5;
+    font-size: 35px;
+    font-weight: lighter;
+    text-align: center;
+}
+.containerPole{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.poleThemes{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-evenly;
+    width: 750px;
+}
+.poleThemes > p{
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    background-color: #e6e6e6;
+    border-radius: 5px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
 }

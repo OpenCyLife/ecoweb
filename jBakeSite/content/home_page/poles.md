@@ -1,12 +1,13 @@
-title=Pôles
+title=Nos Pôles
 icone=fas fa-otter
-date=2019-01-23
+date=2019-01-21
 type=block
 tags=homepage
 status=published
+specificClass=poleWhite poles
+contentImage=images/poles.svg
+ancorId=poles
+includePoleList=true
 ~~~~~~
-* [Pôle structuration](http://localhost:8820/poles/structuration.html)
-* Pôle sensibilisation
-* Pôle accompagnement
-* Pôle R&D
-* Pôle ressource
+Les problématiques sur lesquelles nous travaillons sont à la fois systémiques et urgentes.
+Les solutions doivent donc impliquer dès leur conception toutes les parties prenantes: **Ecoles, entreprises, associations, individus, pouvoirs publics...**

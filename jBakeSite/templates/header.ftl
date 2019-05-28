@@ -11,10 +11,9 @@
 
     <!-- Le styles -->
     <link href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>css/bootstrap.min.css" rel="stylesheet">
-    <link href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>css/asciidoctor.css" rel="stylesheet">
     <link href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>css/base.css" rel="stylesheet">
-    <link href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>css/prettify.css" rel="stylesheet">
     <link href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>css/style.css" rel="stylesheet">
+    <link href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>css/style-ext.css" rel="stylesheet">
 	
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
@@ -28,12 +27,14 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
-    <link rel="shortcut icon" href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>favicon.ico">
+    <link rel="shortcut icon" href="/images/logo-small.jpg">
   </head>
-  <body onload="prettyPrint()">
+  <body>
     <div id="wrap">
-		<div id="pageTitle">
-			<img src="images/logo.jpg" id="logoHeader"/>
-			<h1>OPEN CYLIFE</h1>
-			<p id="ecoTitle">Site éco-concu</p>
-		</div>   
+    	<div class="header">
+			<div id="pageTitle">
+				<img src="/images/opencylife.png" id="logoOpen"/>
+				<h1 id="headerTitle">Et toi, tu veux quel futur ?</h1>
+				<img src="/images/siteco.png" id="logoEco"/>
+			</div>
+		</div>

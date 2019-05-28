@@ -1,12 +1,14 @@
 title=Notre écosystème
-date=2019-0-25
+date=2019-01-25
 type=block
 tags=homepage
 status=published
+specificClass=poleWhite
+contentImage=images/ecosystem.svg
+ancorId=ecosystem
 ~~~~~~
-Les problématiques sur lesquelles nous travaillons sont à la fois systémiques et urgentes. Les solutions doivent donc impliquer dès leur conception toutes les parties prenantes : Ecoles, entreprises, associations, individus, pouvoirs publics … Nous invitons toute structure travaillant :
-
-* Dans les nouvelles technologies ( Intelligence Artificielle, Réalité Virtuelle, IoT, Blockchain…)
-* Sur la transition sociétale ( SDG, ESS, écologie, économie circulaire et symbiotique…)
-
-… à nous contacter afin de voir comment joindre nos forces.
+Nous évaluons pour chacune de nos actions, d'une part son cycle de vie complète (conception, fabrication, utilisation, transformation) et d'autre part son impact sur l'écosystème concerné.
+Nous privilégions le temps long: Concertation large, formulation précise de la problématique et application d'une solution par itération (Boucle expérimentation-rectification).
+Nous valorisons chaque ressource : Limiter la production en réadaptant l'éxistant, traiter les "déchets" comme du potentiel et générer de multiples bénéfices à partir d'un seul processus.
+Nous nous connectons aux "périphériques" et contextes à rique, puisqu'ils sont source d'innovation.
+Nous défendons la diversité et la modularité des réponses apportées.
