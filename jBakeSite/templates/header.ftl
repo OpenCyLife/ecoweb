@@ -27,14 +27,14 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
-    <link rel="shortcut icon" href="/images/logo-small.jpg">
+    <link rel="shortcut icon" href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>images/logo-small.jpg">
   </head>
   <body>
     <div id="wrap">
     	<div class="header">
 			<div id="pageTitle">
-				<img src="/images/opencylife.png" id="logoOpen"/>
+				<img src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>images/opencylife.png" alt="Logo Open CI Life" id="logoOpen"/>
 				<h1 id="headerTitle">Et toi, tu veux quel futur ?</h1>
-				<img src="/images/siteco-small.png" id="logoEco"/>
+				<img src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>images/siteco-small.png" alt="Site Eco Conçu"id="logoEco"/>
 			</div>
 		</div>

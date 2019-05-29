@@ -9,7 +9,7 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>">
-          	<img src="/images/logo-small.jpg" style="height:30px"></img>Open CY Life
+          	<img src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>images/logo-small.jpg" style="height:30px"></img>Open CY Life
           </a>
         </div>
         <div class="navbar-collapse collapse">
