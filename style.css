@@ -21,6 +21,7 @@ body {
     color:#282825;
     font-size: 30px;
     margin-top: 50px;
+    align-items: center;
 }
 #eco{
     display: flex;
@@ -28,8 +29,8 @@ body {
     margin-top:5%;
 }
 #logoOpen{
-    width:350px;
-    height:120px;
+    widows:150px;
+    height:150px;
 }
 #logoEco{
     width:140px;
