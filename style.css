@@ -168,6 +168,10 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
 }
+.description{
+    font-weight: lighter;
+    color: #aaaaaa;
+}
 .poleThemes{
     display: flex;
     flex-direction: row;
@@ -181,12 +185,40 @@ body {
     border-color: black;
     background-color: #e6e6e6;
     border-radius: 5px;
-    height: 40px;
-    width: 200px;
+    height: 100px;
+    width: 250px;
     text-align: center;
     vertical-align: middle;
-    line-height: 40px;
-    
+    line-height: 40px;    
+}
+.poleDescription{
+    display: flex;
+    flex-direction: column;
+    column-width: 120px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: smaller;
+    line-height:20px;
+}
+.listPole{
+    text-align: start
+}
+
+.titleDescription{
+    font-family:trebuchet, helvetica, sans-serif;
+    color:#282825;
+    font-size: 25px;
+    font-weight: lighter;
+    text-align: center;
+}
+.descriptionIcons{
+    width:80px;
+    height:80px;
+    align-items: center;
 }
 .poleTest{
     display: flex;
