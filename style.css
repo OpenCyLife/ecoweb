@@ -82,7 +82,7 @@ body {
 .poleBody{
     display: flex;
     flex-direction: row; 
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;     
 }
 .poleIcons{
@@ -193,8 +193,9 @@ body {
 }
 .poleDescription{
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
-    column-width: 120px;
+    width: 400px;
     border-width: 1px;
     border-style: solid;
     border-color: black;
@@ -203,6 +204,7 @@ body {
     vertical-align: middle;
     font-size: smaller;
     line-height:20px;
+    align-content: center;
 }
 .listPole{
     text-align: start
