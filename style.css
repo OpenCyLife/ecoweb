@@ -7,14 +7,14 @@ body {
 }
 #pageTitle{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: row;
     vertical-align: center;
     font-family:trebuchet, helvetica, sans-serif;
     color:#282825;
     width: 100%;
-    margin-bottom: 3%;    
+    margin-bottom: 3%; 
 }
 #headerTitle{
     font-family:trebuchet, helvetica, sans-serif;
@@ -34,7 +34,7 @@ body {
 }
 #logoEco{
     width:140px;
-    height:140px;
+    height:150px;
 }
 .headerPoles{
     display: flex;
@@ -82,15 +82,16 @@ body {
 .poleBody{
     display: flex;
     flex-direction: row; 
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;     
 }
 .poleIcons{
-    width:120px;
-    height:120px;
+    width:90px;
+    height:90px;
     align-items: center;
     margin-right: 0;
     vertical-align: text-bottom;
+    margin-bottom: 5%;
 }
 .actionTitle{
     font-family:trebuchet, helvetica, sans-serif;
@@ -127,19 +128,27 @@ body {
 #containerPartners{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    height: 300PX;
+    align-items: space-between;
+    margin-top: 3%;    
 }
 .partenaires{
     display: flex;
     flex-direction: row;
     align-items: stretch;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100vh;
 }
+.partenaireslow{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-around;
+    width: 100vh;
+    margin-top: 3%;
+}
 .iconsPartners{
-    widows: 100px;
-    height:100px;
+    widows: 110px;
+    height:110px;
 }
 .poleContact{
     display: flex;
@@ -166,7 +175,7 @@ body {
 .containerPole{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 .description{
     font-weight: lighter;
@@ -175,9 +184,8 @@ body {
 .poleThemes{
     display: flex;
     flex-direction: row;
-    align-items: stretch;
-    justify-content: space-evenly;
-    width: 800px;
+    justify-content: space-around;
+    widows: 2;
 }
 .poleThemes > p{
     border-width: 1px;
@@ -185,21 +193,21 @@ body {
     border-color: black;
     background-color: #e6e6e6;
     border-radius: 5px;
-    height: 100px;
+    height: 150px;
     width: 250px;
     text-align: center;
     vertical-align: middle;
-    line-height: 40px;    
+    line-height: 40px;  
 }
 .poleDescription{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: column;
-    width: 400px;
+    width: 40%;
     border-width: 1px;
     border-style: solid;
     border-color: black;
-    border-radius: 5px;
+    border-radius: 15px;
     text-align: center;
     vertical-align: middle;
     font-size: smaller;
@@ -216,11 +224,14 @@ body {
     font-size: 25px;
     font-weight: lighter;
     text-align: center;
+    margin-top: 1%;
 }
 .descriptionIcons{
-    width:80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    widows: 2px;
     height:80px;
-    align-items: center;
 }
 .poleTest{
     display: flex;
