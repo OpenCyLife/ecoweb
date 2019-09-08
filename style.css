@@ -173,9 +173,10 @@ body {
     text-align: center;
 }
 .containerPole{
-    display: flex;
+    display: inline-block;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
+    align-content: center;
 }
 .description{
     font-weight: lighter;
@@ -186,6 +187,7 @@ body {
     flex-direction: row;
     justify-content: space-around;
     widows: 2;
+    margin-top: 5%;
 }
 .poleThemes > p{
     border-width: 1px;
@@ -201,21 +203,22 @@ body {
 }
 .poleDescription{
     display: flex;
-    justify-content: space-around;
+    justify-content: start;
     flex-direction: column;
     width: 40%;
     border-width: 1px;
     border-style: solid;
     border-color: black;
     border-radius: 15px;
-    text-align: center;
     vertical-align: middle;
     font-size: smaller;
     line-height:20px;
     align-content: center;
 }
 .listPole{
-    text-align: start
+    text-align: start;
+    margin-top: 3%;
+    margin-bottom: 15%;
 }
 
 .titleDescription{
@@ -224,14 +227,14 @@ body {
     font-size: 25px;
     font-weight: lighter;
     text-align: center;
-    margin-top: 1%;
+    margin-top: 5%;
 }
 .descriptionIcons{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    display: inline-flex;
+    justify-content: stretch;
     widows: 2px;
     height:80px;
+    margin-top: 3%;
 }
 .poleTest{
     display: flex;
