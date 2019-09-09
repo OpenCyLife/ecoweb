@@ -230,11 +230,12 @@ body {
     margin-top: 5%;
 }
 .descriptionIcons{
-    display: inline-flex;
-    justify-content: stretch;
-    widows: 2px;
-    height:80px;
+    display: flex;
+    justify-content: center;
+    width: 70px;
+    height:70px;
     margin-top: 3%;
+    margin-left: 40%;
 }
 .poleTest{
     display: flex;
