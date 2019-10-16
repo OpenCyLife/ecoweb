@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JBake</title>
+    <link>http://localhost:8820</link>
+    <atom:link href="http://localhost:8820/feed.xml" rel="self" type="application/rss+xml" />
+    <description>JBake Bootstrap Template</description>
+    <language>en-gb</language>
+    <pubDate>mar., 1 oct. 2019 15:33:02 +0200</pubDate>
+    <lastBuildDate>mar., 1 oct. 2019 15:33:02 +0200</lastBuildDate>
+
+
+  </channel> 
+</rss>
