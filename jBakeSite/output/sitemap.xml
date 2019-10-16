@@ -1,87 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <url>
-        <loc>http://ecoweb.clicketcloud.com//projects.html</loc>
+        <loc>http://localhost:8820/projects.html</loc>
         <lastmod>2019-03-16</lastmod>
     </url>
     <url>
-        <loc>http://ecoweb.clicketcloud.com//projects/projet3.html</loc>
+        <loc>http://localhost:8820/projects/projet3.html</loc>
         <lastmod>2019-03-16</lastmod>
     </url>
     <url>
-        <loc>http://ecoweb.clicketcloud.com//projects/projet2.html</loc>
+        <loc>http://localhost:8820/projects/projet2.html</loc>
         <lastmod>2019-03-14</lastmod>
     </url>
     <url>
-        <loc>http://ecoweb.clicketcloud.com//projects/projet5.html</loc>
+        <loc>http://localhost:8820/projects/projetTest.html</loc>
+        <lastmod>2019-01-10</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:8820/projects/projet5.html</loc>
         <lastmod>2019-01-01</lastmod>
     </url>
     <url>
-        <loc>http://ecoweb.clicketcloud.com//projects/projet4.html</loc>
+        <loc>http://localhost:8820/projects/projet4.html</loc>
         <lastmod>2019-01-01</lastmod>
     </url>
     <url>
-        <loc>http://ecoweb.clicketcloud.com//projects/projet1.html</loc>
+        <loc>http://localhost:8820/projects/projet1.html</loc>
         <lastmod>2019-01-01</lastmod>
     </url>
     <url>
-        <loc>http://ecoweb.clicketcloud.com//documents.html</loc>
+        <loc>http://localhost:8820/documents.html</loc>
         <lastmod>2019-03-16</lastmod>
     </url>
     <url>
-        <loc>http://ecoweb.clicketcloud.com//documents/document1.html</loc>
+        <loc>http://localhost:8820/documents/document1.html</loc>
         <lastmod>2019-03-16</lastmod>
     </url>
     <url>
-        <loc>http://ecoweb.clicketcloud.com//home_page/missions.html</loc>
+        <loc>http://localhost:8820/home_page/missions.html</loc>
         <lastmod>2019-01-31</lastmod>
     </url>
     <url>
-        <loc>http://ecoweb.clicketcloud.com//home_page/principes.html</loc>
+        <loc>http://localhost:8820/home_page/principes.html</loc>
         <lastmod>2019-01-29</lastmod>
     </url>
     <url>
-        <loc>http://ecoweb.clicketcloud.com//home_page/actions.html</loc>
+        <loc>http://localhost:8820/home_page/actions.html</loc>
         <lastmod>2019-01-27</lastmod>
     </url>
     <url>
-        <loc>http://ecoweb.clicketcloud.com//home_page/ecosysteme.html</loc>
+        <loc>http://localhost:8820/home_page/ecosysteme.html</loc>
         <lastmod>2019-01-25</lastmod>
     </url>
     <url>
-        <loc>http://ecoweb.clicketcloud.com//home_page/partenaires.html</loc>
+        <loc>http://localhost:8820/home_page/partenaires.html</loc>
         <lastmod>2019-01-23</lastmod>
     </url>
     <url>
-        <loc>http://ecoweb.clicketcloud.com//home_page/rejoindre.html</loc>
+        <loc>http://localhost:8820/home_page/rejoindre.html</loc>
         <lastmod>2019-01-21</lastmod>
     </url>
     <url>
-        <loc>http://ecoweb.clicketcloud.com//home_page/poles.html</loc>
+        <loc>http://localhost:8820/home_page/poles.html</loc>
         <lastmod>2019-01-21</lastmod>
     </url>
     <url>
-        <loc>http://ecoweb.clicketcloud.com//poles.html</loc>
+        <loc>http://localhost:8820/poles.html</loc>
         <lastmod>2019-03-16</lastmod>
     </url>
     <url>
-        <loc>http://ecoweb.clicketcloud.com//poles/structuration.html</loc>
+        <loc>http://localhost:8820/poles/structuration.html</loc>
         <lastmod>2019-03-01</lastmod>
     </url>
     <url>
-        <loc>http://ecoweb.clicketcloud.com//poles/sensibilisation.html</loc>
+        <loc>http://localhost:8820/poles/sensibilisation.html</loc>
         <lastmod>2019-02-27</lastmod>
     </url>
     <url>
-        <loc>http://ecoweb.clicketcloud.com//poles/accompagnement.html</loc>
+        <loc>http://localhost:8820/poles/accompagnement.html</loc>
         <lastmod>2019-02-25</lastmod>
     </url>
     <url>
-        <loc>http://ecoweb.clicketcloud.com//poles/rd.html</loc>
+        <loc>http://localhost:8820/poles/rd.html</loc>
         <lastmod>2019-02-23</lastmod>
     </url>
     <url>
-        <loc>http://ecoweb.clicketcloud.com//poles/ressources.html</loc>
+        <loc>http://localhost:8820/poles/ressources.html</loc>
         <lastmod>2019-02-21</lastmod>
     </url>
 </urlset>

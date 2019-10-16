@@ -21,7 +21,7 @@
             <li><a href="/#poles"style="text-decoration:none; outline: none; color:black">Nos pôles</a></li>
             <li><a href="/#contact"style="text-decoration:none; outline: none; color:black">Contacts</a></li>
             
-            <!--
+           <!--
 			<li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>projects.html">Nos projets</a></li>
 			<li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>documents.html">La base documentaire</a></li>
 			<li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>poles.html">les pôles</a></li>

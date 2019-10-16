@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>JBake</title>
-    <link>http://ecoweb.clicketcloud.com/</link>
-    <atom:link href="http://ecoweb.clicketcloud.com//feed.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:8820</link>
+    <atom:link href="http://localhost:8820/feed.xml" rel="self" type="application/rss+xml" />
     <description>JBake Bootstrap Template</description>
     <language>en-gb</language>
-    <pubDate>mer., 29 mai 2019 14:12:24 +0200</pubDate>
-    <lastBuildDate>mer., 29 mai 2019 14:12:24 +0200</lastBuildDate>
+    <pubDate>mar., 1 oct. 2019 15:33:02 +0200</pubDate>
+    <lastBuildDate>mar., 1 oct. 2019 15:33:02 +0200</lastBuildDate>
 
 
   </channel> 
