@@ -30,11 +30,10 @@
     <link rel="shortcut icon" href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>images/logo-small.jpg">
   </head>
   <body>
-    <div id="wrap">
-    	<div class="header">
-			<div id="pageTitle">
+  <div class="container">
+    <div class="header">
 				<img src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>images/opencylife.png" alt="Logo Open CI Life" id="logoOpen"/>
 				<h1 id="headerTitle">Et toi, tu veux quel futur ?</h1>
 				<img src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>images/siteco-small.png" alt="Site Eco Conçu"id="logoEco"/>
-			</div>
 		</div>
+    </div>

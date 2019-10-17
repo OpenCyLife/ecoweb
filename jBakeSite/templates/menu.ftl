@@ -1,7 +1,7 @@
 	<!-- Fixed navbar -->
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
+    <div class="container">
+    <div class="navbar navbar-light bg-white" role="navigation">
+              <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
@@ -9,8 +9,7 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>">
-          	<img src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>images/logo-small.jpg" style="height:30px"></img>Open CY Life
-          </a>
+          	<img src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>images/logo-small.jpg" style="height:35px, margin-bottom : 10px;"></img></a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -43,4 +42,4 @@
         </div><!--/.nav-collapse -->
       </div>
     </div>
-    <div class="container">
+    <div class="container-fluid">

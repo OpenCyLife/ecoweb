@@ -3,7 +3,6 @@
 	<#include "menu.ftl">
 
 	<#list blocks as block>
-	
 	<div
 	<#if (block.specificClass)??>
 		class="<#escape x as x?xml>${block.specificClass}</#escape>"

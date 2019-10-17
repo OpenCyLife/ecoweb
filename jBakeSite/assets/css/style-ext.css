@@ -3,6 +3,11 @@ html{
 }
 .header{
 	margin-top: 50px;
+	display: flex;
+    flex-direction: row;
+	flex-wrap:wrap;
+	justify-content: space-between;
+	padding-bottom: 50px;
 }
 .blockContent {
     padding: 0px 20px;
@@ -27,11 +32,11 @@ html{
 	min-width: 200px;;
 }
 .poleIcons {
-	margin-right: 10px;
+	margin-right: 25px;
 }
 /** simillar to .partenaires **/
 .partners .poleBody .blockContent > p, .join .poleBody .blockContent > p{
-    width: 100%;
+	width: 100%;
 }
 .partners .poleBody .blockContent > p a, .join .poleBody .blockContent > p a{
     margin: 0px 198px 35px 0px;
