@@ -158,7 +158,6 @@ body {
     width: 100vh;
     margin-top: 50px;
     margin-bottom: 50px;
-    margin-left:13%;
 }
 .contactIcons{
     width:100px;
@@ -262,5 +261,10 @@ body {
     margin: auto;
     padding-bottom: 3%;
     line-height: 170%;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
