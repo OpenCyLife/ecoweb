@@ -61,16 +61,20 @@ html{
 	display: block;
 }
 
-.actions .poleBody > ul > li {
+.actions .poleBody .blockContent > ul > li > strong {
+	color:black;
+}
+
+.actions .poleBody .blockContent > ul > li {
 	display : list-item;
  	/*list-style-image : url(images/validate.svg);*/
  	list-style: none;
 	background-image: url("/images/validate.svg");
 	background-repeat: no-repeat;
 	background-position: left center;
-	background-size: 30px;
-	padding: 10px 10px 10px 40px;
-	font-size: 2em;
+	background-size: 50px;
+	padding: 10px 10px 10px 75px;
+	color: gray;
 }
 
 .actions .poleBody > ul > li > ul > li {
