@@ -5,7 +5,4 @@ tags=pole
 status=published
 ~~~~~~
 
-## Objectif
-
-
-## ....
+- Recherche de subventions
