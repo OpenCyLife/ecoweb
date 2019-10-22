@@ -176,6 +176,12 @@ body {
     justify-content: space-around;
 }
 
+.poleBox {
+	width:40%;
+	border:2px solid black;
+	margin:20px;
+}
+
 .poleThemes {
     display: flex;
     flex-direction: row;
