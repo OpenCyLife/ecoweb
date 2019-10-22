@@ -3,7 +3,7 @@ date=2019-02-23
 type=pole
 tags=pole
 status=published
-icone=fas fa-otter
+icone=fas fa-flask
 ~~~~~~
 
 - Etat de l'art sur les alternatives aux terres rares.
