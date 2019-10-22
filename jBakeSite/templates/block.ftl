@@ -24,13 +24,18 @@
 					<div>
 						<#list poles as pole>
 							<#if (pole.status == "published")>
-								<a href="${pole.uri}"><h2>
-								<#if pole.icone??>
-									<i class="${pole.icone}"></i>
+									<div class="poleBox">
+										<h2>
+										<#if pole.icone??>
+											<i class="${pole.icone}"></i>
+										</#if>
+										<#escape x as x?xml>${pole.title}</#escape>
+										</h2>
+										<div class="poleContent">
+											${pole.body}
+										</div>
+									</div>
 								</#if>
-								<#escape x as x?xml>${pole.title}</#escape>
-							</h2></a>
-							</#if>
 						</#list>
 					</div> 
 				</#if>

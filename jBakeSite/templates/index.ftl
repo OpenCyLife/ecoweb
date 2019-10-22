@@ -25,14 +25,17 @@
 						<div class="containerPole poleThemes">
 							<#list poles as pole>
 								<#if (pole.status == "published")>
-									<span> 
-										<a href="${pole.uri}">
-											<#if pole.icone??>
-												<i class="${pole.icone}"></i>
-											</#if>
-											<#escape x as x?xml>${pole.title}</#escape>
-										</a> 
-									</span>
+									<div class="poleBox">
+										<h2>
+										<#if pole.icone??>
+											<i class="${pole.icone}"></i>
+										</#if>
+										<#escape x as x?xml>${pole.title}</#escape>
+										</h2>
+										<div class="poleContent">
+											${pole.body}
+										</div>
+									</div>
 								</#if>
 							</#list>
 						</div>
