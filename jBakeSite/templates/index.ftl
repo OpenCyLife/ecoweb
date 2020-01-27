@@ -2,7 +2,7 @@
 	
 	<#include "menu.ftl">
 
-	<#list org_openCiLife_block as block>
+	<#list org_openCiLife_blocks as block>
 	
 	<div
 	<#if (block.specificClass)??>
@@ -24,7 +24,7 @@
 					<#if (block.includePoleList)??>
 					<#if block.includePoleList == "true">
 						<div class="containerPole poleThemes">
-							<#list org_openCiLife_pole as pole>
+							<#list org_openCiLife_poles as pole>
 								<#if (pole.status == "published")>
 									<span> 
 										<a href="${pole.uri}">
