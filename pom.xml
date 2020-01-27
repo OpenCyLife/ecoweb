@@ -1,0 +1,91 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>org.opencilife.ecoweb</groupId>
+	<artifactId>website</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>MarkDownEditor</name>
+
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<src.dir>jBakeSite</src.dir>
+		<jbake.inputDirectory>${project.basedir}/${src.dir}</jbake.inputDirectory>
+		<jbake.outputDirectory>${jbake.inputDirectory}/output</jbake.outputDirectory>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.vladsch.flexmark</groupId>
+			<artifactId>flexmark-all</artifactId>
+			<version>0.40.8</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.jbake</groupId>
+				<artifactId>jbake-maven-plugin</artifactId>
+				<version>0.3.1</version>
+				<configuration>
+					<!-- <inputDirectory>${project.basedir}/src/main/resources</inputDirectory> 
+						<outputDirectory>${project.build.directory}/classes</outputDirectory> -->
+				</configuration>
+				<executions>
+					<execution>
+						<id>default-generate</id>
+						<phase>generate-resources</phase>
+						<goals>
+							<goal>generate</goal>
+						</goals>
+					</execution>
+				</executions>
+				<dependencies>
+					<!-- AsciiDoc content support -->
+					<dependency>
+						<groupId>org.asciidoctor</groupId>
+						<artifactId>asciidoctorj</artifactId>
+						<version>1.5.6</version>
+					</dependency>
+
+					<!-- Markdown content support -->
+					<dependency>
+						<groupId>com.vladsch.flexmark</groupId>
+						<artifactId>flexmark</artifactId>
+						<version>0.32.18</version>
+					</dependency>
+					<dependency>
+						<groupId>com.vladsch.flexmark</groupId>
+						<artifactId>flexmark-profile-pegdown</artifactId>
+						<version>0.32.18</version>
+					</dependency>
+
+					<!-- Freemarker template support -->
+					<dependency>
+						<groupId>org.freemarker</groupId>
+						<artifactId>freemarker</artifactId>
+						<version>2.3.27-incubating</version>
+					</dependency>
+
+					<!-- Groovy template support -->
+					<!--<dependency> <groupId>org.codehaus.groovy</groupId> <artifactId>groovy</artifactId> 
+						<version>2.4.7</version> </dependency> <dependency> <groupId>org.codehaus.groovy</groupId> 
+						<artifactId>groovy-templates</artifactId> <version>2.4.7</version> </dependency> -->
+
+					<!-- Thymeleaf template support -->
+					<!--<dependency> <groupId>org.thymeleaf</groupId> <artifactId>thymeleaf</artifactId> 
+						<version>3.0.2.RELEASE</version> </dependency> -->
+
+					<!-- Jade4J template support -->
+					<!--<dependency> <groupId>de.neuland-bfi</groupId> <artifactId>jade4j</artifactId> 
+						<version>1.2.3</version> </dependency> -->
+				</dependencies>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

@@ -1,0 +1,176 @@
+body {
+    font: 100% Helvetica, sans-serif;
+}
+#pageTitle{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    vertical-align: center;
+    font-family:trebuchet, helvetica, sans-serif;
+    color:#282825;
+    width: 100%;
+    margin-bottom: 3%;    
+}
+#headerTitle{
+    font-family:trebuchet, helvetica, sans-serif;
+    color:#282825;
+    font-size: 30px;
+    margin-top: 50px;
+}
+#logoOpen{
+    width:250px;
+    height:120px;
+}
+#logoEco{
+    width:120px;
+    height:120px;
+}
+.headerPoles{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
+    margin-left: 23%;
+}
+.headerPoles > p{
+    font: 100% Helvetica, sans-serif;
+    color:black;    
+}
+.poleColor{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 1px solid;
+    border-color: #282825;
+    width: 100%;
+    height: auto;
+    background-color: #f7f7f7;
+    vertical-align: middle;
+    margin: auto;
+    padding-bottom: 3%;
+    line-height: 170%;
+}
+.poleWhite{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 1px solid;
+    border-color: #282825;
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    margin: auto;
+    padding-bottom: 3%;
+    line-height: 170%;
+}
+.poleTitle{
+    font-family:trebuchet, helvetica, sans-serif;
+    color:#282825;
+    font-size: 35px;
+    font-weight: lighter;
+    text-align: center;
+}
+.poleBody{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around;
+    align-items: center;     
+}
+.poleIcons{
+    width:120px;
+    height:120px;
+    align-items: center;
+}
+.actionTitle{
+    font-family:trebuchet, helvetica, sans-serif;
+    color:#282825;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0%;
+}
+.validateIcons{
+    width:60px;
+    height:60px;
+    align-items: center;
+}
+.actionItems{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: space-between;
+}
+.itemsBody{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center; 
+    align-content: center;
+    margin-left: 10%;
+}
+.actionBody{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+}
+#containerPartners{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 300PX;
+}
+.partenaires{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-around;
+    width: 100vh;
+}
+.iconsPartners{
+    height:100px;
+}
+.poleContact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vh;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left:15%;
+}
+.contactIcons{
+    width:100px;
+    height:100px;
+    align-items: center;
+}
+#contact{
+    font-family:trebuchet, helvetica, sans-serif;
+    color:#1f6ce5;
+    font-size: 35px;
+    font-weight: lighter;
+    text-align: center;
+}
+.containerPole{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.poleThemes{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-evenly;
+    width: 750px;
+}
+.poleThemes > p{
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    background-color: #e6e6e6;
+    border-radius: 5px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+}
