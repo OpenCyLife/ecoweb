@@ -1,6 +1,6 @@
 title=Nos projets
 date=2019-03-16
-type=projects
+type=org_openCiLife_projects
 status=published
 ~~~~~~
 

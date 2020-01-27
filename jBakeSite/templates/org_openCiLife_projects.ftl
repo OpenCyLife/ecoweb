@@ -11,7 +11,7 @@
 	</div>
 	
 	<div class="project_list">
-		<#list projects as project>
+		<#list org_openCiLife_projects as project>
 			<#if (project.status == "published")>
 				<div class="project">
 					<div class="project_header">

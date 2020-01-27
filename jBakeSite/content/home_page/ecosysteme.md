@@ -1,6 +1,6 @@
 title=Notre écosystème
 date=2019-01-25
-type=block
+type=org_openCiLife_block
 tags=homepage
 status=published
 specificClass=poleWhite

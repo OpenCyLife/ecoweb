@@ -1,6 +1,6 @@
 title=Missions
 date=2019-01-31
-type=block
+type=org_openCiLife_block
 tags=homepage
 status=published
 specificClass=poleColor

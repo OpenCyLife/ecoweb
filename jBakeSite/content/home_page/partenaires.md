@@ -1,6 +1,6 @@
 title=Nos partenaires
 date=2019-01-23
-type=block
+type=org_openCiLife_block
 tags=homepage
 status=published
 specificClass=poleColor partners

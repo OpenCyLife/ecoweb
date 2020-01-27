@@ -1,6 +1,6 @@
 title=Nos principes
 date=2019-01-29
-type=block
+type=org_openCiLife_block
 tags=homepage
 status=published
 specificClass=poleWhite

@@ -1,6 +1,6 @@
 title=Nos Actions
 date=2019-01-27
-type=block
+type=org_openCiLife_block
 tags=homepage
 status=published
 specificClass=poleColor actions

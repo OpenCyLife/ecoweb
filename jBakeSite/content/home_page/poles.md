@@ -1,7 +1,7 @@
 title=Nos Pôles
 icone=fas fa-otter
 date=2019-01-21
-type=block
+type=org_openCiLife_block
 tags=homepage
 status=published
 specificClass=poleWhite poles
