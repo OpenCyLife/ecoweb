@@ -1,0 +1,86 @@
+html{
+	font-size:100%;
+}
+.header{
+	margin-top: 50px;
+	display: flex;
+    flex-direction: row;
+	flex-wrap:wrap;
+	justify-content: space-between;
+	padding-bottom: 50px;
+}
+.blockContent {
+    padding: 0px 20px;
+    width: 100%;
+}
+.poleThemes{
+	display:block;
+	width: 100%;
+}
+/** simillar to .poleThemes > p **/
+.poleThemes > span{
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    background-color: #e6e6e6;
+    border-radius: 5px;
+    text-align: center;
+    vertical-align: middle;
+	padding: 5px 30px;
+	margin: 10px 50px 10px 0px;
+	display: inline-block;
+	min-width: 200px;;
+}
+.poleIcons {
+	margin-right: 25px;
+}
+/** simillar to .partenaires **/
+.partners .poleBody .blockContent > p, .join .poleBody .blockContent > p{
+	width: 100%;
+}
+.partners .poleBody .blockContent > p a, .join .poleBody .blockContent > p a{
+    margin: 0px 198px 35px 0px;
+	display: inline-block;
+}
+/** simillar to .iconsPartners **/
+.partners .poleBody .blockContent > p > a > img, .join .poleBody .blockContent > p > a > img{
+    height:100px;
+}
+.poleThemes > p {
+    line-height: 100%;
+    margin-right: 10px;
+}
+.join .poleBody > p {
+	width:100%;
+}
+.poleContact{
+	width: 100%;
+}
+.poleThemes > p > a{
+	padding: 8px 25px;
+	display: block;
+}
+
+.actions .poleBody .blockContent > ul > li > strong {
+	color:black;
+}
+
+.actions .poleBody .blockContent > ul > li {
+	display : list-item;
+ 	/*list-style-image : url(images/validate.svg);*/
+ 	list-style: none;
+	background-image: url("/images/validate.svg");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 50px;
+	padding: 10px 10px 10px 75px;
+	color: gray;
+}
+
+.actions .poleBody > ul > li > ul > li {
+	display : list-item;
+ 	/*list-style-image : url(images/validate.svg);*/
+ 	list-style: none;
+ 	font-size: 0.5em;
+ 	margin-left: -50px;
+}
