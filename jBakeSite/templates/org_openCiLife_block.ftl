@@ -22,7 +22,7 @@
 			<#if (content.includePoleList)??>
 				<#if content.includePoleList == "true">
 					<div>
-						<#list poles as pole>
+						<#list org_openCiLife_poles as pole>
 							<#if (pole.status == "published")>
 								<a href="${pole.uri}"><h2>
 								<#if pole.icone??>
