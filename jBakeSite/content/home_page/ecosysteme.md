@@ -5,7 +5,8 @@ tags=homepage
 status=published
 specificClass=poleWhite
 contentImage=images/ecosystem.svg
-ancorId=ecosystem
+anchorId=ecosystem
+order=40
 ~~~~~~
 Nous évaluons pour chacune de nos actions, d'une part son cycle de vie complète (conception, fabrication, utilisation, transformation) et d'autre part son impact sur l'écosystème concerné.
 Nous privilégions le temps long: Concertation large, formulation précise de la problématique et application d'une solution par itération (Boucle expérimentation-rectification).

@@ -6,7 +6,8 @@ tags=homepage
 status=published
 specificClass=poleWhite poles
 contentImage=images/poles.svg
-ancorId=poles
+anchorId=poles
+order=50
 includePoleList=true
 ~~~~~~
 Les problématiques sur lesquelles nous travaillons sont à la fois systémiques et urgentes.

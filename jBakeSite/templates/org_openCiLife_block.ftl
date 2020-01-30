@@ -10,8 +10,8 @@
 	
 		<#if (content.title)??>
 			<h2
-			<#if (content.ancorId)??>
-				id="${content.ancorId}"
+			<#if (content.anchorId)??>
+				id="${content.anchorId}"
 			<#else></#if>
 			class="poleTitle"><#escape x as x?xml>${content.title}</#escape></h2>
 		<#else></#if>

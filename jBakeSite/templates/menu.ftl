@@ -14,12 +14,16 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
+          
+			<#if (config.site_menu_includeBlock == "true")>
+				<#list org_openCiLife_blocks?sort_by("order") as block_menu>
+	          
+					<#if (block_menu.anchorId)??>
+						<li><a href="/#${block_menu.anchorId}"style="text-decoration:none; outline: none; color:black">${block_menu.title}</a></li>
+					<#else></#if>
+				</#list>
+			</#if>
             <!-- <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>/">Home</a></li> -->
-            <li><a href="/#principes"style="text-decoration:none; outline: none; color:black">Nos principes</a></li>
-            <li><a href="/#actions"style="text-decoration:none; outline: none; color:black">Nos actions</a></li>
-            <li><a href="/#ecosystem"style="text-decoration:none; outline: none; color:black">Notre écosystème</a></li>
-            <li><a href="/#poles"style="text-decoration:none; outline: none; color:black">Nos pôles</a></li>
-            <li><a href="/#contact"style="text-decoration:none; outline: none; color:black">Contacts</a></li>
             
             <!--
 			<li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>projects.html">Nos projets</a></li>

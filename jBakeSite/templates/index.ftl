@@ -2,7 +2,11 @@
 	
 	<#include "menu.ftl">
 
-	<#list org_openCiLife_blocks as block>
+	<#list org_openCiLife_blocks?sort_by("order") as block>
+	
+	<#if (block.anchorId)??>
+		<span stype="display:none" id="${block.anchorId}"></span>
+	<#else></#if>
 	
 	<div
 	<#if (block.specificClass)??>
@@ -11,9 +15,6 @@
 	>
 	<#if (block.title)??>
 		<h2
-		<#if (block.ancorId)??>
-			id="${block.ancorId}"
-		</#if>
 		class="poleTitle"><#escape x as x?xml>${block.title}</#escape></h2>
 	<#else></#if>
 	
