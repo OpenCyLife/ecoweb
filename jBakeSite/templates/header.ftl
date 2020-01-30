@@ -29,7 +29,7 @@
     <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
     <link rel="shortcut icon" href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>images/common/logo-small.jpg">
   </head>
-  <body>
+  <body class="${content.type}">
     <div id="wrap">
     	<div class="header">
 			<div id="pageTitle">
