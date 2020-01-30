@@ -47,7 +47,7 @@ body {
     font: 100% Helvetica, sans-serif;
     color:black;    
 }
-.poleColor{
+.hpColor{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -60,7 +60,7 @@ body {
     padding-bottom: 3%;
     line-height: 170%;
 }
-.poleWhite{
+.hpWhite{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;

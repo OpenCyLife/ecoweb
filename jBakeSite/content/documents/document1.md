@@ -1,6 +1,6 @@
 title=Un super document
 date=2019-03-016
-type=document
+type=org_openCiLife_document
 tags=document
 status=published
 exerpt=Ce document va vous aider à ..... 

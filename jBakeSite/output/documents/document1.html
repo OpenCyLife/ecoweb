@@ -27,20 +27,21 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
-    <link rel="shortcut icon" href="../images/logo-small.jpg">
+    <link rel="shortcut icon" href="../images/common/logo-small.jpg">
   </head>
-  <body>
-  <div class="container">
-    <div class="header">
-				<img src="../images/opencylife.png" alt="Logo Open CI Life" id="logoOpen"/>
-				<h1 id="headerTitle">Et toi, tu veux quel futur ?</h1>
-				<img src="../images/siteco-small.png" alt="Site Eco Conçu"id="logoEco"/>
+  <body class="org_openCiLife_document">
+    <div id="wrap">
+    	<div class="header">
+			<div id="pageTitle">
+				<img src="../images/common/logo_left.png" alt="Logo Open CI Life" id="logoLeft"/>
+				<h1 id="headerTitle">Et toi tu veux quel futur ?</h1>
+				<img src="../images/common/logo_right.png" alt="Site Eco Conçu" id="logoRight"/>
+			</div>
 		</div>
-    </div>
 	<!-- Fixed navbar -->
-    <div class="container">
-    <div class="navbar navbar-light bg-white" role="navigation">
-              <div class="navbar-header">
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
@@ -48,18 +49,29 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="../">
-          	<img src="../images/logo-small.jpg" style="height:35px, margin-bottom : 10px;"></img></a>
+          	<img src="../images/logo-small.jpg" style="height:30px"></img>Open CY Life
+          </a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
+          
+	          
+						<li><a href="/#actions"style="text-decoration:none; outline: none; color:black">Missions</a></li>
+	          
+						<li><a href="/#principes"style="text-decoration:none; outline: none; color:black">Nos principes</a></li>
+	          
+						<li><a href="/#actions"style="text-decoration:none; outline: none; color:black">Nos Actions</a></li>
+	          
+						<li><a href="/#ecosystem"style="text-decoration:none; outline: none; color:black">Notre écosystème</a></li>
+	          
+						<li><a href="/#partenaires"style="text-decoration:none; outline: none; color:black">Nos partenaires</a></li>
+	          
+						<li><a href="/#poles"style="text-decoration:none; outline: none; color:black">Nos Pôles</a></li>
+	          
+						<li><a href="/#rejoindre"style="text-decoration:none; outline: none; color:black">Nous rejoindre</a></li>
             <!-- <li><a href="..//">Home</a></li> -->
-            <li><a href="/#principes"style="text-decoration:none; outline: none; color:black">Nos principes</a></li>
-            <li><a href="/#actions"style="text-decoration:none; outline: none; color:black">Nos actions</a></li>
-            <li><a href="/#ecosystem"style="text-decoration:none; outline: none; color:black">Notre écosystème</a></li>
-            <li><a href="/#poles"style="text-decoration:none; outline: none; color:black">Nos pôles</a></li>
-            <li><a href="/#contact"style="text-decoration:none; outline: none; color:black">Contacts</a></li>
             
-           <!--
+            <!--
 			<li><a href="../projects.html">Nos projets</a></li>
 			<li><a href="../documents.html">La base documentaire</a></li>
 			<li><a href="../poles.html">les pôles</a></li>
@@ -81,7 +93,7 @@
         </div><!--/.nav-collapse -->
       </div>
     </div>
-    <div class="container-fluid">
+    <div class="container">
 	<div class="page-header">
 		<h1>Un super document</h1>
 	</div>
@@ -95,24 +107,10 @@
     
     <div id="footer">
       <div class="container">
-            <p class="poleTitle">Si vous voulez nous soutenir</p>
-            <div class="centerFooter">
-              <div class="donate">
-                <img src="../images/donation.svg" alt="donation" class="iconsPartners">
-                  <div class="don">
-                    <a href="https://www.helloasso.com/associations/open-cylife/adhesions/open-cylife-adhesion"
-                      target="blank">Donation</a>
-                    <a href="https://www.helloasso.com/associations/open-cylife/formulaires/1" target="blank">Pour faire un don,
-                      c'est par ici</a>
-                  </div>
-              </div>
-              <div class="donate">
-                <img src="../images/contact.svg" alt="Logo Contact" class="contactIcons"/> 
-                <a class="don" href="mailto:frederic@open-cy.life" target=_blank style="text-decoration:none; outline: none">Contact</a>
-              </div>
-            </div>
-      	
-   
+      	<div id="contact">
+      		<img src="../images/contact.svg" alt="Logo Contact" class="contactIcons"/> 
+      		<a href="https://www.open-cy.life/" target=_blank style="text-decoration:none; outline: none">Contact</a>
+      	</div>
         <p class="muted credit">&copy; 2019 | Mixed with <a href="http://getbootstrap.com/">Bootstrap v3.1.1</a> | Baked with <a href="http://jbake.org">JBake v2.6.4</a></p>
       </div>
     </div>

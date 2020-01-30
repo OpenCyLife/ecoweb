@@ -1,6 +1,6 @@
 title=Awesome projet 1
 date=2019-01-01
-type=project
+type=org_openCiLife_project
 tags=projet
 status=published
 image=/images/project/image_logo_1.jpg

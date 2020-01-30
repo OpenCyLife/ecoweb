@@ -1,12 +1,13 @@
 title=Nos Pôles
 icone=fas fa-otter
 date=2019-01-21
-type=block
+type=org_openCiLife_block
 tags=homepage
 status=published
-specificClass=poleWhite poles
+specificClass=hpWhite poles
 contentImage=images/poles.svg
-ancorId=poles
+anchorId=poles
+order=50
 includePoleList=true
 ~~~~~~
 Les problématiques sur lesquelles nous travaillons sont à la fois systémiques et urgentes.
