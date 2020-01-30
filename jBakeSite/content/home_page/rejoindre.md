@@ -4,7 +4,7 @@ date=2019-01-21
 type=org_openCiLife_block
 tags=homepage
 status=published
-specificClass=poleWhite join
+specificClass=hpWhite join
 anchorId=rejoindre
 order=60
 ~~~~~~
