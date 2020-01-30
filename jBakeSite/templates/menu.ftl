@@ -9,7 +9,7 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>">
-          	<img src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>images/logo-small.jpg" style="height:35px, margin-bottom : 10px;"></img></a>
+          	<img src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>images/common/logo-small.jpg" style="height:35px, margin-bottom : 10px;"></img></a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -46,4 +46,4 @@
         </div><!--/.nav-collapse -->
       </div>
     </div>
-    <div class="container-fluid">
+    <div class="container">

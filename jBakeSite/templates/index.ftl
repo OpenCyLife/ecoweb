@@ -27,14 +27,15 @@
 						<div class="containerPole poleThemes">
 							<#list org_openCiLife_poles as pole>
 								<#if (pole.status == "published")>
-									<span> 
-										<a href="${pole.uri}">
-											<#if pole.icone??>
-												<i class="${pole.icone}"></i>
-											</#if>
-											<#escape x as x?xml>${pole.title}</#escape>
-										</a> 
-									</span>
+									<div class="poleDescription">
+									<#if pole.image??>
+											<img class="descriptionIcons" src="${pole.image}">
+									</#if>
+									<p class="titleDescription">
+										<#escape x as x?xml>${pole.title}</#escape>
+									</p>
+										${pole.body}
+									</div>
 								</#if>
 							</#list>
 						</div>

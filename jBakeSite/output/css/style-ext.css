@@ -2,20 +2,14 @@ html{
 	font-size:100%;
 }
 .header{
-	margin-top: 50px;
 	display: flex;
     flex-direction: row;
 	flex-wrap:wrap;
 	justify-content: space-between;
-	padding-bottom: 50px;
 }
 .blockContent {
     padding: 0px 20px;
     width: 100%;
-}
-.poleThemes{
-	display:block;
-	width: 100%;
 }
 /** simillar to .poleThemes > p **/
 .poleThemes > span{
@@ -38,8 +32,14 @@ html{
 .partners .poleBody .blockContent > p, .join .poleBody .blockContent > p{
 	width: 100%;
 }
+
+.join .blockContent > p, .partners .blockContent > p {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
 .partners .poleBody .blockContent > p a, .join .poleBody .blockContent > p a{
-    margin: 0px 198px 35px 0px;
 	display: inline-block;
 }
 /** simillar to .iconsPartners **/
@@ -52,9 +52,6 @@ html{
 }
 .join .poleBody > p {
 	width:100%;
-}
-.poleContact{
-	width: 100%;
 }
 .poleThemes > p > a{
 	padding: 8px 25px;

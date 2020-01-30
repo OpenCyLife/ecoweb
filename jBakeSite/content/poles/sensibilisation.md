@@ -3,7 +3,7 @@ date=2019-02-27
 type=org_openCiLife_pole
 tags=pole
 status=published
-icone=fas fa-broadcast-tower
+image=images/user.webp
 ~~~~~~
 
 - Organisation d'un centre de ressource sur les thématiques du digital et de ses impacts sociaux et environnementaux sur notre site
