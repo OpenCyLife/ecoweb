@@ -18,11 +18,11 @@ body {
     font-size: 30px;
     margin-top: 50px;
 }
-#logoOpen{
+#logoLeft{
     width:250px;
     height:120px;
 }
-#logoEco{
+#logoRight{
     width:120px;
     height:120px;
 }
