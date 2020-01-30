@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="${config.site_header_lang}">
   <head>
     <meta charset="utf-8"/>
     <title><#if (content.title)??><#escape x as x?xml>${content.title}</#escape><#else>${config.site_header_title}</#if></title>
