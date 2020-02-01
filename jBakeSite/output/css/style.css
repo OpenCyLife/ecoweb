@@ -26,11 +26,16 @@ body {
     width:300px;
     height:auto;
 }
-
 #logoRight{
     width:150px;
     height:auto;
 }
+
+.navbar-toggle{
+	background-image:url(/images/common/burger.svg);
+	width: 32px;
+}
+
 .headerPoles{
     display: flex;
     flex-direction: row;
@@ -87,7 +92,6 @@ body {
     align-items: center;
     margin-right: 0;
     vertical-align: text-bottom;
-    margin-bottom: 5%;
 }
 .actionTitle{
     font-family:trebuchet, helvetica, sans-serif;

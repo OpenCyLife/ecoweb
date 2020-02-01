@@ -8,7 +8,7 @@ html{
 	justify-content: space-between;
 }
 .blockContent {
-    padding: 0px 20px;
+    padding: 0px 2%;
     width: 100%;
 }
 /** simillar to .poleThemes > p **/
@@ -26,7 +26,7 @@ html{
 	min-width: 200px;;
 }
 .poleIcons {
-	margin-right: 25px;
+	margin-right: 1%;
 }
 /** simillar to .partenaires **/
 .partners .poleBody .blockContent > p, .join .poleBody .blockContent > p{
@@ -69,8 +69,8 @@ html{
 	background-image: url("/images/validate.svg");
 	background-repeat: no-repeat;
 	background-position: left center;
-	background-size: 50px;
-	padding: 10px 10px 10px 75px;
+	background-size: 40px;
+	padding: 10px 10px 10px 45px;
 	color: gray;
 }
 
