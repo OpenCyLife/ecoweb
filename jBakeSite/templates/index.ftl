@@ -17,16 +17,16 @@
 		>
 		<#if (block.title)??>
 			<h2
-			class="poleTitle"><#escape x as x?xml>${block.title}</#escape></h2>
+			class="blockTitle"><#escape x as x?xml>${block.title}</#escape></h2>
 		<#else></#if>
 		
-				<div class="poleBody">
+				<div class="blockBody">
 					<div class="blockContent">
 						${block.body}
 						
 						<#if (block.includePoleList)??>
 						<#if block.includePoleList == "true">
-							<div class="containerPole poleThemes">
+							<div class="blockSubContent">
 								<#list org_openCiLife_poles as pole>
 									<#if (pole.status == "published")>
 										<div class="poleDescription">
