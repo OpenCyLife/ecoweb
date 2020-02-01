@@ -1,6 +1,11 @@
+html{
+	font-size:100%;
+}
+
 body {
     font: 100% Helvetica, sans-serif;
 }
+
 .header{
     display: flex;
     flex-direction: column;
@@ -36,17 +41,79 @@ body {
 	width: 32px;
 }
 
-.headerPoles{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 60%;
-    margin-left: 23%;
+.blockContent{
+    padding: 0px 2%;
+    width: 100%;
 }
-.headerPoles > p{
-    font: 100% Helvetica, sans-serif;
-    color:black;    
+/** simillar to .blockSubContent > p **/
+.blockSubContent > span{
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    background-color: #e6e6e6;
+    border-radius: 5px;
+    text-align: center;
+    vertical-align: middle;
+	padding: 5px 30px;
+	margin: 10px 50px 10px 0px;
+	display: inline-block;
+	min-width: 200px;;
 }
+
+/** simillar to .partenaires **/
+.partners .blockBody .blockContent > p, .join .blockBody .blockContent > p{
+	width: 100%;
+}
+
+.join .blockContent > p, .partners .blockContent > p{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+.partners .blockBody .blockContent > p a, .join .blockBody .blockContent > p a{
+	display: inline-block;
+}
+/** simillar to .iconsPartners **/
+.partners .blockBody .blockContent > p > a > img, .join .blockBody .blockContent > p > a > img{
+    height:100px;
+}
+.blockSubContent > p{
+    line-height: 100%;
+    margin-right: 10px;
+}
+.join .blockBody > p{
+	width:100%;
+}
+.blockSubContent > p > a{
+	padding: 8px 25px;
+	display: block;
+}
+
+.actions .blockBody .blockContent > ul > li > strong{
+	color:black;
+}
+
+.actions .blockBody .blockContent > ul > li{
+	display : list-item;
+ 	/*list-style-image : url(images/validate.svg);*/
+ 	list-style: none;
+	background-image: url("/images/validate.svg");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 40px;
+	padding: 10px 10px 10px 45px;
+	color: gray;
+}
+
+.actions .blockBody > ul > li > ul > li{
+	display : list-item;
+ 	/*list-style-image : url(images/validate.svg);*/
+ 	list-style: none;
+ 	font-size: 0.5em;
+ 	margin-left: -50px;
+}
+
 .hpColor{
     display: flex;
     flex-direction: column;
@@ -86,93 +153,40 @@ body {
     justify-content: space-around;
     align-items: center;     
 }
-.poleIcons{
+
+.blockIcon{
     width:90px;
     height:90px;
     align-items: center;
     margin-right: 0;
     vertical-align: text-bottom;
-}
-.actionTitle{
-    font-family:trebuchet, helvetica, sans-serif;
-    color:#282825;
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 0%;
-}
-.validateIcons{
-    width:60px;
-    height:60px;
-    align-items: center;
-}
-.actionItems{
-    display: flex;
-    flex-direction: row;
-    align-items: center; 
-    justify-content: space-between;
-}
-.itemsBody{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center; 
-    align-content: center;
-    margin-left: 10%;
-}
-.actionBody{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: flex-start;
-}
-#containerPartners{
-    display: flex;
-    flex-direction: column;
-    align-items: space-between;
-    margin-top: 3%;    
-}
-.partenaires{
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    justify-content: space-between;
-    width: 100vh;
+    margin-right: 1%;
 }
 
-.iconsPartners{
-    widows: 110px;
-    height:110px;
-}
 .footer_blocks{
-    display: flex;
+	display: flex;
     flex-direction: row;
     justify-content: space-around;
-    line-height: 2em;
 }
-.footer_block {
+
+.footer_block{
 	display: flex;
     flex-direction: row;
     justify-content: space-around;
     font-size: 1.2em;
 }
 
-#footer img {
-    width:110px;
-    height:110px;
-    align-items: center;
+.footer_block img{
+	width:100px;
 }
 
-.footer_block_text {
+.footer_block_text{
+	display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 	margin-left:4%;
 }
 
-#contact{
-    font-family:trebuchet, helvetica, sans-serif;
-    color:#1f6ce5;
-    font-size: 35px;
-    font-weight: lighter;
-    text-align: center;
-}
 .description{
     font-weight: lighter;
     color: #aaaaaa;
@@ -196,7 +210,7 @@ body {
     vertical-align: middle;
     line-height: 40px;  
 }
-.poleDescription{
+.blockDescription{
     display: flex;
     justify-content: start;
     flex-direction: column;
@@ -209,11 +223,6 @@ body {
     font-size: smaller;
     line-height:20px;
     align-content: center;
-}
-.listPole{
-    text-align: start;
-    margin-top: 3%;
-    margin-bottom: 15%;
 }
 
 .titleDescription{
@@ -231,30 +240,4 @@ body {
     height:70px;
     margin-top: 3%;
     margin-left: 40%;
-}
-.poleTest{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 100%;
-    height: auto;
-    vertical-align: middle;
-    margin: auto;
-    padding-bottom: 3%;
-    line-height: 170%;
-    border-top:solid #282825 1px;
-}
-.poleFollow{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    border-top:1px solid #282825;
-    border-bottom:1px solid #282825;
-    width: 100%;
-    height: auto;
-    background-color: #f7f7f7;
-    vertical-align: middle;
-    margin: auto;
-    padding-bottom: 3%;
-    line-height: 170%;
 }

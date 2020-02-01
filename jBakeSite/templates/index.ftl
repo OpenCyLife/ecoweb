@@ -29,7 +29,7 @@
 							<div class="blockSubContent">
 								<#list org_openCiLife_poles as pole>
 									<#if (pole.status == "published")>
-										<div class="poleDescription">
+										<div class="blockDescription">
 										<#if pole.image??>
 												<img class="descriptionIcons" src="${pole.image}">
 										</#if>
@@ -46,7 +46,7 @@
 					</div>	
 						
 					<#if (block.contentImage)??>
-						<img src=${block.contentImage} class="poleIcons"/>
+						<img src=${block.contentImage} class="blockIcon"/>
 					<#else></#if>
 				</div>
 			</div>
