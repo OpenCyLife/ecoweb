@@ -1,4 +1,4 @@
-title=Nous rejoindre
+title=Rejoignez-nous
 icone=fas fa-otter
 date=2019-01-21
 type=org_openCiLife_block
