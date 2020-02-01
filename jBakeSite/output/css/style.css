@@ -73,14 +73,14 @@ body {
     padding-bottom: 3%;
     line-height: 170%;
 }
-.poleTitle{
+.blockTitle{
     font-family:trebuchet, helvetica, sans-serif;
     color:#282825;
     font-size: 35px;
     font-weight: lighter;
     text-align: center;
 }
-.poleBody{
+.blockBody{
     display: flex;
     flex-direction: row; 
     justify-content: space-around;
@@ -173,24 +173,18 @@ body {
     font-weight: lighter;
     text-align: center;
 }
-.containerPole{
-    display: inline-block;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-}
 .description{
     font-weight: lighter;
     color: #aaaaaa;
 }
-.poleThemes{
+.blockSubContent{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     widows: 2;
     margin-top: 5%;
 }
-.poleThemes > p{
+.blockSubContent > p{
     border-width: 1px;
     border-style: solid;
     border-color: black;
