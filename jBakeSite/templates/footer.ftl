@@ -17,8 +17,8 @@
 				</#if>
 			</#list>
 	     </div>
+	     <p class="muted credit">&copy; 2019 | Mixed with <a href="http://getbootstrap.com/">Bootstrap v3.1.1</a> | Baked with <a href="http://jbake.org">JBake ${version}</a> with recipe from <a href ="https://github.com/OpenCyLife/ecoweb">EcoWeb</a> by <a href="http://www.OpenCi.life">OpenCi.life</a></p>
       </div>
-      <p class="muted credit">&copy; 2019 | Mixed with <a href="http://getbootstrap.com/">Bootstrap v3.1.1</a> | Baked with <a href="http://jbake.org">JBake ${version}</a> with recipe from <a href ="https://github.com/OpenCyLife/ecoweb">EcoWeb by OpenCi.life</a></p>
     </div>
     
     <!-- Javascript here load faster -->
