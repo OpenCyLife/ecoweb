@@ -4,26 +4,21 @@
     
     <div id="footer">
      <div class="container">
-	     <div class="poleContact">
-		     <div class="donate">
-		                <img src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>images/donation.svg" alt="donation" class="iconsPartners">
-		                <div class="don">
-		                    <a href="https://www.helloasso.com/associations/open-cylife/adhesions/open-cylife-adhesion" target="blank">Donation</a>
-		                    <a href="https://www.helloasso.com/associations/open-cylife/formulaires/1" target="blank">Pour faire
-		                        un don,
-		                        c'est par ici</a>
-		                </div>
-		            </div>
-		      <div class="donate">
-		        <img src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>images/contact.svg" class="contactIcons"/> 
-		        <a href="https://www.open-cy.life/" target=_blank style="text-decoration:none; outline: none"><p id="contact">Contact</p></a>
-		      </div>
-		   </div>
-    </div>
-      	
-   
-        <p class="muted credit">&copy; 2019 | Mixed with <a href="http://getbootstrap.com/">Bootstrap v3.1.1</a> | Baked with <a href="http://jbake.org">JBake ${version}</a></p>
+	     <div class="footer_blocks">
+			<#list org_openCiLife_blocks?sort_by("order") as block>
+				<#assign blockTags = block.tags>
+				<#if (blockTags?seq_contains("footer"))>
+					<div class="footer_block">
+			            <img src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>${block.contentImage}">
+			            <div class="footer_block_text">
+			            	${block.body}
+			            </div>
+			        </div>
+				</#if>
+			</#list>
+	     </div>
       </div>
+      <p class="muted credit">&copy; 2019 | Mixed with <a href="http://getbootstrap.com/">Bootstrap v3.1.1</a> | Baked with <a href="http://jbake.org">JBake ${version}</a> with recipe from <a href ="https://github.com/OpenCyLife/ecoweb">EcoWeb by OpenCi.life</a></p>
     </div>
     
     <!-- Javascript here load faster -->
