@@ -7,7 +7,7 @@ status=published
 specificClass=hpWhite poles
 contentImage=images/poles.svg
 anchorId=poles
-order=50
+order=7
 includePoleList=true
 ~~~~~~
 Chaque initiative compte. Open CyLife est un facilitateur, qui sensibilise et accompagne tous ceux qui ont un projet mêlant digital et transition sociétale. L’association est jeune et se modèle suivant les membres qui la rejoignent.

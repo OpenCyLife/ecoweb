@@ -5,7 +5,7 @@ status=published
 specificClass=hpColor actions
 contentImage=images/donation.svg
 anchorId=donation
-order=10
+order=8
 ~~~~~~
 [Adhesion](https://www.helloasso.com/associations/open-cylife/adhesions/open-cylife-adhesion)
 
