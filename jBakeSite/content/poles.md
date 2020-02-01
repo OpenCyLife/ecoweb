@@ -1,6 +1,6 @@
 title=Les pôles
 date=2019-03-16
-type=poles
+type=org_openCiLife_poles
 status=published
 ~~~~~~
 Nos différents pôles

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="${config.site_header_lang}">
   <head>
     <meta charset="utf-8"/>
-    <title><#if (content.title)??><#escape x as x?xml>${content.title}</#escape><#else>Open CY Life</#if></title>
+    <title><#if (content.title)??><#escape x as x?xml>${content.title}</#escape><#else>${config.site_header_title}</#if></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Open CY Life">
-    <meta name="author" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="${config.site_header_description}">
+    <meta name="author" content="${config.site_header_author}">
+    <meta name="keywords" content="${config.site_header_keyword}">
     <meta name="generator" content="JBake">
 
     <!-- Le styles -->
@@ -27,13 +27,14 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
-    <link rel="shortcut icon" href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>images/logo-small.jpg">
+    <link rel="shortcut icon" href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>images/common/logo-small.jpg">
   </head>
-  <body>
-  <div class="container">
-    <div class="header">
-				<img src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>images/opencylife.png" alt="Logo Open CI Life" id="logoOpen"/>
-				<h1 id="headerTitle">Et toi, tu veux quel futur ?</h1>
-				<img src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>images/siteco-small.png" alt="Site Eco Conçu"id="logoEco"/>
+  <body class="${content.type}">
+    <div id="wrap">
+    	<div class="header">
+			<div id="pageTitle">
+				<img src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>images/common/logo_left.png" alt="${config.site_logoLeft_description}" id="logoLeft"/>
+				<h1 id="headerTitle">${config.site_headline?join(" ")}</h1>
+				<img src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>images/common/logo_right.png" alt="${config.site_logoRight_description}" id="logoRight"/>
+			</div>
 		</div>
-    </div>

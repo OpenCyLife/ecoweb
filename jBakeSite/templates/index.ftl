@@ -2,52 +2,55 @@
 	
 	<#include "menu.ftl">
 
-	<#list blocks as block>
-	<div
-	<#if (block.specificClass)??>
-		class="<#escape x as x?xml>${block.specificClass}</#escape>"
-	</#if>
-	>
-	<#if (block.title)??>
-		<h2
-		<#if (block.ancorId)??>
-			id="${block.ancorId}"
+	<#list org_openCiLife_blocks?sort_by("order") as block>
+		<#assign blockTags = block.tags>
+		<#if (blockTags?seq_contains("homepage"))>
+		
+		<#if (block.anchorId)??>
+			<span stype="display:none" id="${block.anchorId}"></span>
+		<#else></#if>
+		
+		<div
+		<#if (block.specificClass)??>
+			class="<#escape x as x?xml>${block.specificClass}</#escape>"
 		</#if>
-		class="poleTitle"><#escape x as x?xml>${block.title}</#escape></h2>
-	<#else></#if>
-	
-			<div class="poleBody">
-				<div class="blockContent">
-					${block.body}
-					
-					<#if (block.includePoleList)??>
-					<#if block.includePoleList == "true">
-						<div class="containerPole poleThemes">
-							<#list poles as pole>
-								<#if (pole.status == "published")>
-									<div class="poleBox">
-										<h2>
-										<#if pole.icone??>
-											<i class="${pole.icone}"></i>
+		>
+		<#if (block.title)??>
+			<h2
+			class="poleTitle"><#escape x as x?xml>${block.title}</#escape></h2>
+		<#else></#if>
+		
+				<div class="poleBody">
+					<div class="blockContent">
+						${block.body}
+						
+						<#if (block.includePoleList)??>
+						<#if block.includePoleList == "true">
+							<div class="containerPole poleThemes">
+								<#list org_openCiLife_poles as pole>
+									<#if (pole.status == "published")>
+										<div class="poleDescription">
+										<#if pole.image??>
+												<img class="descriptionIcons" src="${pole.image}">
 										</#if>
-										<#escape x as x?xml>${pole.title}</#escape>
-										</h2>
-										<div class="poleContent">
+										<p class="titleDescription">
+											<#escape x as x?xml>${pole.title}</#escape>
+										</p>
 											${pole.body}
 										</div>
-									</div>
-								</#if>
-							</#list>
-						</div>
+									</#if>
+								</#list>
+							</div>
+						</#if>
 					</#if>
-				</#if>
-				</div>	
-					
-				<#if (block.contentImage)??>
-					<img src=${block.contentImage} class="poleIcons"/>
-				<#else></#if>
+					</div>	
+						
+					<#if (block.contentImage)??>
+						<img src=${block.contentImage} class="poleIcons"/>
+					<#else></#if>
+				</div>
 			</div>
-		</div>
+		</#if>
   	</#list>
 
 <#include "footer.ftl">

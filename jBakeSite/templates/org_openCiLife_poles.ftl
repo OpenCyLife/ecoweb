@@ -11,7 +11,7 @@
 	</div>
 	
 	<div class="document_list">
-		<#list poles as pole>
+		<#list org_openCiLife_poles as pole>
 			<#if (pole.status == "published")>
 				<div class="document">
 					<div class="document_header">

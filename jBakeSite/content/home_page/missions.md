@@ -1,10 +1,11 @@
 title=Missions
 date=2019-01-31
-type=block
+type=org_openCiLife_block
 tags=homepage
 status=published
-specificClass=poleColor
+specificClass=hpColor
 contentImage=images/target.svg
-ancorId=actions
+anchorId=actions
+order=10
 ~~~~~~
 **Open Cylife** est un collectif dont l’objet est de consacrer la puissance des technologies innovantes à l'émergence d’une société plus équitable et responsable.

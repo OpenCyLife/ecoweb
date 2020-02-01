@@ -1,9 +1,9 @@
 title=Pôle R&D
 date=2019-02-23
-type=pole
+type=org_openCiLife_pole
 tags=pole
 status=published
-icone=fas fa-flask
+image=images/play-button.webp
 ~~~~~~
 
 - Etat de l'art sur les alternatives aux terres rares.

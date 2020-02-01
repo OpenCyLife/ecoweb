@@ -1,9 +1,9 @@
 title=Pôle accompagnement
 date=2019-02-25
-type=pole
+type=org_openCiLife_pole
 tags=pole
 status=draft
-icone=fas fa-ad
+image=fas fa-ad
 ~~~~~~
 
 ## Objectif

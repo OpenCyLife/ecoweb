@@ -13,10 +13,6 @@
         <lastmod>2019-03-14</lastmod>
     </url>
     <url>
-        <loc>http://localhost:8820/projects/projetTest.html</loc>
-        <lastmod>2019-01-10</lastmod>
-    </url>
-    <url>
         <loc>http://localhost:8820/projects/projet5.html</loc>
         <lastmod>2019-01-01</lastmod>
     </url>
@@ -29,12 +25,16 @@
         <lastmod>2019-01-01</lastmod>
     </url>
     <url>
-        <loc>http://localhost:8820/documents.html</loc>
+        <loc>http://localhost:8820/documents/document1.html</loc>
         <lastmod>2019-03-16</lastmod>
     </url>
     <url>
-        <loc>http://localhost:8820/documents/document1.html</loc>
-        <lastmod>2019-03-16</lastmod>
+        <loc>http://localhost:8820/footer/contact.html</loc>
+        <lastmod>2020-02-01</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:8820/footer/donation.html</loc>
+        <lastmod>2020-02-01</lastmod>
     </url>
     <url>
         <loc>http://localhost:8820/home_page/missions.html</loc>
@@ -75,9 +75,5 @@
     <url>
         <loc>http://localhost:8820/poles/rd.html</loc>
         <lastmod>2019-02-23</lastmod>
-    </url>
-    <url>
-        <loc>http://localhost:8820/poles/ressources.html</loc>
-        <lastmod>2019-02-21</lastmod>
     </url>
 </urlset>

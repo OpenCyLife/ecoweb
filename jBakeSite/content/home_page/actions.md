@@ -1,11 +1,12 @@
 title=Nos Actions
 date=2019-01-27
-type=block
+type=org_openCiLife_block
 tags=homepage
 status=published
-specificClass=poleColor actions
+specificClass=hpColor actions
 contentImage=images/action.svg
-ancorId=actions
+anchorId=actions
+order=30
 ~~~~~~
 - **Connecter**
     ...les communautés technologiques et celles oeuvrant à la transition sociétale pour dynamiser la fertilisation croisée.
