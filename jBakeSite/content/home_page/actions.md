@@ -6,7 +6,7 @@ status=published
 specificClass=hpColor actions
 contentImage=images/action.svg
 anchorId=actions
-order=30
+order=4
 ~~~~~~
 - **Connecter**
     ...les communautés technologiques et celles oeuvrant à la transition sociétale pour dynamiser la fertilisation croisée.

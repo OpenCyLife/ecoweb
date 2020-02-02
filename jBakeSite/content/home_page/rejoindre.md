@@ -6,7 +6,7 @@ tags=homepage
 status=published
 specificClass=hpWhite join
 anchorId=rejoindre
-order=60
+order=7
 ~~~~~~
 
 [![Facebook](/images/facebook.svg)](https://www.facebook.com/Open-Cy-Life-333304130587142/) [![Meetup](/images/meetup.svg)](https://www.meetup.com/fr-FR/Nouvelles-technologies-et-Transition-societale-Open-CyLife/) [![Twitter](images/twitter-small.svg)](https://twitter.com/opencylife/)

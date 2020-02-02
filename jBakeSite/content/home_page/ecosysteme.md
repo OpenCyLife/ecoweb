@@ -6,7 +6,7 @@ status=published
 specificClass=hpWhite
 contentImage=images/ecosystem.svg
 anchorId=ecosystem
-order=40
+order=5
 ~~~~~~
 Nous évaluons pour chacune de nos actions, d'une part son cycle de vie complète (conception, fabrication, utilisation, transformation) et d'autre part son impact sur l'écosystème concerné.
 

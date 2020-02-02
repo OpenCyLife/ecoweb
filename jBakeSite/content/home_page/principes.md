@@ -6,7 +6,7 @@ status=published
 specificClass=hpWhite
 contentImage=images/principe.svg
 anchorId=principes
-order=20
+order=3
 ~~~~~~
 Nous évaluons pour chacune de nos action, d’une part son cycle de vie complet (conception, fabrication, utilisation, transformation) et d’autre part son impact sur l’écosystème concerné. Nous privilégions le temps long : concertation large, formulation précise de la problématique et application d’une solution par itération (Boucle experimentation-rectification).
 

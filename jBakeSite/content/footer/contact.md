@@ -5,6 +5,6 @@ status=published
 specificClass=hpColor actions
 contentImage=images/contact.svg
 anchorId=contact
-order=20
+order=9
 ~~~~~~
 [Contact](https://www.open-cy.life/)
