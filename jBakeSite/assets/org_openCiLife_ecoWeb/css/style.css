@@ -33,8 +33,9 @@ body {
 	height: auto;
 }
 
+<!-- FIXME Djer13 does not work if website in subFolder -->
 .navbar-toggle {
-	background-image: url(/images/common/burger.svg);
+	background-image: url(/org_openCiLife_ecoWeb/images/common/burger.svg);
 	width: 32px;
 }
 
