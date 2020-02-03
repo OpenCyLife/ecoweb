@@ -1,7 +1,8 @@
 title=Notre écosystème
 date=2019-01-25
 type=org_openCiLife_block
-tags=homepage
+category=homepage
+tags=
 status=published
 specificClass=hpWhite
 contentImage=images/ecosystem.svg

@@ -1,6 +1,7 @@
 title=Donation
 type=org_openCiLife_block
-tags=footer
+category=footer
+tags=
 status=published
 specificClass=hpColor actions
 contentImage=images/donation.svg

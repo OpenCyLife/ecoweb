@@ -8,14 +8,21 @@ return : true in a least one lookupItems is found in aSequence
 <#function seq_containsOne aSequence lookupItems>
 	<#assign found=false>
 	<#if (lookupItems?is_sequence)>
-	
-		<#list lookupItems as item>
-			<#if (!found)>
-				<#assign found = aSequence?seq_contains(item) >
-			</#if>
-		</#list>
-	<#else>
-		<#assign found = aSequence?seq_contains(lookupItems) >
+		<#if (aSequence?is_sequence)>
+			<#list lookupItems as item>
+				<#if (!found)>
+					<#assign found = aSequence?seq_contains(item)>
+				</#if>
+			</#list>
+		<#else> <#-- aSequence is not a Sequence, but lookupItems IS -->
+			<#assign found = lookupItems?seq_contains(aSequence)>
+		</#if>
+	<#else> <#-- lookupItems is not a Sequence -->
+		<#if (aSequence?is_sequence)>
+			<#assign found = aSequence?seq_contains(lookupItems)>
+		<#else> <#-- both params are NOT lists -->
+			<#assign found = lookupItems == aSequence>
+		</#if>>
 	</#if>
 	
 	<#return found>

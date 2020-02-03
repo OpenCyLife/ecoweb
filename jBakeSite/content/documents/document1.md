@@ -1,7 +1,7 @@
 title=Un super document
 date=2019-03-016
 type=org_openCiLife_document
-tags=document
+tags=
 status=published
 exerpt=Ce document va vous aider à ..... 
 download_link=http://www.google.fr

@@ -5,7 +5,9 @@
 	
 	<ul>
 		<#list tags as tag>
+		<#if (tag?? && tag?hasContent && tag.name?hasContent)>
 			<li><a href="${ecoWeb.buildRootPathAwareURL(tag.uri)}">${tag.name}</a></li>
+			</#if>
 		</#list>
 	</ul>
 	

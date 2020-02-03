@@ -18,7 +18,7 @@
 			<#if (config.site_menu_includeBlock == "true")>
 				<#list org_openCiLife_blocks?sort_by("order") as block_menu>
 					
-					<#if   (ecoWeb.seq_containsOne(block_menu.tags, config.site_menu_tags_include))>
+					<#if   (ecoWeb.seq_containsOne(block_menu.category, config.site_menu_tags_include))>
 						<#if (block_menu.anchorId)??>
 							<li><a href="/#${block_menu.anchorId}"style="text-decoration:none; outline: none; color:black">${block_menu.title}</a></li>
 						<#else></#if>

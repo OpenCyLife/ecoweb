@@ -1,7 +1,7 @@
 title=Bien mieux que Awesome project
 date=2019-03-14
 type=org_openCiLife_project
-tags=projet
+tags=test1
 status=published
 image=/images/project/image_logo_2.png
 ~~~~~~

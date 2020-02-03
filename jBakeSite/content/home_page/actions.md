@@ -1,7 +1,8 @@
 title=Nos Actions
 date=2019-01-27
 type=org_openCiLife_block
-tags=homepage
+category=homepage
+tags=
 status=published
 specificClass=hpColor actions
 contentImage=images/action.svg

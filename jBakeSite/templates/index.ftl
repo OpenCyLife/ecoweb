@@ -3,8 +3,8 @@
 	<#include "menu.ftl">
 
 	<#list org_openCiLife_blocks?sort_by("order") as block>
-		<#assign blockTags = block.tags>
-		<#if (blockTags?seq_contains("homepage"))>
+		<#assign blockCategory = block.category>
+		<#if ( ecoWeb.seq_containsOne(blockCategory, "homepage"))>
 		
 		<#if (block.anchorId)??>
 			<span stype="display:none" id="${block.anchorId}"></span>

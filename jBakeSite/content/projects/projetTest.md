@@ -1,7 +1,7 @@
 title=New test Project
 date=2019-01-10
 type=project
-tags=projet
+tags=test3,test4
 status=published
 image=/images/project/image_logo_1.jpg
 exerpt=Un résumé
