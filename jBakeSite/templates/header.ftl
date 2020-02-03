@@ -12,7 +12,7 @@
 
     <!-- Le styles -->
     <link href="${ecoWeb.buildRootPathAwareURL("org_openCiLife_ecoWeb/css/bootstrap.min.css")}" rel="stylesheet">
-    <link href=${ecoWeb.buildRootPathAwareURL("org_openCiLife_ecoWeb/css/base.css")}" rel="stylesheet">
+    <link href="${ecoWeb.buildRootPathAwareURL("org_openCiLife_ecoWeb/css/base.css")}" rel="stylesheet">
     <link href="${ecoWeb.buildRootPathAwareURL("org_openCiLife_ecoWeb/css/style.css")}" rel="stylesheet">
     <link href="${ecoWeb.buildRootPathAwareURL("css/style-ext.css")}" rel="stylesheet">
 	
