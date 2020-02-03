@@ -41,3 +41,16 @@ return : URL prepend with rootPath (if configured)
 	
 	<#return rootPathAwareURL>
 </#function>
+
+<#-- display text from config file. Handle corectly when coma "," in text
+param : theText : the text to display (may be a "sequence")
+return : a text (with original coma ",")
+-->
+<#function displayConfigText theText>
+	<#if theText?is_sequence>
+		<#assign text = theText?join(", ")>
+	<#else>
+		<#assign text = theText>
+	</#if>
+	<#return text>
+</#function>

@@ -3,11 +3,11 @@
 <html lang="${config.site_header_lang}">
   <head>
     <meta charset="utf-8"/>
-    <title><#if (content.title)??><#escape x as x?xml>${content.title}</#escape><#else>${config.site_header_title}</#if></title>
+    <title><#if (content.title)??><#escape x as x?xml>${content.title}</#escape><#else>${ecoWeb.displayConfigText(config.site_header_title)}</#if></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="${config.site_header_description}">
-    <meta name="author" content="${config.site_header_author}">
-    <meta name="keywords" content="${config.site_header_keyword}">
+    <meta name="description" content="${ecoWeb.displayConfigText(config.site_header_description)}">
+    <meta name="author" content="${ecoWeb.displayConfigText(config.site_header_author)}">
+    <meta name="keywords" content="${ecoWeb.displayConfigText(config.site_header_keyword)}">
     <meta name="generator" content="JBake">
 
     <!-- Le styles -->
@@ -34,8 +34,8 @@
     <div id="wrap">
     	<div id="up" class="header">
 			<div id="pageTitle">
-				<img src="${ecoWeb.buildRootPathAwareURL(config.site_logoLeft_file)}" alt="${config.site_logoLeft_description}" id="logoLeft"/>
-				<h1 id="headerTitle">${config.site_headline?join(" ")}</h1>
-				<img src="${ecoWeb.buildRootPathAwareURL(config.site_logoRight_file)}" alt="${config.site_logoRight_description}" id="logoRight"/>
+				<img src="${ecoWeb.buildRootPathAwareURL(config.site_logoLeft_file)}" alt="${ecoWeb.displayConfigText(config.site_logoLeft_description)}" id="logoLeft"/>
+				<h1 id="headerTitle">${ecoWeb.displayConfigText(config.site_headline)}</h1>
+				<img src="${ecoWeb.buildRootPathAwareURL(config.site_logoRight_file)}" alt="${ecoWeb.displayConfigText(config.site_logoRight_description)}" id="logoRight"/>
 			</div>
 		</div>
