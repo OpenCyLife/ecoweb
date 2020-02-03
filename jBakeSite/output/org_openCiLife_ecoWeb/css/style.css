@@ -253,6 +253,16 @@ body {
 	text-align: center;
 }
 
+#go_to_top {
+    position: -webkit-sticky;
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+    opacity: 0.5;
+    width: 50px;
+    height: 50px;
+}
+
 @media screen and (min-width: 640px) {
 	#pageTitle {
 		justify-content: space-around;
