@@ -3,24 +3,17 @@ html {
 }
 
 body {
-	font: 100% Helvetica, sans-serif;
+	font: 100% trebuchet, helvetica, sans-serif;
 }
 
 #pageTitle {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	font-family: trebuchet, helvetica, sans-serif;
-	color: #282825;
-	width: 100%;
 }
 
 #headerTitle {
-	font-family: trebuchet, helvetica, sans-serif;
 	color: #282825;
-	font-size: 30px;
-	margin-top: 50px;
-	align-items: center;
 }
 
 #logoLeft {
@@ -31,6 +24,10 @@ body {
 #logoRight {
 	width: 50px;
 	height: auto;
+}
+
+.navbar {
+	font-size: 125%;
 }
 
 <!-- FIXME Djer13 does not work if website in subFolder -->
@@ -153,10 +150,7 @@ body {
 }
 
 .blockTitle {
-	font-family: trebuchet, helvetica, sans-serif;
-	color: #282825;
-	font-size: 35px;
-	font-weight: lighter;
+	font-size: 200%;
 	text-align: center;
 }
 
