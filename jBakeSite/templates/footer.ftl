@@ -1,9 +1,10 @@
 		</div>
+		<img src="${ecoWeb.buildRootPathAwareURL("org_openCiLife_ecoWeb/images/pageup.svg")}" id="go_to_top" OnClick='window.location.href="#up"'>
 		<div id="push"></div>
     </div>
     
     <div id="footer">
-     <div class="container">
+     <div class="containe	r">
 	     <div class="footer_blocks">
 			<#list org_openCiLife_blocks?sort_by("order") as block>
 				<#assign blockTags = block.tags>

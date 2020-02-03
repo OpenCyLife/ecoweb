@@ -32,7 +32,7 @@
   </head>
   <body class="${content.type}">
     <div id="wrap">
-    	<div class="header">
+    	<div id="up" class="header">
 			<div id="pageTitle">
 				<img src="${ecoWeb.buildRootPathAwareURL(config.site_logoLeft_file)}" alt="${config.site_logoLeft_description}" id="logoLeft"/>
 				<h1 id="headerTitle">${config.site_headline?join(" ")}</h1>
