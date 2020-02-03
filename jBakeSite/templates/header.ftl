@@ -1,3 +1,4 @@
+<#import "tools/org_openCiLife_ecoweb-marcos.ftl" as ecoWeb>
 <!DOCTYPE html>
 <html lang="${config.site_header_lang}">
   <head>

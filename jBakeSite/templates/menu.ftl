@@ -12,24 +12,13 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
           
-          <#-- Create IMDB URL -->
-<#function seq_containsOne aSequence lookupItems>
-	<#assign found=false>
-	<#list lookupItems as item>
-		<#if (!found)>
-			<#assign found = aSequence?seq_contains(item) >
-		</#if>
-	</#list>
-	
-	<#return found>
-</#function>
+
           
           
 			<#if (config.site_menu_includeBlock == "true")>
 				<#list org_openCiLife_blocks?sort_by("order") as block_menu>
 					
-					<#if (config.site_menu_tags_include?is_string)?then(block_menu.tags?seq_contains(config.site_menu_tags_include), seq_containsOne(block_menu.tags, config.site_menu_tags_include))>
-	          
+					<#if   (ecoWeb.seq_containsOne(block_menu.tags, config.site_menu_tags_include))>
 						<#if (block_menu.anchorId)??>
 							<li><a href="/#${block_menu.anchorId}"style="text-decoration:none; outline: none; color:black">${block_menu.title}</a></li>
 						<#else></#if>
