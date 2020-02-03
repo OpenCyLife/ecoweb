@@ -20,3 +20,17 @@ return : true in a least one lookupItems is found in aSequence
 	
 	<#return found>
 </#function>
+
+<#-- Build URL, using the root.path if required 
+param : relativeUrl : the relative URL to adapt
+return : URL prepend with rootPath (if configured)
+-->
+<#function buildRootPathAwareURL relativeUrl>
+	<#assign rootPathAwareURL = relativeUrl>
+	
+	<#if (content.rootpath)??>
+		<#assign rootPathAwareURL = content.rootpath + relativeUrl>
+	</#if>
+	
+	<#return rootPathAwareURL>
+</#function>

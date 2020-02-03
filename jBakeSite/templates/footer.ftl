@@ -9,7 +9,7 @@
 				<#assign blockTags = block.tags>
 				<#if (blockTags?seq_contains("footer"))>
 					<div class="footer_block">
-			            <img src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>${block.contentImage}">
+			            <img src="${ecoWeb.buildRootPathAwareURL(block.contentImage)}">
 			            <div class="footer_block_text">
 			            	${block.body}
 			            </div>
@@ -22,7 +22,7 @@
     </div>
     
     <!-- Javascript here load faster -->
-    <script src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>org_openCiLife_ecoWeb/js/jquery-1.11.1.min.js"></script>
-    <script src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>org_openCiLife_ecoWeb/js/bootstrap.min.js"></script>
+    <script src="${ecoWeb.buildRootPathAwareURL("org_openCiLife_ecoWeb/js/jquery-1.11.1.min.js")}"></script>
+    <script src="${ecoWeb.buildRootPathAwareURL("org_openCiLife_ecoWeb/js/bootstrap.min.js")}"></script>
   </body>
 </html>

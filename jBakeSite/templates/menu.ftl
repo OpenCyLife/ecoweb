@@ -25,9 +25,9 @@
 					</#if>
 				</#list>
 			</#if>
-            <!-- <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>/">Home</a></li> -->
+            <#-- <li><a href="${ecoWeb.buildRootPathAwareURL("/")}">Home</a></li> -->
             
-           <!--
+           <#--
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
               <ul class="dropdown-menu">
