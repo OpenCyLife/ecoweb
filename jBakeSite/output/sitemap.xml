@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <url>
-        <loc>http://localhost:8820/projects.html</loc>
+        <loc>http://localhost:8820/projects/projects.html</loc>
         <lastmod>2019-03-16</lastmod>
     </url>
     <url>
@@ -29,12 +29,12 @@
         <lastmod>2019-03-16</lastmod>
     </url>
     <url>
-        <loc>http://localhost:8820/footer/contact.html</loc>
-        <lastmod>2020-02-01</lastmod>
+        <loc>http://localhost:8820/footer/donation.html</loc>
+        <lastmod>2020-02-03</lastmod>
     </url>
     <url>
-        <loc>http://localhost:8820/footer/donation.html</loc>
-        <lastmod>2020-02-01</lastmod>
+        <loc>http://localhost:8820/footer/contact.html</loc>
+        <lastmod>2020-02-03</lastmod>
     </url>
     <url>
         <loc>http://localhost:8820/home_page/missions.html</loc>
@@ -57,16 +57,12 @@
         <lastmod>2019-01-23</lastmod>
     </url>
     <url>
-        <loc>http://localhost:8820/home_page/poles.html</loc>
-        <lastmod>2019-01-21</lastmod>
-    </url>
-    <url>
         <loc>http://localhost:8820/home_page/rejoindre.html</loc>
         <lastmod>2019-01-21</lastmod>
     </url>
     <url>
-        <loc>http://localhost:8820/poles.html</loc>
-        <lastmod>2019-03-16</lastmod>
+        <loc>http://localhost:8820/home_page/poles.html</loc>
+        <lastmod>2019-01-21</lastmod>
     </url>
     <url>
         <loc>http://localhost:8820/poles/sensibilisation.html</loc>

@@ -3,11 +3,11 @@
 	<#include "menu.ftl">
 	
 	<div class="page-header">
-		<h1>Tag: <#if myOptionalVar??>${tag}<#else>No name</#if></h1>
+		<h1>Tag: <#if tag??>${tag}<#else>No name</#if></h1>
 	</div>
 	
 	<!--<ul>-->
-		<#list tag_posts as post>
+		<#list tagged_documents as post>
 		<#if (last_month)??>
 			<#if post.date?string("MMMM yyyy") != last_month>
 				</ul>
@@ -19,7 +19,7 @@
 			<ul>
 		</#if>
 		
-		<li>${post.date?string("dd")} - <a href="${content.rootpath}${post.uri}">${post.title}</a></li>
+		<li>${post.date?string("dd")} - <a href="${ecoWeb.buildRootPathAwareURL(post.uri)}">${post.title}</a>  (${post.type})</li>
 		<#assign last_month = post.date?string("MMMM yyyy")>
 		</#list>
 	</ul>

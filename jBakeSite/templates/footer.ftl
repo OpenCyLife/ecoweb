@@ -1,15 +1,16 @@
 		</div>
+		<img src="${ecoWeb.buildRootPathAwareURL("org_openCiLife_ecoWeb/images/pageup.svg")}" id="go_to_top" OnClick='window.location.href="#up"'>
 		<div id="push"></div>
     </div>
     
     <div id="footer">
-     <div class="container">
+     <div class="containe	r">
 	     <div class="footer_blocks">
 			<#list org_openCiLife_blocks?sort_by("order") as block>
 				<#assign blockTags = block.tags>
 				<#if (blockTags?seq_contains("footer"))>
 					<div class="footer_block">
-			            <img src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>${block.contentImage}">
+			            <img src="${ecoWeb.buildRootPathAwareURL(block.contentImage)}">
 			            <div class="footer_block_text">
 			            	${block.body}
 			            </div>
@@ -22,7 +23,7 @@
     </div>
     
     <!-- Javascript here load faster -->
-    <script src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>js/jquery-1.11.1.min.js"></script>
-    <script src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>js/bootstrap.min.js"></script>
+    <script src="${ecoWeb.buildRootPathAwareURL("org_openCiLife_ecoWeb/js/jquery-1.11.1.min.js")}"></script>
+    <script src="${ecoWeb.buildRootPathAwareURL("org_openCiLife_ecoWeb/js/bootstrap.min.js")}"></script>
   </body>
 </html>

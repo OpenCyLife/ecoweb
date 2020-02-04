@@ -1,7 +1,8 @@
 title=Missions
 date=2019-01-31
 type=org_openCiLife_block
-tags=homepage
+category=homepage
+tags=
 status=published
 specificClass=hpColor
 contentImage=images/target.svg

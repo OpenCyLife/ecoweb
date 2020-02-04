@@ -3,14 +3,10 @@
 	<#include "menu.ftl">
 
 	<#list org_openCiLife_blocks?sort_by("order") as block>
-		<#assign blockTags = block.tags>
-		<#if (blockTags?seq_contains("homepage"))>
+		<#assign blockCategory = block.category>
+		<#if ( ecoWeb.seq_containsOne(blockCategory, "homepage"))>
 		
-		<#if (block.anchorId)??>
-			<span stype="display:none" id="${block.anchorId}"></span>
-		<#else></#if>
-		
-		<div
+		<div id="${block.anchorId}"
 		<#if (block.specificClass)??>
 			class="<#escape x as x?xml>${block.specificClass}</#escape>"
 		</#if>

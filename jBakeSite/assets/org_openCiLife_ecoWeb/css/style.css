@@ -3,24 +3,17 @@ html {
 }
 
 body {
-	font: 100% Helvetica, sans-serif;
+	font: 100% trebuchet, helvetica, sans-serif;
 }
 
 #pageTitle {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	font-family: trebuchet, helvetica, sans-serif;
-	color: #282825;
-	width: 100%;
 }
 
 #headerTitle {
-	font-family: trebuchet, helvetica, sans-serif;
 	color: #282825;
-	font-size: 30px;
-	margin-top: 50px;
-	align-items: center;
 }
 
 #logoLeft {
@@ -33,8 +26,13 @@ body {
 	height: auto;
 }
 
+.navbar {
+	font-size: 125%;
+}
+
+<!-- FIXME Djer13 does not work if website in subFolder -->
 .navbar-toggle {
-	background-image: url(/images/common/burger.svg);
+	background-image: url(/org_openCiLife_ecoWeb/images/common/burger.svg);
 	width: 32px;
 }
 
@@ -152,10 +150,7 @@ body {
 }
 
 .blockTitle {
-	font-family: trebuchet, helvetica, sans-serif;
-	color: #282825;
-	font-size: 35px;
-	font-weight: lighter;
+	font-size: 200%;
 	text-align: center;
 }
 
@@ -256,6 +251,16 @@ body {
 .credit {
 	background-color: lightgray;
 	text-align: center;
+}
+
+#go_to_top {
+    position: -webkit-sticky;
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+    opacity: 0.5;
+    width: 50px;
+    height: 50px;
 }
 
 @media screen and (min-width: 640px) {
