@@ -17,7 +17,7 @@
 					
 					<#if   (ecoWeb.seq_containsOne(block_menu.category, config.site_menu_tags_include))>
 						<#if (block_menu.anchorId)??>
-							<li><a href=${ecoWeb.buildRootPathAwareURL("#"+block_menu.anchorId)}" style="text-decoration:none; outline: none; color:black">${block_menu.title}</a></li>
+							<li><a href="${ecoWeb.buildRootPathAwareURL("#"+block_menu.anchorId)}" style="text-decoration:none; outline: none; color:black">${block_menu.title}</a></li>
 						<#else></#if>
 					</#if>
 				</#list>
