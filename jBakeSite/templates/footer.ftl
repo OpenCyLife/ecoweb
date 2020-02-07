@@ -4,11 +4,11 @@
     </div>
     
     <div id="footer">
-     <div class="containe	r">
+     <div class="container">
 	     <div class="footer_blocks">
 			<#list org_openCiLife_blocks?sort_by("order") as block>
-				<#assign blockTags = block.tags>
-				<#if (blockTags?seq_contains("footer"))>
+				<#assign blockCategory = block.category>
+				<#if ( ecoWeb.seq_containsOne(blockCategory, "footer"))>
 					<div class="footer_block">
 			            <img src="${ecoWeb.buildRootPathAwareURL(block.contentImage)}">
 			            <div class="footer_block_text">
@@ -25,5 +25,6 @@
     <!-- Javascript here load faster -->
     <script src="${ecoWeb.buildRootPathAwareURL("org_openCiLife_ecoWeb/js/jquery-1.11.1.min.js")}"></script>
     <script src="${ecoWeb.buildRootPathAwareURL("org_openCiLife_ecoWeb/js/bootstrap.min.js")}"></script>
+    <script src="${ecoWeb.buildRootPathAwareURL("org_openCiLife_ecoWeb/js/org_openCiLife_ecoWeb.js")}"></script>
   </body>
 </html>
