@@ -156,7 +156,7 @@ param : content : content to search for incluide content
 				
 				<@debug subContentDisplayMode = subContentDisplayMode subContentDisplayContentMode = subContentDisplayContentMode/>
 				<div class="${subContentDisplayMode}_list">
-				<#list subContents as subContent>
+				<#list subContents?sort_by("order") as subContent>
 					<#assign subContentCategory = (subContent.category)!"__none__">
 					<#assign includeContentFilter = content.includeContent.category!"none">
 					
