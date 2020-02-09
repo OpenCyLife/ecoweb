@@ -60,19 +60,19 @@ return : URL prepend with rootPath (if configured)
 
 <#-- search for absolute UURL in content and preprend the RootPath
 param : text : the teh text to search for relative URL
+param : rootPath : default ${content.rootpath} : the rootPath of teh webSite
 return : text with URL transformed
 -->
-<#-- <#function findAndReplaceUrlAddAwareRootPath text>
+<#function findAndReplaceUrlAddAwareRootPath text rootPath = content.rootpath>
 	<#assign contenRootPathAwareURL = text>
 	
 	<#if (content.rootpath)??>
-		<#assign contenRootPathAwareURL = text?replace("(/images/", content.rootpath + "/images/")>
+		<#assign contenRootPathAwareURL = text?replace("(/images/", "/" + rootPath + "/images/")>
 	</#if>
 	
 	<#return contenRootPathAwareURL>
 </#function>
- -->
- 
+
 <#-- display text from config file. Handle corectly when coma "," in text
 param : theText : the text to display (may be a "sequence")
 return : a text (with original coma ",")
