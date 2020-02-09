@@ -96,9 +96,9 @@
 								<h2>Transformez votre Rasberry pi 4 en serveur / Cloud</h2>
 <p>Télécharger l'image officielle de r Pi 4 sur le <a href="https://www.raspberrypi.org/downloads/raspbian/">site (raspbian)</a>.<br />
 Flachez votre carte microSD via <a href="https://www.balena.io/etcher/">etcher</a>.</p>
-<p><img src="/images/articles/rpi_cloud/etcher.webp" alt="etcher" /><br />
+<p><img src="../images/articles/rpi_cloud/etcher.webp" alt="etcher" /><br />
 Configurer le premier démarrage.<br />
-<img src="/images/articles/rpi_cloud/Raspbian-Buster-first-time.webp" alt="premier démarrage" /></p>
+<img src="../images/articles/rpi_cloud/Raspbian-Buster-first-time.webp" alt="premier démarrage" /></p>
 <h2>Votre Site web</h2>
 <p>Nous allons d’abord installer un serveur web pour votre site (<a href="https://raspberry-pi.fr/installer-serveur-web-raspberry-lamp/">tuto</a>).</p>
 <h3>Installation d’Apache</h3>
@@ -134,7 +134,7 @@ sudo apt update
 <pre><code class="language-sh">echo &quot;&lt;?php phpinfo();?&gt;&quot; &gt; /var/www/html/index.html
 </code></pre>
 <p>À partir de là, le fonctionnement est le même que pour la vérification d’Apache. Vous tentez d’accéder à votre page, et vous devriez avoir un résultat proche de cette image (si vous n’avez pas d’interface, utilisez la même méthode que précédemment, et cherchez les mots « PHP Version »).<br />
-<img src="/images/articles/rpi_cloud/phpinfo.webp" alt="php info" /><br />
+<img src="../images/articles/rpi_cloud/phpinfo.webp" alt="php info" /><br />
 Tableau généré par la commande phpinfo sur une raspberry.</p>
 <h2>Une base de données MySQL pour votre serveur</h2>
 <h3>Installer MySQL</h3>
@@ -177,14 +177,14 @@ GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' WITH GRANT OPTION;
 <p>l’adresse devrait à priori être de la forme 192.168.<em>.</em> Si vous êtes connecté par câble Ethernet, il s’agira probablement de celle suivant le « inet addr : », dans la partie eth0.</p>
 <p>Chez Bouygues par exemple on va sur l’adresse : <strong>192.168.1.254</strong>.</p>
 <p>Puis sur les services de la box<br />
-<img src="/images/articles/rpi_cloud/bouyguesaccueil.webp" alt="bouygues" /></p>
+<img src="../images/articles/rpi_cloud/bouyguesaccueil.webp" alt="bouygues" /></p>
 <p>Puis la ligne du dessous dans la redirection de ports on va accorder l’accès à notre Raspberry.</p>
 <p>Dans la rubrique NAT &amp; PAT on ajoute 2 règles sur les ports 80 et 443 pour laisser passer ses ports et les rediriger directement sur le Raspberry.</p>
 <p>En mettant en place ces redirections, vous allez en fait rediriger les requêtes web, c’est-à-dire celles utilisant les protocoles HTTP (port 80) et HTTPS (port 443), vers votre système Raspbian, qui fait tourner le serveur Apache2.</p>
 <p>Lors de la réception d’une requête par votre box, elle la redirigera donc sur votre Raspberry, ou elle sera analysée par Apache, qui retournera au client qui a effectué la requête les ressources adaptées.<br />
-<img src="/images/articles/rpi_cloud/natpat.webp" alt="natpat" /></p>
+<img src="../images/articles/rpi_cloud/natpat.webp" alt="natpat" /></p>
 <p>Voici un autre un petit schéma du comportement de votre box lors d’une requête sur votre IP depuis un réseau externe, une fois les redirections de ports ajoutées.<br />
-<img src="/images/articles/rpi_cloud/shemainternet.webp" alt="internet" /></p>
+<img src="../images/articles/rpi_cloud/shemainternet.webp" alt="internet" /></p>
 <p>oilà, votre serveur web est désormais accessible depuis l’extérieur. Vous pouvez donc vous arrêter là. Cependant, vous ne pouvez y accéder que par votre adresse IP, ce qui n’est pas vraiment pratique (tout particulièrement si cette dernière est dynamique, comme c’est le cas par exemple chez Orange, et si elle ne peut pas être fixée gratuitement par votre FAI, comme chez Orange, encore…).</p>
 <p>Voir la section du tuto sur le DynDNS et les IP non fixes avec cet autre tuto très complet :<br />
 <a href="https://pimylifeup.com/raspberry-pi-port-forwarding/">https://pimylifeup.com/raspberry-pi-port-forwarding/</a></p>
@@ -218,7 +218,7 @@ sudo apt-get upgrade
 </code></pre>
 <h4>On peut aller faire le premier démarrage à l’adresse dans le navigateur</h4>
 <p><code>votreIP/nextcloud</code> de type <code>192.168.1.XXX/nextcloud</code><br />
-<img src="/images/articles/rpi_cloud/accueilnext.webp" alt="nextcloud" /></p>
+<img src="../images/articles/rpi_cloud/accueilnext.webp" alt="nextcloud" /></p>
 <p>On vous laisse un peu le découvrir, le configurer. Il est désormais utilisable sur le réseau</p>
 <h3>Déplacement du dossier DATA</h3>
 <p>Pour plus de sécurité on va déplacer les data dans un dossier moins accessible. On crée le dossier</p>
@@ -289,11 +289,11 @@ mkdir /home/pi/ftp/files
 </code></pre>
 <h3>Test du Serveur</h3>
 <p>On va sur un autre ordinateur et on ouvre son client FTP<br />
-<img src="/images/articles/rpi_cloud/ftp1.webp" alt="ftp" /></p>
+<img src="../images/articles/rpi_cloud/ftp1.webp" alt="ftp" /></p>
 <p>On rentre son IP locale en Hote si on est sur le même réseau. Sinon l’IP de la Box</p>
 <p>Le port est toujours le 21</p>
 <p>Le nom et mot de passe son ceux de l’utilisateur en lien avec le dossier.<br />
-<img src="/images/articles/rpi_cloud/ftp2.webp" alt="ftp" /></p>
+<img src="../images/articles/rpi_cloud/ftp2.webp" alt="ftp" /></p>
 <p>Normalement c’est tout bon</p>
 <h3>Pour aller plus loin</h3>
 <p>Faire fonctionner votre FTP avec ProFtp <a href="http://www.vous-etes-au-top.com/blog/faq/creer-un-acces-ftp-avec-proftpd-vers-le-repertoire-varwww-en-sshresolu.html">C'est ici</a>.</p>
