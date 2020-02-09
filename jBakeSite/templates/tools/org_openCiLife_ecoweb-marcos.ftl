@@ -64,13 +64,13 @@ param : rootPath : default ${content.rootpath} : the rootPath of teh webSite
 return : text with URL transformed
 -->
 <#function findAndReplaceUrlAddAwareRootPath text rootPath = content.rootpath>
-	<#assign contenRootPathAwareURL = text>
+	<#assign contentRootPathAwareURL = text>
 	
 	<#if (content.rootpath)??>
-		<#assign contenRootPathAwareURL = text?replace("(/images/", "/dev/images/")>
+		<#assign contentRootPathAwareURL = text?replace("/images/", "/" + rootPath + "images/", "r")>
 	</#if>
 	
-	<#return contenRootPathAwareURL>
+	<#return contentRootPathAwareURL>
 </#function>
 
 <#-- display text from config file. Handle corectly when coma "," in text
