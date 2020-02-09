@@ -66,8 +66,8 @@ return : text with URL transformed
 <#function findAndReplaceUrlAddAwareRootPath text rootPath = content.rootpath>
 	<#assign contentRootPathAwareURL = text>
 	
-	<#if (content.rootpath)??>
-		<#assign contentRootPathAwareURL = text?replace("/images/", rootPath + "images/", "r")>
+	<#if (config.replaceRootContextInBodyContent)?? && config.replaceRootContextInBodyContent == true>
+		<#assign contentRootPathAwareURL = text?replace("/images/", "../images/", "r")>
 	</#if>
 	
 	<#return contentRootPathAwareURL>
