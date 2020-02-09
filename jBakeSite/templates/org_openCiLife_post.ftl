@@ -10,7 +10,7 @@
 		<h1><#escape x as x?xml>${content.title}</#escape></h1>
 	<#else></#if>
 
-	<p>${ecoWeb.findAndReplaceUrlAddAwareRootPath(content.body)}</p>
+	<p>${content.body}</p>
 
 	<@ecoWeb.buildsubContent content />
 	
