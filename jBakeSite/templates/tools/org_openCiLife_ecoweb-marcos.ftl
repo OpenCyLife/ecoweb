@@ -67,13 +67,14 @@ return : text with URL transformed
 <#function findAndReplaceUrlAddAwareRootPath text rootPath = content.rootpath>
 	<#assign contentRootPathAwareURL = text>
 	
-	<#if (config.replaceRootContextInBodyContent)?? && config.replaceRootContextInBodyContent == true>
-		<#assign contentRootPathAwareURL = text?replace("/images/", "../images/", "r")>
+	<#if (config.rootPath)??>
+		<#assign contentRootPathAwareURL = text?replace("/images/", rootPath + "/images/", "r")>
 	</#if>
 	
 	<#return contentRootPathAwareURL>
 </#function>
  -->
+ 
 <#-- display text from config file. Handle corectly when coma "," in text
 param : theText : the text to display (may be a "sequence")
 return : a text (with original coma ",")
