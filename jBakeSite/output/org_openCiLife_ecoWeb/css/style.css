@@ -6,6 +6,10 @@ body {
 	font: 100% trebuchet, helvetica, sans-serif;
 }
 
+img {
+	max-width: 100%;
+}
+
 #pageTitle {
 	display: flex;
 	align-items: center;
@@ -272,7 +276,6 @@ table th, table td {
 	border: 1px solid black;
 	padding: 0.5%;
 }
-
 
 .mosaic_item {
 	
