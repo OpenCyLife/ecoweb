@@ -62,7 +62,7 @@ return : URL prepend with rootPath (if configured)
 param : text : the teh text to search for relative URL
 return : text with URL transformed
 -->
-<#function findAndReplaceUrlAddAwareRootPath text>
+<#-- <#function findAndReplaceUrlAddAwareRootPath text>
 	<#assign contenRootPathAwareURL = text>
 	
 	<#if (content.rootpath)??>
@@ -71,7 +71,8 @@ return : text with URL transformed
 	
 	<#return contenRootPathAwareURL>
 </#function>
-
+ -->
+ 
 <#-- display text from config file. Handle corectly when coma "," in text
 param : theText : the text to display (may be a "sequence")
 return : a text (with original coma ",")

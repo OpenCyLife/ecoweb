@@ -13,9 +13,9 @@ order=005
 Télécharger l'image officielle de r Pi 4 sur le [site (raspbian)](https://www.raspberrypi.org/downloads/raspbian/).
 Flachez votre carte microSD via [etcher](https://www.balena.io/etcher/).
 
-![etcher](/images/articles/rpi_cloud/etcher.webp)
+![etcher](images/articles/rpi_cloud/etcher.webp)
 Configurer le premier démarrage.
-![premier démarrage](/images/articles/rpi_cloud/Raspbian-Buster-first-time.webp)
+![premier démarrage](images/articles/rpi_cloud/Raspbian-Buster-first-time.webp)
 
 ## Votre Site web
 Nous allons d’abord installer un serveur web pour votre site ([tuto](https://raspberry-pi.fr/installer-serveur-web-raspberry-lamp/)).
@@ -73,7 +73,7 @@ Puis créez un fichier « index.php » dans ce répertoire, avec cette ligne de 
 echo "<?php phpinfo();?>" > /var/www/html/index.html
 ```
 À partir de là, le fonctionnement est le même que pour la vérification d’Apache. Vous tentez d’accéder à votre page, et vous devriez avoir un résultat proche de cette image (si vous n’avez pas d’interface, utilisez la même méthode que précédemment, et cherchez les mots « PHP Version »).
-![php info](/images/articles/rpi_cloud/phpinfo.webp)
+![php info](images/articles/rpi_cloud/phpinfo.webp)
 Tableau généré par la commande phpinfo sur une raspberry.
 
 ## Une base de données MySQL pour votre serveur
@@ -136,7 +136,7 @@ l’adresse devrait à priori être de la forme 192.168.*.* Si vous êtes connec
 Chez Bouygues par exemple on va sur l’adresse : **192.168.1.254**.
 
 Puis sur les services de la box
-![bouygues](/images/articles/rpi_cloud/bouyguesaccueil.webp)
+![bouygues](images/articles/rpi_cloud/bouyguesaccueil.webp)
 
 Puis la ligne du dessous dans la redirection de ports on va accorder l’accès à notre Raspberry.
 
@@ -145,10 +145,10 @@ Dans la rubrique NAT & PAT on ajoute 2 règles sur les ports 80 et 443 pour lais
 En mettant en place ces redirections, vous allez en fait rediriger les requêtes web, c’est-à-dire celles utilisant les protocoles HTTP (port 80) et HTTPS (port 443), vers votre système Raspbian, qui fait tourner le serveur Apache2.
 
 Lors de la réception d’une requête par votre box, elle la redirigera donc sur votre Raspberry, ou elle sera analysée par Apache, qui retournera au client qui a effectué la requête les ressources adaptées. 
-![natpat](/images/articles/rpi_cloud/natpat.webp)
+![natpat](images/articles/rpi_cloud/natpat.webp)
 
 Voici un autre un petit schéma du comportement de votre box lors d’une requête sur votre IP depuis un réseau externe, une fois les redirections de ports ajoutées.
-![internet](/images/articles/rpi_cloud/shemainternet.webp)
+![internet](images/articles/rpi_cloud/shemainternet.webp)
 
 oilà, votre serveur web est désormais accessible depuis l’extérieur. Vous pouvez donc vous arrêter là. Cependant, vous ne pouvez y accéder que par votre adresse IP, ce qui n’est pas vraiment pratique (tout particulièrement si cette dernière est dynamique, comme c’est le cas par exemple chez Orange, et si elle ne peut pas être fixée gratuitement par votre FAI, comme chez Orange, encore…).
 
@@ -212,7 +212,7 @@ sudo chmod 750 /var/www/html/nextcloud/data
 #### On peut aller faire le premier démarrage à l’adresse dans le navigateur
 
 ``votreIP/nextcloud`` de type ``192.168.1.XXX/nextcloud``
-![nextcloud](/images/articles/rpi_cloud/accueilnext.webp)
+![nextcloud](images/articles/rpi_cloud/accueilnext.webp)
 
 On vous laisse un peu le découvrir, le configurer. Il est désormais utilisable sur le réseau
 
@@ -335,7 +335,7 @@ sudo service vsftpd restart
 
 ### Test du Serveur
 On va sur un autre ordinateur et on ouvre son client FTP
-![ftp](/images/articles/rpi_cloud/ftp1.webp)
+![ftp](images/articles/rpi_cloud/ftp1.webp)
 
 
 On rentre son IP locale en Hote si on est sur le même réseau. Sinon l’IP de la Box
@@ -343,7 +343,7 @@ On rentre son IP locale en Hote si on est sur le même réseau. Sinon l’IP de 
 Le port est toujours le 21
 
 Le nom et mot de passe son ceux de l’utilisateur en lien avec le dossier.
-![ftp](/images/articles/rpi_cloud/ftp2.webp)
+![ftp](images/articles/rpi_cloud/ftp2.webp)
 
 Normalement c’est tout bon
 
