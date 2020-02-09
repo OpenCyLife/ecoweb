@@ -67,7 +67,7 @@ return : text with URL transformed
 	<#assign contentRootPathAwareURL = text>
 	
 	<#if (content.rootpath)??>
-		<#assign contentRootPathAwareURL = text?replace("/images/", "/" + rootPath + "images/", "r")>
+		<#assign contentRootPathAwareURL = text?replace("/images/", rootPath + "images/", "r")>
 	</#if>
 	
 	<#return contentRootPathAwareURL>
