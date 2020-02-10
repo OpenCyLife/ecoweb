@@ -39,6 +39,10 @@ img {
 	width: 32px;
 }
 
+.navbar-nav>li>a {
+	color: black;
+}
+
 .blockContent {
 	padding: 0px 2%;
 	width: 100%;

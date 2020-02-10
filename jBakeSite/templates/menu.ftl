@@ -17,7 +17,7 @@
 					
 					<#if   (ecoWeb.seq_containsOne(block_menu.category, config.site_menu_tags_include))>
 						<#if (block_menu.anchorId)??>
-							<li><a href="${ecoWeb.buildRootPathAwareURL("#"+block_menu.anchorId)}" style="text-decoration:none; outline: none; color:black">${block_menu.title}</a></li>
+							<li><a href="${ecoWeb.buildRootPathAwareURL("#"+block_menu.anchorId)}">${block_menu.title}</a></li>
 						<#else></#if>
 					</#if>
 				</#list>
@@ -27,7 +27,7 @@
 				<#list org_openCiLife_posts?sort_by("order") as blog_menu>
 					<#if   (ecoWeb.seq_containsOne(blog_menu.category, config.site_menu_includeCategories))>
 						<#if (blog_menu.uri)??>
-							<li><a href="${ecoWeb.buildRootPathAwareURL(blog_menu.uri)}" style="text-decoration:none; outline: none; color:black">${blog_menu.title}</a></li>
+							<li><a href="${ecoWeb.buildRootPathAwareURL(blog_menu.uri)}">${blog_menu.title}</a></li>
 						<#else></#if>
 					</#if>
 				</#list>
