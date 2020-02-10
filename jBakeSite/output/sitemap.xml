@@ -1,28 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <url>
-        <loc>http://localhost:8820/projects/projects.html</loc>
-        <lastmod>2019-03-16</lastmod>
+        <loc>http://localhost:8820/projects/tara.html</loc>
+        <lastmod>2020-02-10</lastmod>
     </url>
     <url>
-        <loc>http://localhost:8820/projects/projet3.html</loc>
-        <lastmod>2019-03-16</lastmod>
+        <loc>http://localhost:8820/projects/radio_pluriel.html</loc>
+        <lastmod>2020-02-10</lastmod>
     </url>
     <url>
-        <loc>http://localhost:8820/projects/projet2.html</loc>
-        <lastmod>2019-03-14</lastmod>
+        <loc>http://localhost:8820/projects/mutualisation_des_savoirs.html</loc>
+        <lastmod>2020-02-10</lastmod>
     </url>
     <url>
-        <loc>http://localhost:8820/projects/projet5.html</loc>
-        <lastmod>2019-01-01</lastmod>
+        <loc>http://localhost:8820/projects/collectif_com.html</loc>
+        <lastmod>2020-02-10</lastmod>
     </url>
     <url>
-        <loc>http://localhost:8820/projects/projet4.html</loc>
-        <lastmod>2019-01-01</lastmod>
-    </url>
-    <url>
-        <loc>http://localhost:8820/projects/projet1.html</loc>
-        <lastmod>2019-01-01</lastmod>
+        <loc>http://localhost:8820/projects/ecoWeb.html</loc>
+        <lastmod>2019-03-01</lastmod>
     </url>
     <url>
         <loc>http://localhost:8820/documents/document1.html</loc>
@@ -57,6 +53,10 @@
         <lastmod>2019-03-16</lastmod>
     </url>
     <url>
+        <loc>http://localhost:8820/projects/projects.html</loc>
+        <lastmod>2019-03-16</lastmod>
+    </url>
+    <url>
         <loc>http://localhost:8820/footer/donation.html</loc>
         <lastmod>2020-02-03</lastmod>
     </url>
@@ -85,11 +85,11 @@
         <lastmod>2019-01-23</lastmod>
     </url>
     <url>
-        <loc>http://localhost:8820/home_page/rejoindre.html</loc>
+        <loc>http://localhost:8820/home_page/poles.html</loc>
         <lastmod>2019-01-21</lastmod>
     </url>
     <url>
-        <loc>http://localhost:8820/home_page/poles.html</loc>
+        <loc>http://localhost:8820/home_page/rejoindre.html</loc>
         <lastmod>2019-01-21</lastmod>
     </url>
     <url>
