@@ -6,6 +6,10 @@ body {
 	font: 100% trebuchet, helvetica, sans-serif;
 }
 
+img {
+	max-width: 100%;
+}
+
 #pageTitle {
 	display: flex;
 	align-items: center;
@@ -33,6 +37,10 @@ body {
 .navbar-toggle {
 	background-image: url(/org_openCiLife_ecoWeb/images/burger.svg);
 	width: 32px;
+}
+
+.navbar-nav>li>a {
+	color: black;
 }
 
 .blockContent {
@@ -272,7 +280,6 @@ table th, table td {
 	border: 1px solid black;
 	padding: 0.5%;
 }
-
 
 .mosaic_item {
 	

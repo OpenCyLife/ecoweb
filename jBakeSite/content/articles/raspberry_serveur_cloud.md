@@ -1,11 +1,11 @@
 title=Tutoriel auto hébergement
-date=2019-01-27
+date=2019-08-15
 type=org_openCiLife_post
 category=main
-tags=autonomie_IT
+tags=autonomie IT
 status=published
 exerpt=Nous avons condensé pour vous des tutoriel pour créer un hébergement et un cloud sur un raspberry
-contentImage=images/articles/Raspi-PGB001.webp
+contentImage=images/articles/rpi_cloud/Raspi-PGB001.webp
 order=005
 ~~~~~~
 ## Transformez votre Rasberry pi 4 en serveur / Cloud

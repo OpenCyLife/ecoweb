@@ -1,7 +1,7 @@
 title=Soyons modeste
 date=2019-03-16
 type=org_openCiLife_project
-tags=test2
+tags=test
 status=published
 image=/images/project/image_logo_3.png
 ~~~~~~

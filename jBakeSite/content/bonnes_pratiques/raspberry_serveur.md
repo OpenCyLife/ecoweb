@@ -1,8 +1,8 @@
 title=Héberger son site web sur un raspberry pi
-date=2019-01-27
+date=2019-10-15
 type=org_openCiLife_post
 category=bonne_pratique
-tags=autonomie_IT
+tags=autonomie IT
 status=published
 exerpt=Nous hébergeons nous même notre site et notre cloud
 contentImage=images/bonnes_pratiques/raspberry-pi.svg
