@@ -177,7 +177,7 @@ param : content : content to search for incluide content
 					<#assign subContentCategory = (subContent.category)!"__none__">
 					<#assign includeContentFilter = content.includeContent.category!"none">
 					
-					<#if (includeContentFilter == "none" || seq_containsOne(includeContentFilter, subContentCategory))>
+					<#if ((subContent.status == "published") && (includeContentFilter == "none" || seq_containsOne(includeContentFilter, subContentCategory)))>
 						<@debug "ACEPTED : SubContent : " + (subContent.title)!"not_set", includeContentFilter  + " IN " + subContentCategory/>
 						<div class="${subContentDisplayMode}">
 							<#if (subContentDisplayContentMode == "link")>

@@ -26,7 +26,7 @@
 			<#if (config.site_menu_includeCategories)??>
 				<#list org_openCiLife_posts?sort_by("order") as blog_menu>
 					<#if   (ecoWeb.seq_containsOne(blog_menu.category, config.site_menu_includeCategories))>
-						<#if (blog_menu.uri)??>
+						<#if (blog_menu.uri)?? && blog_menu.status == "published">
 							<li><a href="${ecoWeb.buildRootPathAwareURL(blog_menu.uri)}">${blog_menu.title}</a></li>
 						<#else></#if>
 					</#if>
