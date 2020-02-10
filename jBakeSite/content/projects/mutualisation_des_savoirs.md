@@ -1,17 +1,29 @@
-title=New test Project
-date=2019-01-10
-type=project
+title=mutualisation des savoirs
+date=2020-02-10
+type=org_openCiLife_project
 tags=test
 status=published
-image=/images/project/image_logo_1.jpg
-exerpt=Un résumé
+contentImage=images/project/no_image.png
+exerpt=Chercher et partager les meilleurs pratiques sur des questions très techniques de gestions de très grosses masses de données
+projectStatus=prototypage
+order=060
 ~~~~~~
 
-## projet de test
-- Point 1
-- Point 2
-- point 3
+## infos 
+**Porteur du porjet** : Arnaud
+**Membres actifs** : Arnaud
 
-Si is il est vraiment kool.
-Echanger avec nous sur RocketChat.
-Ou sur Mastodont ! 
+## Objectif
+Le projet de mutualisation des savoirs des meilleurs pratiques sur des questions très techniques de gestions de très grosses masses de données.Il s'agit de créer un référentiel des pratiques pour faire des choix plus responsables.
+
+## Pourquoi
+A définir
+
+## Comment
+A définir
+
+## Réalisation(s
+A définir
+
+## Source
+A définir 
