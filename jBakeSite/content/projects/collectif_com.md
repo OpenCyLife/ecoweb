@@ -1,7 +1,7 @@
 title=Collectif Comm
 date=2020-02-10
 type=org_openCiLife_project
-tags=éhcnages
+tags=éhcanges
 status=published
 contentImage=images/project/no_image.png
 exerpt=Le collectif autour de la communication pour aider à communiquer les idées et échanger des savoirs faires
