@@ -255,6 +255,19 @@ img {
 	margin-left: 40%;
 }
 
+.projectInfos {
+	border: 1px solid black;
+}
+
+.label {
+	font-weight: bold;
+	color: black;
+}
+
+.projectStatus {
+	font-style: italic;
+}
+
 .credit {
 	background-color: lightgray;
 	text-align: center;
@@ -354,7 +367,7 @@ table th, table td {
 	font-weight: bold;
 }
 
-.table_image { 
+.table_image {
 	width: 20%;
 }
 /*
@@ -421,15 +434,11 @@ table th, table td {
 
 /* Modal elements */
 .
-modal-body
-{
-display
-:
-flex;
-flex-direction
-:
-row;
+modal-body {
+	display: flex;
+	flex-direction: row;
 }
+
 .modal-body-content {
 	padding-left: 1%;
 }
@@ -488,5 +497,8 @@ div.debug {
 	}
 	.footer_block {
 		justify-content: space-around;
+	}
+	.projectInfos {
+		float: right;
 	}
 }
