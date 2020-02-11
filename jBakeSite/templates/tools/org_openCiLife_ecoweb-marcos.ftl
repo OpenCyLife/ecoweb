@@ -199,9 +199,11 @@ param : content : content to search for incluide content
 							<#if (subContentDisplayContentMode == "link" || subContentDisplayContentMode == "modal")>
 								</a>
 							</#if>
-							<div class="${subContentDisplayMode}_content widget_content">
-								${subContent.body!""}
-							</div>
+							<#if (subContentDisplayContentMode == "modal")>
+								<div class="${subContentDisplayMode}_content widget_content">
+									${subContent.body!""}
+								</div>
+							</#if>
 						</div>
 						<#else>
 							<@debug "FILTRED : SubContent : " + (subContent.title)!"not_set", includeContentFilter + " NOT IN " subContentCategory />
