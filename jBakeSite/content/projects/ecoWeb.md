@@ -6,12 +6,10 @@ status=published
 contentImage=images/project/no_image.png
 exerpt=Créez un site Web avec la durabilité à l'esprit : Réduire l'empreinte carbone
 projectStatus=prototypage
+owner=Open Cy Life
+members=Jérémie D, Frédéric L
 order=005
 ~~~~~~
-
-## infos 
-**Porteur du porjet** : Open Cy Life
-**Membres actifs** : Jérémie D
 
 ## Objectif
 Fournir des "templates" pour faciliter la création de site web lèger, éco-conçut et facile à (auto)héberger.

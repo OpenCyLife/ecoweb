@@ -6,12 +6,10 @@ status=published
 contentImage=images/project/logotara.png
 exerpt=Participez à des projets ou dupliquer toute l'organisation d'un projet pour le refaire autre part
 projectStatus=prototypage
+owner=Romain
+members=Romain
 order=020
 ~~~~~~
-
-## infos 
-**Porteur du porjet** : Romain
-**Membres actifs** : Romain
 
 ## Objectif
 La plateforme TARA pour démultiplier les talents sur le la conduite de projets dans différents territoires. Elle permettrait de mettre en contact des besoins et des expertises, de mutualiser pour la suite et de gérer les projets eux-même

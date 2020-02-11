@@ -6,12 +6,10 @@ status=published
 contentImage=images/project/no_image.png
 exerpt=Chercher et partager les meilleurs pratiques sur des questions très techniques de gestions de très grosses masses de données
 projectStatus=prototypage
+owner=Arnaud
+members=Arnaud
 order=060
 ~~~~~~
-
-## infos 
-**Porteur du porjet** : Arnaud
-**Membres actifs** : Arnaud
 
 ## Objectif
 Le projet de mutualisation des savoirs des meilleurs pratiques sur des questions très techniques de gestions de très grosses masses de données.Il s'agit de créer un référentiel des pratiques pour faire des choix plus responsables.

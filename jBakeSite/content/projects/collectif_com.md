@@ -6,12 +6,10 @@ status=published
 contentImage=images/project/no_image.png
 exerpt=Le collectif autour de la communication pour aider à communiquer les idées et échanger des savoirs faires
 projectStatus=en réflexion
+owner=Diane
+members=Diane
 order=030
 ~~~~~~
-
-## infos 
-**Porteur du porjet** : Diane
-**Membres actifs** : Diane
 
 ## Objectif
 Le collectif autour de la communication pour aider à communiquer les idées et échanger des savoirs faires

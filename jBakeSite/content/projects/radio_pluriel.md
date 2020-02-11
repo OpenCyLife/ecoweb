@@ -6,12 +6,10 @@ status=published
 contentImage=images/project/radio_pluriel.png
 exerpt=une plateforme de partage des savoirs par podcast à but scientifique (avec Patrice Berger)
 projectStatus=en Production
+owner=Bertrand
+members=Bertrand, Patrice Berger
 order=040
 ~~~~~~
-
-## infos 
-**Porteur du porjet** : Bertrand
-**Membres actifs** : Bertrand, Patrice Berger
 
 ## Objectif
 Le projet [Radio pluriel](https://www.radiopluriel.fr/) (91,5FM) qui développe une plateforme de partage des savoirs par podcast à but scientifique (avec Patrice Berger)

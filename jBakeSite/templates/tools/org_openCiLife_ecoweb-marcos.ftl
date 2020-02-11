@@ -14,7 +14,7 @@ return : true in a least one lookupItems is found in aSequence
 	
 	<#if autoSplitChar?? && autoSplitChar != "">
 		<#if (aSequence?is_string && aSequence?contains(autoSplitChar))>
-			<#assign transformedASequence=aSequence?split(r"\s*,\s*", "r")>
+			<#assign transformedASequence = splitStringToSequence(aSequence)>
 		</#if>
 		
 		<#if (lookupItems?is_string && lookupItems?contains(autoSplitChar))>
@@ -42,6 +42,21 @@ return : true in a least one lookupItems is found in aSequence
 	</#if>
 	
 	<#return found>
+</#function>
+
+<#-- convert a String to a Sequence
+param : value : the String to convert
+param : **default** : , : autoSplitChar : String containing this Char will be converted to Sequence with autoSplitChar as separator
+return : URL prepend with rootPath (if configured)
+-->
+<#function splitStringToSequence stringValue autoSplitChar = ",">
+	<#if (stringValue?is_string && stringValue?contains(autoSplitChar))>
+		<#assign sequence=stringValue?split(r"\s*,\s*", "r")>
+	<#else>
+		<#assign sequence=[stringValue]>
+	</#if>
+	
+	<#return sequence>
 </#function>
 
 <#-- Build URL, using the root.path if required 
