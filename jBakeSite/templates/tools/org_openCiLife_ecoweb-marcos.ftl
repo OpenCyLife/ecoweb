@@ -159,6 +159,7 @@ param : content : content to search for incluide content
 -->
 <#macro buildsubContent content>
 	<#if (content.includeContent)??>
+		<@debug "Found content ton include"/>
 		<#if ((content.includeContent.display??) && (content.includeContent.display.type??))>
 			<#assign subContents = db.getAllContent(content.includeContent.type)>
 			<@debug "Included Type " + content.includeContent.type/>
@@ -172,46 +173,103 @@ param : content : content to search for incluide content
 				</#if>
 				
 				<@debug subContentDisplayMode = subContentDisplayMode subContentDisplayContentMode = subContentDisplayContentMode/>
-				<div class="${subContentDisplayMode}_list">
+				<#if (subContentDisplayMode == "table")>
+					<table class="${subContentDisplayMode}_list">
+						<theader>
+							<tr>
+								<th>Logo</th>
+								<th>Nom</th>
+								<th>Résumé</th>
+								<#if (content.includeContent.display.additionalData)??>
+									<#list content.includeContent.display.additionalData as colName, colValue>
+										<#if (colName?? && colName != "")>
+											<th>${colName}</th>
+										</#if>
+									</#list>
+								</#if>
+								<th></th>
+							</tr>
+						</theader>
+						<tbody>
+				<#else>
+					<div class="${subContentDisplayMode}_list">
+				</#if>
+				
 				<#list subContents?sort_by("order") as subContent>
 					<#assign subContentCategory = (subContent.category)!"__none__">
 					<#assign includeContentFilter = content.includeContent.category!"none">
 					
 					<#if ((subContent.status == "published") && (includeContentFilter == "none" || seq_containsOne(includeContentFilter, subContentCategory)))>
 						<@debug "ACEPTED : SubContent : " + (subContent.title)!"not_set", includeContentFilter  + " IN " + subContentCategory/>
-						<div class="${subContentDisplayMode}">
-							<#if (subContentDisplayContentMode == "link")>
-								<a href="${ecoWeb.buildRootPathAwareURL(subContent.uri)}" class="widget_link">
-							<#elseif (subContentDisplayContentMode == "modal")>
-								<a href="#" role="button" class="widget_link_modal" data-toggle="modal" data-target="#${theModalId}">
-							</#if>
-							<#if (subContent.contentImage??)>
-								<div class="${subContentDisplayMode}_image">
-									<img src="${ecoWeb.buildRootPathAwareURL(subContent.contentImage)}" class="widget_image" />
-								</div>
-							</#if>
-							<h2 class="${subContentDisplayMode}_title widget_title">
-								${subContent.title!""}
-							</h2>
-							<div class="${subContentDisplayMode}_exerpt widget_exerpt">
-								${subContent.exerpt!""}
-							</div>
-							<#if (subContentDisplayContentMode == "link" || subContentDisplayContentMode == "modal")>
-								</a>
-							</#if>
-							<#if (subContentDisplayContentMode == "modal")>
-								<div class="${subContentDisplayMode}_content widget_content">
-									${subContent.body!""}
-								</div>
-							</#if>
-						</div>
+						
+						<#if (subContentDisplayMode == "table")>
+									<tr 
+										<#if (subContentDisplayContentMode == "link")>
+											data-href="${ecoWeb.buildRootPathAwareURL(subContent.uri)}"
+										</#if> 
+										class="${subContentDisplayMode}">
+										<td class="${subContentDisplayMode}_image">
+											<#if (subContent.contentImage)??>
+												<img src="${ecoWeb.buildRootPathAwareURL(subContent.contentImage)}" class="widget_image" />
+											</#if>
+										</td>
+										<td class="${subContentDisplayMode}_title widget_title">
+											${subContent.title!""}
+										</td>
+										<td class="${subContentDisplayMode}_exerpt widget_exerpt">
+											${subContent.exerpt!""}
+										</td>
+										
+										<#if ((content.includeContent.display.additionalData)?? && content.includeContent.display.additionalData?is_hash)>
+											<#list content.includeContent.display.additionalData as colName, colValue>
+												<td>${subContent[colValue]}</td>
+											</#list>
+										</#if>
+									</tr>
 						<#else>
-							<@debug "FILTRED : SubContent : " + (subContent.title)!"not_set", includeContentFilter + " NOT IN " subContentCategory />
-						</#if> <#-- end of category filter check -->
-					</#list>
+							<div class="${subContentDisplayMode}">
+								<#if (subContentDisplayContentMode == "link")>
+									<a href="${ecoWeb.buildRootPathAwareURL(subContent.uri)}" class="widget_link">
+								<#elseif (subContentDisplayContentMode == "modal")>
+									<a href="#" role="button" class="widget_link_modal" data-toggle="modal" data-target="#${theModalId}">
+								</#if>
+								<#if (subContent.contentImage??)>
+									<div class="${subContentDisplayMode}_image">
+										<#if (subContent.contentImage)??>
+											<img src="${ecoWeb.buildRootPathAwareURL(subContent.contentImage)}" class="widget_image" />
+										</#if>
+									</div>
+								</#if>
+								<h2 class="${subContentDisplayMode}_title widget_title">
+									${subContent.title!""}
+								</h2>
+								<div class="${subContentDisplayMode}_exerpt widget_exerpt">
+									${subContent.exerpt!""}
+								</div>
+								<#if (subContentDisplayContentMode == "link" || subContentDisplayContentMode == "modal")>
+									</a>
+								</#if>
+								<#if (subContentDisplayContentMode == "modal")>
+									<div class="${subContentDisplayMode}_content widget_content">
+										${subContent.body!""}
+									</div>
+								</#if>
+							</div>
+						</#if> <#-- end onf contentDuisplayType "switch" -->
+					<#else>
+						<@debug "FILTRED : SubContent : " + (subContent.title)!"not_set", includeContentFilter + " NOT IN " subContentCategory />
+					</#if> <#-- end of category filter check -->
+				</#list>
+				
+				<#if (subContentDisplayMode == "table")>
+						</tbody>
+					</table>
+				</#if>
 			<#else>
 				pas de contenus (pour le moment).
 			</#if>
 		</#if>
+	<#else>
+		<@debug "No SubContent for this content"/>
 	</#if>
 </#macro>
