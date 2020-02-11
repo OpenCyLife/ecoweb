@@ -433,14 +433,17 @@ table th, table td {
 */
 
 /* Modal elements */
-.
-modal-body {
+.modal-body {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 }
 
 .modal-body-content {
 	padding-left: 1%;
+}
+
+.modal-image {
+	max-height:200px;
 }
 
 .shadow {

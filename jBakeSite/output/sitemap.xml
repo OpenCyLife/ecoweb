@@ -37,6 +37,10 @@
         <lastmod>2020-02-06</lastmod>
     </url>
     <url>
+        <loc>http://localhost:8820/bonnes_pratiques/temps_sur_mon_smartphonne.html</loc>
+        <lastmod>2019-10-15</lastmod>
+    </url>
+    <url>
         <loc>http://localhost:8820/bonnes_pratiques/site_eco_concu.html</loc>
         <lastmod>2019-10-15</lastmod>
     </url>
@@ -66,10 +70,6 @@
     </url>
     <url>
         <loc>http://localhost:8820/bonnes_pratiques/acheter_reconditionne.html</loc>
-        <lastmod>2019-10-15</lastmod>
-    </url>
-    <url>
-        <loc>http://localhost:8820/bonnes_pratiques/temps_sur_mon_smartphonne.html</loc>
         <lastmod>2019-10-15</lastmod>
     </url>
     <url>
@@ -113,11 +113,11 @@
         <lastmod>2019-01-23</lastmod>
     </url>
     <url>
-        <loc>http://localhost:8820/home_page/rejoindre.html</loc>
+        <loc>http://localhost:8820/home_page/poles.html</loc>
         <lastmod>2019-01-21</lastmod>
     </url>
     <url>
-        <loc>http://localhost:8820/home_page/poles.html</loc>
+        <loc>http://localhost:8820/home_page/rejoindre.html</loc>
         <lastmod>2019-01-21</lastmod>
     </url>
     <url>
