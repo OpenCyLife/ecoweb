@@ -37,7 +37,19 @@
         <lastmod>2020-02-06</lastmod>
     </url>
     <url>
+        <loc>http://localhost:8820/bonnes_pratiques/site_eco_concu.html</loc>
+        <lastmod>2019-10-15</lastmod>
+    </url>
+    <url>
         <loc>http://localhost:8820/bonnes_pratiques/raspberry_serveur.html</loc>
+        <lastmod>2019-10-15</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:8820/bonnes_pratiques/limiter_video.html</loc>
+        <lastmod>2019-10-15</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:8820/bonnes_pratiques/eteindre_son_pc.html</loc>
         <lastmod>2019-10-15</lastmod>
     </url>
     <url>
@@ -45,7 +57,19 @@
         <lastmod>2019-10-15</lastmod>
     </url>
     <url>
+        <loc>http://localhost:8820/bonnes_pratiques/calmer_son_navigateur.html</loc>
+        <lastmod>2019-10-15</lastmod>
+    </url>
+    <url>
         <loc>http://localhost:8820/bonnes_pratiques/bonnes_pratiques.html</loc>
+        <lastmod>2019-10-15</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:8820/bonnes_pratiques/acheter_reconditionne.html</loc>
+        <lastmod>2019-10-15</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:8820/bonnes_pratiques/temps_sur_mon_smartphonne.html</loc>
         <lastmod>2019-10-15</lastmod>
     </url>
     <url>
@@ -53,11 +77,11 @@
         <lastmod>2019-08-15</lastmod>
     </url>
     <url>
-        <loc>http://localhost:8820/projects/projects.html</loc>
+        <loc>http://localhost:8820/blogs.html</loc>
         <lastmod>2019-03-16</lastmod>
     </url>
     <url>
-        <loc>http://localhost:8820/blogs.html</loc>
+        <loc>http://localhost:8820/projects/projects.html</loc>
         <lastmod>2019-03-16</lastmod>
     </url>
     <url>
