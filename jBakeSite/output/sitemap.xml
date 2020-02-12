@@ -37,15 +37,23 @@
         <lastmod>2020-02-06</lastmod>
     </url>
     <url>
-        <loc>http://localhost:8820/bonnes_pratiques/temps_sur_mon_smartphonne.html</loc>
+        <loc>http://localhost:8820/bonnes_pratiques/eteindre_pc_la_nuit.html</loc>
         <lastmod>2019-10-15</lastmod>
     </url>
     <url>
-        <loc>http://localhost:8820/bonnes_pratiques/site_eco_concu.html</loc>
+        <loc>http://localhost:8820/bonnes_pratiques/couper_box_la_nuit.html</loc>
         <lastmod>2019-10-15</lastmod>
     </url>
     <url>
-        <loc>http://localhost:8820/bonnes_pratiques/recycler_ses_appareils.html</loc>
+        <loc>http://localhost:8820/bonnes_pratiques/bonnes_pratiques_mail.html</loc>
+        <lastmod>2019-10-15</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:8820/bonnes_pratiques/besoin_d_acheter.html</loc>
+        <lastmod>2019-10-15</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:8820/bonnes_pratiques/revoir_son_image.html</loc>
         <lastmod>2019-10-15</lastmod>
     </url>
     <url>
@@ -53,19 +61,11 @@
         <lastmod>2019-10-15</lastmod>
     </url>
     <url>
-        <loc>http://localhost:8820/bonnes_pratiques/privilegier_la_TNT.html</loc>
-        <lastmod>2019-10-15</lastmod>
-    </url>
-    <url>
-        <loc>http://localhost:8820/bonnes_pratiques/on_favorise_les_favoris.html</loc>
+        <loc>http://localhost:8820/bonnes_pratiques/privilegier_des_systemes_libres.html</loc>
         <lastmod>2019-10-15</lastmod>
     </url>
     <url>
         <loc>http://localhost:8820/bonnes_pratiques/nettoyer_regulierement_ses_donnees.html</loc>
-        <lastmod>2019-10-15</lastmod>
-    </url>
-    <url>
-        <loc>http://localhost:8820/bonnes_pratiques/mises_a_jour_manuels.html</loc>
         <lastmod>2019-10-15</lastmod>
     </url>
     <url>
@@ -77,23 +77,11 @@
         <lastmod>2019-10-15</lastmod>
     </url>
     <url>
-        <loc>http://localhost:8820/bonnes_pratiques/eteindre_pc_la_nuit.html</loc>
-        <lastmod>2019-10-15</lastmod>
-    </url>
-    <url>
         <loc>http://localhost:8820/bonnes_pratiques/desactiver_notifications.html</loc>
         <lastmod>2019-10-15</lastmod>
     </url>
     <url>
-        <loc>http://localhost:8820/bonnes_pratiques/couper_box_la_nuit.html</loc>
-        <lastmod>2019-10-15</lastmod>
-    </url>
-    <url>
         <loc>http://localhost:8820/bonnes_pratiques/calmer_son_navigateur.html</loc>
-        <lastmod>2019-10-15</lastmod>
-    </url>
-    <url>
-        <loc>http://localhost:8820/bonnes_pratiques/bonnes_pratiques_mail.html</loc>
         <lastmod>2019-10-15</lastmod>
     </url>
     <url>
@@ -102,6 +90,34 @@
     </url>
     <url>
         <loc>http://localhost:8820/bonnes_pratiques/acheter_reconditionne.html</loc>
+        <lastmod>2019-10-15</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:8820/bonnes_pratiques/site_eco_concu.html</loc>
+        <lastmod>2019-10-15</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:8820/bonnes_pratiques/recycler_ses_appareils.html</loc>
+        <lastmod>2019-10-15</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:8820/bonnes_pratiques/privilegier_la_TNT.html</loc>
+        <lastmod>2019-10-15</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:8820/bonnes_pratiques/on_favorise_les_favoris.html</loc>
+        <lastmod>2019-10-15</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:8820/bonnes_pratiques/mises_a_jour_manuels.html</loc>
+        <lastmod>2019-10-15</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:8820/bonnes_pratiques/formez_vous.html</loc>
+        <lastmod>2019-10-15</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:8820/bonnes_pratiques/temps_sur_mon_smartphonne.html</loc>
         <lastmod>2019-10-15</lastmod>
     </url>
     <url>
@@ -145,11 +161,11 @@
         <lastmod>2019-01-23</lastmod>
     </url>
     <url>
-        <loc>http://localhost:8820/home_page/poles.html</loc>
+        <loc>http://localhost:8820/home_page/rejoindre.html</loc>
         <lastmod>2019-01-21</lastmod>
     </url>
     <url>
-        <loc>http://localhost:8820/home_page/rejoindre.html</loc>
+        <loc>http://localhost:8820/home_page/poles.html</loc>
         <lastmod>2019-01-21</lastmod>
     </url>
     <url>
