@@ -8,5 +8,5 @@ exerpt=Nous coupons le courant la nuit pour économiser 25 % d 'électricité su
 contentImage=images/bonnes_pratiques/rounded-plug.svg
 order=001
 ~~~~~~
-Depuis plusieurs mois nous la coupons la nuit, pour éviter le flux de data qu 'elle génère naturellement alors que nous dormons, pour l'électricité(11 w chez bouygues) et pour couper le wifi fort inutile la nuit.
+Depuis plusieurs mois nous la coupons la nuit, pour éviter le flux de data qu'elle génère naturellement alors que nous dormons, pour l'électricité (11 w chez bouygues) et pour couper le wifi fort inutile la nuit.
 Solution low tech: la prise horaire...3, 99€
