@@ -189,7 +189,7 @@ param : content : content to search for incluide content
 				
 				<@debug subContentDisplayMode = subContentDisplayMode subContentDisplayContentMode = subContentDisplayContentMode/>
 				<#if (subContentDisplayMode == "table")>
-					<table class="${subContentDisplayMode}_list">
+					<table class="${subContentDisplayMode}_list content_type_${subContentDisplayContentMode}">
 						<theader>
 							<tr>
 								<th>Logo</th>
@@ -222,7 +222,7 @@ param : content : content to search for incluide content
 										<#if (subContentDisplayContentMode == "link")>
 											data-href="${ecoWeb.buildRootPathAwareURL(subContent.uri)}"
 										</#if> 
-										class="${subContentDisplayMode}">
+									>
 										<td class="${subContentDisplayMode}_image">
 											<#if (subContent.contentImage)??>
 												<img src="${ecoWeb.buildRootPathAwareURL(subContent.contentImage)}" class="widget_image" />
@@ -246,7 +246,7 @@ param : content : content to search for incluide content
 										</#if>
 									</tr>
 						<#else>
-							<div class="${subContentDisplayMode}">
+							<div class="${subContentDisplayMode} content_type_${subContentDisplayContentMode}">
 								<#if (subContentDisplayContentMode == "link")>
 									<a href="${ecoWeb.buildRootPathAwareURL(subContent.uri)}" class="widget_link">
 								<#elseif (subContentDisplayContentMode == "modal")>
@@ -269,6 +269,7 @@ param : content : content to search for incluide content
 									</a>
 								</#if>
 								<#if (subContentDisplayContentMode == "modal")>
+									<button type="button" class="btn btn-primary btn-block ${subContentDisplayMode}_showMore showMore" data-toggle="modal" data-target="#${theModalId}">Détails</button>
 									<div class="${subContentDisplayMode}_content widget_content">
 										${subContent.body!""}
 									</div>
