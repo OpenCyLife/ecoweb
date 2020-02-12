@@ -4,7 +4,7 @@ type=org_openCiLife_post
 category=bonne_pratique
 tags=economie energie
 status=published
-exerpt=J'y pense et puis j'oublie!Il peut y penser pour moi
+exerpt=J'y pense et puis j'oublie&nbsp;! Il peut y penser pour moi
 contentImage=images/bonnes_pratiques/computer.svg
 order=004
 ~~~~~~

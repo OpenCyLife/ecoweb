@@ -4,7 +4,7 @@ type=org_openCiLife_post
 category=bonne_pratique
 tags=autonomie IT
 status=published
-exerpt=Nous hébergeons nous même notre site et notre cloud
+exerpt=Nous hébergeons nous-même notre site et notre cloud
 contentImage=images/bonnes_pratiques/raspberry-pi.svg
 order=002
 ~~~~~~

@@ -4,7 +4,7 @@ type=org_openCiLife_post
 category=bonne_pratique
 tags=economie energie
 status=published
-exerpt=Les 25 onglets de mon navigateur consomment comme 25 navigateurs!
+exerpt=Les 25 onglets de mon navigateur consomment comme 25 navigateurs&nbsp;!
 contentImage=images/bonnes_pratiques/browser.svg
 order=005
 ~~~~~~

@@ -4,7 +4,7 @@ type=org_openCiLife_post
 category=bonne_pratique
 tags=gestion déchets
 status=published
-exerpt=A-t 'on vraiment toujours besoin de neuf ?
+exerpt=A-t'on vraiment toujours besoin de neuf&nbsp;?
 contentImage=images/bonnes_pratiques/laptop.svg
 order=009
 ~~~~~~
