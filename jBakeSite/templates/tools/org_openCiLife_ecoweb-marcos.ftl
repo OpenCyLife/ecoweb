@@ -237,7 +237,11 @@ param : content : content to search for incluide content
 										
 										<#if ((content.includeContent.display.additionalData)?? && content.includeContent.display.additionalData?is_hash)>
 											<#list content.includeContent.display.additionalData as colName, colValue>
-												<td>${subContent[colValue]}</td>
+												<#if (subContent[colValue]?is_date)>
+													<td>${subContent[colValue]?string('dd/MM/yyyy à HH:mm')}</td>
+												<#else>
+													<td>${subContent[colValue]}</td>
+												</#if>
 											</#list>
 										</#if>
 									</tr>
