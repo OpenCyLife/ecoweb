@@ -255,9 +255,9 @@ param : content : content to search for incluide content
 										</#if>
 									</div>
 								</#if>
-								<h2 class="${subContentDisplayMode}_title widget_title">
+								<h3 class="${subContentDisplayMode}_title widget_title">
 									${subContent.title!""}
-								</h2>
+								</h3>
 								<div class="${subContentDisplayMode}_exerpt widget_exerpt">
 									${subContent.exerpt!""}
 								</div>

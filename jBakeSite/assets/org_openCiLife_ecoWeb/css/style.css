@@ -334,7 +334,7 @@ table th, table td {
 .card_exerpt {
 	margin-left: 10px;
 	margin-right: 10px;
-	text-align: justify;
+	text-align: center;
 }
 
 .card_image {
