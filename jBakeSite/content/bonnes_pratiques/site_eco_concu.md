@@ -9,6 +9,7 @@ contentImage=images/bonnes_pratiques/bio.svg
 order=006
 ~~~~~~
 Le poids moyen des pages web a augmenté de (entre 2015 et 2018)
+
 - 29,5 % pour le poids en desktop à 1,72 Mo 
 - 93,7 % pour le poids en mobile à 1, 56 Mo.
 
