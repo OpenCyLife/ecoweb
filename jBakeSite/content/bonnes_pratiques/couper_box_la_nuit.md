@@ -1,8 +1,8 @@
 title=Couper le courant la nuit
-date=2019-01-27
+date=2019-10-15
 type=org_openCiLife_post
 category=bonne_pratique
-tags=economie_energie
+tags=economie energie
 status=published
 exerpt=Nous coupons le courant la nuit pour économiser 25 % d 'électricité sur la box
 contentImage=images/bonnes_pratiques/rounded-plug.svg

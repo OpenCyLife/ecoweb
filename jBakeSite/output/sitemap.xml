@@ -29,20 +29,32 @@
         <lastmod>2019-03-16</lastmod>
     </url>
     <url>
+        <loc>http://localhost:8820/articles/effet_rebond.html</loc>
+        <lastmod>2020-02-10</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:8820/articles/terres_rares.html</loc>
+        <lastmod>2020-02-06</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:8820/bonnes_pratiques/raspberry_serveur.html</loc>
+        <lastmod>2019-10-15</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:8820/bonnes_pratiques/couper_box_la_nuit.html</loc>
+        <lastmod>2019-10-15</lastmod>
+    </url>
+    <url>
         <loc>http://localhost:8820/bonnes_pratiques/bonnes_pratiques.html</loc>
-        <lastmod>2019-03-16</lastmod>
+        <lastmod>2019-10-15</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:8820/articles/raspberry_serveur_cloud.html</loc>
+        <lastmod>2019-08-15</lastmod>
     </url>
     <url>
         <loc>http://localhost:8820/blogs.html</loc>
         <lastmod>2019-03-16</lastmod>
-    </url>
-    <url>
-        <loc>http://localhost:8820/bonnes_pratiques/raspberry_serveur.html</loc>
-        <lastmod>2019-01-27</lastmod>
-    </url>
-    <url>
-        <loc>http://localhost:8820/bonnes_pratiques/couper_box_la_nuit.html</loc>
-        <lastmod>2019-01-27</lastmod>
     </url>
     <url>
         <loc>http://localhost:8820/footer/donation.html</loc>

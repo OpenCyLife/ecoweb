@@ -58,6 +58,23 @@ return : URL prepend with rootPath (if configured)
 	<#return rootPathAwareURL>
 </#function>
 
+<#-- search for absolute UURL in content and preprend the RootPath
+param : text : the teh text to search for relative URL
+param : rootPath : default ${content.rootpath} : the rootPath of teh webSite
+return : text with URL transformed
+-->
+<#-- 
+<#function findAndReplaceUrlAddAwareRootPath text rootPath = content.rootpath>
+	<#assign contentRootPathAwareURL = text>
+	
+	<#if (config.rootPath)??>
+		<#assign contentRootPathAwareURL = text?replace("/images/", rootPath + "/images/", "r")>
+	</#if>
+	
+	<#return contentRootPathAwareURL>
+</#function>
+ -->
+ 
 <#-- display text from config file. Handle corectly when coma "," in text
 param : theText : the text to display (may be a "sequence")
 return : a text (with original coma ",")
@@ -156,7 +173,7 @@ param : content : content to search for incluide content
 				
 				<@debug subContentDisplayMode = subContentDisplayMode subContentDisplayContentMode = subContentDisplayContentMode/>
 				<div class="${subContentDisplayMode}_list">
-				<#list subContents as subContent>
+				<#list subContents?sort_by("order") as subContent>
 					<#assign subContentCategory = (subContent.category)!"__none__">
 					<#assign includeContentFilter = content.includeContent.category!"none">
 					
