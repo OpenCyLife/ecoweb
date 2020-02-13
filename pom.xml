@@ -86,6 +86,17 @@
 				</dependencies>
 			</plugin>
 		</plugins>
+
+		<filters>
+			<filter>ecoWeb-build.properties</filter>
+		</filters>
+		
+		<resources>
+			<resource>
+				<directory>jBakeSite/jbake.properties</directory>
+				<filtering>true</filtering>
+			</resource>
+		</resources>
 	</build>
 
 </project>
