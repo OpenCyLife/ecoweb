@@ -19,29 +19,8 @@
 				<div class="blockBody">
 					<div class="blockContent">
 						${block.body}
-						
-						<#if (block.includePoleList)??>
-						<#if block.includePoleList == "true">
-							<div class="blockSubContent">
-								<#list org_openCiLife_poles as pole>
-									<#if (pole.status == "published")>
-										<div class="blockDescription">
-										<#if pole.image??>
-												<img class="descriptionIcons" src="${pole.image}">
-										</#if>
-										<p class="titleDescription">
-											<#escape x as x?xml>${pole.title}</#escape>
-										</p>
-											${pole.body}
-										</div>
-									</#if>
-								</#list>
-							</div>
-						</#if>
-					</#if>
 					
 					<@ecoWeb.buildsubContent block />
-					
 					</div>	
 						
 					<#if (block.contentImage)??>
