@@ -143,6 +143,21 @@ param : message : the message to display (a String)
 </#macro>
 
 
+<#-- Find the **displayName** of a custom document type
+param : postType : the name of the document type
+return : a text, the configured display name (in jbake.properties) or the original post type name
+-->
+<#function getDisplayName postType>
+	<#assign postTypeDisplayName = postType>
+	<#assign postTypeDisplayNameProp = "ecoweb_type_" + postType + "_displayName">
+	
+	<#if (config[postTypeDisplayNameProp])??>
+		<#assign postTypeDisplayName = config[postTypeDisplayNameProp]>
+	</#if>
+	
+	<#return postTypeDisplayName>
+</#function>
+
 
 <#-- build an modal block (using Boostrap)
 param : modalId : *default* : basicModal : (html) ID of the modal (to be ued in link to target this modal)
