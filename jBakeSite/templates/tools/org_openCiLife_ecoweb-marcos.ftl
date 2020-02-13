@@ -196,6 +196,7 @@ param : content : content to search for incluide content
 			<#if (subContents?size >0)>
 				<#assign subContentDisplayMode = (content.includeContent.display.type)!"bullet">
 				<#assign subContentDisplayContentMode = (content.includeContent.display.content)!"link">
+				<#assign specificClass = (content.includeContent.specificClass)!"">
 				
 				<#assign theModalId = "basicModal">
 				<#if (subContentDisplayContentMode == "modal")>
@@ -204,7 +205,7 @@ param : content : content to search for incluide content
 				
 				<@debug subContentDisplayMode = subContentDisplayMode subContentDisplayContentMode = subContentDisplayContentMode/>
 				<#if (subContentDisplayMode == "table")>
-					<table class="${subContentDisplayMode}_list content_type_${subContentDisplayContentMode}">
+					<table class="${subContentDisplayMode}_list content_type_${subContentDisplayContentMode} ${specificClass}">
 						<theader>
 							<tr>
 								<th>Logo</th>
@@ -222,21 +223,25 @@ param : content : content to search for incluide content
 						</theader>
 						<tbody>
 				<#else>
-					<div class="${subContentDisplayMode}_list">
+					<div class="${subContentDisplayMode}_list ${specificClass}">
 				</#if>
 				
 				<#list subContents?sort_by("order") as subContent>
 					<#assign subContentCategory = (subContent.category)!"__none__">
-					<#assign includeContentFilter = content.includeContent.category!"none">
+					<#assign includeContentFilter = content.includeContent.category!"all">
+					<#assign specificContentClass = (content.includeContent.display.specificClass)!"">
 					
-					<#if ((subContent.status == "published") && (includeContentFilter == "none" || seq_containsOne(includeContentFilter, subContentCategory)))>
+					<#if ((subContent.status == "published") && (includeContentFilter == "all" || seq_containsOne(includeContentFilter, subContentCategory)))>
 						<@debug "ACEPTED : SubContent : " + (subContent.title)!"not_set", includeContentFilter  + " IN " + subContentCategory/>
 						
 						<#if (subContentDisplayMode == "table")>
 									<tr 
 										<#if (subContentDisplayContentMode == "link")>
 											data-href="${ecoWeb.buildRootPathAwareURL(subContent.uri)}"
-										</#if> 
+										</#if>
+										<#if (specificContentClass != "")>
+											class="${specificContentClass}"
+										</#if>
 									>
 										<td class="${subContentDisplayMode}_image">
 											<#if (subContent.contentImage)??>
@@ -250,6 +255,18 @@ param : content : content to search for incluide content
 											${subContent.exerpt!""}
 										</td>
 										
+										<#if (subContentDisplayContentMode == "modal")>
+											<td>
+												<button type="button" class="btn btn-primary btn-block ${subContentDisplayMode}_showMore showMore" data-toggle="modal" data-target="#${theModalId}">Détails</button>
+											</td>
+										</#if>
+										<#if (subContentDisplayMode == "modal" || subContentDisplayMode == "visible")>
+											<td class="${subContentDisplayMode}_content widget_content">
+												${subContent.body!""}
+											</td>
+										</#if>
+								
+										
 										<#if ((content.includeContent.display.additionalData)?? && content.includeContent.display.additionalData?is_hash)>
 											<#list content.includeContent.display.additionalData as colName, colValue>
 												<#if (subContent[colValue]?is_date)>
@@ -261,7 +278,7 @@ param : content : content to search for incluide content
 										</#if>
 									</tr>
 						<#else>
-							<div class="${subContentDisplayMode} content_type_${subContentDisplayContentMode}">
+							<div class="${subContentDisplayMode} content_type_${subContentDisplayContentMode} ${specificContentClass}">
 								<#if (subContentDisplayContentMode == "link")>
 									<a href="${ecoWeb.buildRootPathAwareURL(subContent.uri)}" class="widget_link">
 								<#elseif (subContentDisplayContentMode == "modal")>
@@ -283,22 +300,28 @@ param : content : content to search for incluide content
 								<#if (subContentDisplayContentMode == "link" || subContentDisplayContentMode == "modal")>
 									</a>
 								</#if>
+								
 								<#if (subContentDisplayContentMode == "modal")>
 									<button type="button" class="btn btn-primary btn-block ${subContentDisplayMode}_showMore showMore" data-toggle="modal" data-target="#${theModalId}">Détails</button>
+								</#if>
+								<#if (subContentDisplayContentMode == "modal" || subContentDisplayContentMode == "visible")>
 									<div class="${subContentDisplayMode}_content widget_content">
 										${subContent.body!""}
 									</div>
 								</#if>
+								
 							</div>
 						</#if> <#-- end onf contentDuisplayType "switch" -->
 					<#else>
-						<@debug "FILTRED : SubContent : " + (subContent.title)!"not_set", includeContentFilter + " NOT IN " subContentCategory />
+						<@debug "FILTRED (" + subContent.status + ") : SubContent : " + (subContent.title)!"not_set", includeContentFilter + " NOT IN " subContentCategory />
 					</#if> <#-- end of category filter check -->
 				</#list>
 				
 				<#if (subContentDisplayMode == "table")>
 						</tbody>
 					</table>
+				<#else>
+					</div>
 				</#if>
 			<#else>
 				pas de contenus (pour le moment).

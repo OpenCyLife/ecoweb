@@ -3,7 +3,8 @@ date=2019-02-23
 type=org_openCiLife_pole
 tags=
 status=published
-image=images/play-button.webp
+contentImage=images/play-button.webp
+order=020
 ~~~~~~
 
 - Etat de l'art sur les alternatives aux terres rares.

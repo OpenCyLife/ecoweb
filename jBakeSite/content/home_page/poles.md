@@ -2,6 +2,7 @@ title=Nos Pôles
 icone=fas fa-otter
 date=2019-01-21
 type=org_openCiLife_block
+includeContent={"type":"org_openCiLife_pole", "specificClass":"blockSubContent", "display":{"type":"card", "content":"visible", "specificClass":"blockDescription"}}
 category=homepage
 tags=
 status=published

@@ -39,6 +39,9 @@
 							</div>
 						</#if>
 					</#if>
+					
+					<@ecoWeb.buildsubContent block />
+					
 					</div>	
 						
 					<#if (block.contentImage)??>
