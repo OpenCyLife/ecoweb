@@ -37,6 +37,22 @@
 
 		<plugins>
 			<plugin>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>3.1.0</version>
+
+				<configuration>
+					<outputDirectory>${jbake.inputDirectory}</outputDirectory>
+					<resources>
+						<resource>
+							<directory>${project.basedir}/jBakeSite</directory>
+							<exclude>output/**</exclude>
+							<filtering>true</filtering>
+						</resource>
+					</resources>
+				</configuration>
+			</plugin>
+			
+			<plugin>
 				<groupId>org.jbake</groupId>
 				<artifactId>jbake-maven-plugin</artifactId>
 				<version>0.3.1</version>
@@ -93,31 +109,6 @@
 					<!--<dependency> <groupId>de.neuland-bfi</groupId> <artifactId>jade4j</artifactId> 
 						<version>1.2.3</version> </dependency> -->
 				</dependencies>
-			</plugin>
-
-			<plugin>
-				<artifactId>maven-resources-plugin</artifactId>
-				<version>3.1.0</version>
-
-				<configuration>
-					<outputDirectory>${jbake.inputDirectory}</outputDirectory>
-					<resources>
-						<resource>
-							<directory>${project.basedir}/jBakeSite</directory>
-							<exclude>output/**</exclude>
-							<filtering>true</filtering>
-						</resource>
-					</resources>
-				</configuration>
-				<executions>
-					<execution>
-						<!-- enable "resources:resources" to be launch before "install" phase -->
-						<phase>install</phase>
-						<goals>
-							<goal>resources</goal>
-						</goals>
-					</execution>
-				</executions>
 			</plugin>
 		</plugins>
 
