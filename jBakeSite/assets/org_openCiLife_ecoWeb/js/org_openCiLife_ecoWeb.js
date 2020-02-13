@@ -32,3 +32,8 @@ $('#basicModal').on('show.bs.modal', function (event) {
         modal.find('.modal-title').text('New message to ' + recipient)
         modal.find('.modal-body input').val(recipient)*/
      })
+
+
+$('*[data-href]').on('click', function() {
+    window.location = $(this).data("href");
+});
