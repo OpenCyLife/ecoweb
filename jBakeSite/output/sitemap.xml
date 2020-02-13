@@ -65,6 +65,22 @@
         <lastmod>2020-02-06</lastmod>
     </url>
     <url>
+        <loc>http://localhost:8820/bonnes_pratiques/eteindre_pc_la_nuit.html</loc>
+        <lastmod>2019-10-15</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:8820/bonnes_pratiques/couper_box_la_nuit.html</loc>
+        <lastmod>2019-10-15</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:8820/bonnes_pratiques/bonnes_pratiques_mail.html</loc>
+        <lastmod>2019-10-15</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:8820/bonnes_pratiques/besoin_d_acheter.html</loc>
+        <lastmod>2019-10-15</lastmod>
+    </url>
+    <url>
         <loc>http://localhost:8820/bonnes_pratiques/revoir_son_image.html</loc>
         <lastmod>2019-10-15</lastmod>
     </url>
@@ -133,22 +149,6 @@
         <lastmod>2019-10-15</lastmod>
     </url>
     <url>
-        <loc>http://localhost:8820/bonnes_pratiques/eteindre_pc_la_nuit.html</loc>
-        <lastmod>2019-10-15</lastmod>
-    </url>
-    <url>
-        <loc>http://localhost:8820/bonnes_pratiques/couper_box_la_nuit.html</loc>
-        <lastmod>2019-10-15</lastmod>
-    </url>
-    <url>
-        <loc>http://localhost:8820/bonnes_pratiques/bonnes_pratiques_mail.html</loc>
-        <lastmod>2019-10-15</lastmod>
-    </url>
-    <url>
-        <loc>http://localhost:8820/bonnes_pratiques/besoin_d_acheter.html</loc>
-        <lastmod>2019-10-15</lastmod>
-    </url>
-    <url>
         <loc>http://localhost:8820/articles/raspberry_serveur_cloud.html</loc>
         <lastmod>2019-08-15</lastmod>
     </url>
@@ -189,11 +189,11 @@
         <lastmod>2019-01-23</lastmod>
     </url>
     <url>
-        <loc>http://localhost:8820/home_page/poles.html</loc>
+        <loc>http://localhost:8820/home_page/rejoindre.html</loc>
         <lastmod>2019-01-21</lastmod>
     </url>
     <url>
-        <loc>http://localhost:8820/home_page/rejoindre.html</loc>
+        <loc>http://localhost:8820/home_page/poles.html</loc>
         <lastmod>2019-01-21</lastmod>
     </url>
     <url>
