@@ -36,6 +36,27 @@
 		</filters>
 
 		<plugins>
+			<!-- Clean and (re) create output folder -->
+			<plugin>
+				<artifactId>maven-antrun-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>clean-output-folder</id>
+						<!-- enable "run" to be launch before "install" phase -->
+						<phase>initialize</phase>
+						<configuration>
+							<tasks>
+								<delete dir="${jbake.inputDirectory}" />
+								<mkdir dir="${jbake.inputDirectory}" />
+							</tasks>
+						</configuration>
+						<goals>
+							<goal>run</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
 			<plugin>
 				<artifactId>maven-resources-plugin</artifactId>
 				<version>3.1.0</version>
@@ -50,6 +71,16 @@
 						</resource>
 					</resources>
 				</configuration>
+				<executions>
+					<execution>
+						<id>copy-filtered-ressources-before-jbake-build</id>
+						<!-- enable "resources:resources" to be launch before "install" phase -->
+						<phase>generate-resources</phase>
+						<goals>
+							<goal>resources</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 			
 			<plugin>
