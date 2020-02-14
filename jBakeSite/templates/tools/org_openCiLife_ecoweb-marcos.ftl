@@ -206,7 +206,7 @@ param : content : content to search for incluide content
 				<@debug subContentDisplayMode = subContentDisplayMode subContentDisplayContentMode = subContentDisplayContentMode/>
 				<#if (subContentDisplayMode == "table")>
 					<table class="${subContentDisplayMode}_list content_type_${subContentDisplayContentMode} ${specificClass}">
-						<theader>
+						<thead>
 							<tr>
 								<th>Logo</th>
 								<th>Nom</th>
@@ -214,35 +214,31 @@ param : content : content to search for incluide content
 								<#if (content.includeContent.display.additionalData)??>
 									<#list content.includeContent.display.additionalData as colName, colValue>
 										<#if (colName?? && colName != "")>
-											<th>${colName}</th>
+								<th>${colName}</th>
 										</#if>
 									</#list>
 								</#if>
-								<th></th>
 							</tr>
-						</theader>
+						</thead>
 						<tbody>
 				<#else>
 					<div class="${subContentDisplayMode}_list ${specificClass}">
 				</#if>
-				
 				<#list subContents?sort_by("order") as subContent>
 					<#assign subContentCategory = (subContent.category)!"__none__">
 					<#assign includeContentFilter = content.includeContent.category!"all">
 					<#assign specificContentClass = (content.includeContent.display.specificClass)!"">
-					
 					<#if ((subContent.status == "published") && (includeContentFilter == "all" || seq_containsOne(includeContentFilter, subContentCategory)))>
 						<@debug "ACEPTED : SubContent : " + (subContent.title)!"not_set", includeContentFilter  + " IN " + subContentCategory/>
-						
 						<#if (subContentDisplayMode == "table")>
-									<tr 
+									<tr<#rt>
 										<#if (subContentDisplayContentMode == "link")>
-											data-href="${ecoWeb.buildRootPathAwareURL(subContent.uri)}"
+											<#lt> data-href="${ecoWeb.buildRootPathAwareURL(subContent.uri)}"<#rt>
 										</#if>
 										<#if (specificContentClass != "")>
-											class="${specificContentClass}"
+											<#lt> class="${specificContentClass}"
 										</#if>
-									>
+									<#lt>>
 										<td class="${subContentDisplayMode}_image">
 											<#if (subContent.contentImage)??>
 												<img src="${ecoWeb.buildRootPathAwareURL(subContent.contentImage)}" class="widget_image" />
@@ -254,25 +250,22 @@ param : content : content to search for incluide content
 										<td class="${subContentDisplayMode}_exerpt widget_exerpt">
 											${subContent.exerpt!""}
 										</td>
-										
 										<#if (subContentDisplayContentMode == "modal")>
-											<td>
-												<button type="button" class="btn btn-primary btn-block ${subContentDisplayMode}_showMore showMore" data-toggle="modal" data-target="#${theModalId}">Détails</button>
-											</td>
+										<td>
+											<button type="button" class="btn btn-primary btn-block ${subContentDisplayMode}_showMore showMore" data-toggle="modal" data-target="#${theModalId}">Détails</button>
+										</td>
 										</#if>
 										<#if (subContentDisplayMode == "modal" || subContentDisplayMode == "visible")>
-											<td class="${subContentDisplayMode}_content widget_content">
-												${subContent.body!""}
-											</td>
+										<td class="${subContentDisplayMode}_content widget_content">
+											${subContent.body!""}
+										</td>
 										</#if>
-								
-										
 										<#if ((content.includeContent.display.additionalData)?? && content.includeContent.display.additionalData?is_hash)>
 											<#list content.includeContent.display.additionalData as colName, colValue>
 												<#if (subContent[colValue]?is_date)>
-													<td>${subContent[colValue]?string('dd/MM/yyyy à HH:mm')}</td>
+										<td>${subContent[colValue]?string('dd/MM/yyyy à HH:mm')}</td>
 												<#else>
-													<td>${subContent[colValue]}</td>
+										<td>${subContent[colValue]}</td>
 												</#if>
 											</#list>
 										</#if>
@@ -287,20 +280,19 @@ param : content : content to search for incluide content
 								<#if (subContent.contentImage??)>
 									<div class="${subContentDisplayMode}_image">
 										<#if (subContent.contentImage)??>
-											<img src="${ecoWeb.buildRootPathAwareURL(subContent.contentImage)}" class="widget_image" />
+										<img src="${ecoWeb.buildRootPathAwareURL(subContent.contentImage)}" class="widget_image"/>
 										</#if>
 									</div>
 								</#if>
-								<h3 class="${subContentDisplayMode}_title widget_title">
-									${subContent.title!""}
-								</h3>
+								<h3 class="${subContentDisplayMode}_title widget_title"><#rt>
+									<#t>${subContent.title!""}
+								<#lt></h3>
 								<div class="${subContentDisplayMode}_exerpt widget_exerpt">
 									${subContent.exerpt!""}
 								</div>
 								<#if (subContentDisplayContentMode == "link" || subContentDisplayContentMode == "modal")>
 									</a>
 								</#if>
-								
 								<#if (subContentDisplayContentMode == "modal")>
 									<button type="button" class="btn btn-primary btn-block ${subContentDisplayMode}_showMore showMore" data-toggle="modal" data-target="#${theModalId}">Détails</button>
 								</#if>
@@ -309,14 +301,12 @@ param : content : content to search for incluide content
 										${subContent.body!""}
 									</div>
 								</#if>
-								
 							</div>
 						</#if> <#-- end onf contentDuisplayType "switch" -->
 					<#else>
 						<@debug "FILTRED (" + subContent.status + ") : SubContent : " + (subContent.title)!"not_set", includeContentFilter + " NOT IN " subContentCategory />
 					</#if> <#-- end of category filter check -->
 				</#list>
-				
 				<#if (subContentDisplayMode == "table")>
 						</tbody>
 					</table>
