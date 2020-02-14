@@ -1,7 +1,7 @@
 title=Nos bonnes pratiques
 date=2019-10-15
 type=org_openCiLife_post
-tags=economie energie
+tags=économie energie
 includeContent={"type":"org_openCiLife_post", "category":"bonne_pratique", "display":{"type":"card", "content":"modal"}}
 category=r&d, main
 exerpt=Nous essayons ici de donner les clés de quelques bonnes pratiques numériques

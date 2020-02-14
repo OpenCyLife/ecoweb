@@ -1,7 +1,7 @@
 title=EcoWeb
 date=2019-03-01
 type=org_openCiLife_project
-tags=Eco-conception
+tags=éco-conception
 status=published
 contentImage=images/project/no_image.png
 exerpt=Créez un site Web avec la durabilité à l'esprit : Réduire l'empreinte carbone
