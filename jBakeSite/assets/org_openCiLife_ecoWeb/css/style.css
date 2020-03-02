@@ -359,7 +359,7 @@ table th, table td {
 	margin-right: auto;
 }
 
-.card_content {
+.content_type_modal .card_content {
 	display: none;
 }
 

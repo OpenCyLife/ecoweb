@@ -26,7 +26,7 @@
 				<span class="label">Membres principaux : </span>
 				<#assign memberList = ecoWeb.splitStringToSequence(content.members)>
 				<#if (memberList?is_string || memberList?size <= 1)>
-					</span><span class="value"><#escape x as x?xml>${content.members}</#escape></span>
+					<span class="value"><#escape x as x?xml>${content.members}</#escape></span>
 				<#else>
 					<ul>
 						<#list memberList as member>

@@ -9,4 +9,4 @@ contentImage=images/project/no_image.png
 order=050
 ~~~~~~
 
-Plus d'infos ici : [https://nuitcodecitoyen.org/villes/fr/lyon](https://nuitcodecitoyen.org/villes/fr/lyon)
+**TODO**

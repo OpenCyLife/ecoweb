@@ -13,8 +13,13 @@
 
 	<properties>
 		<src.dir>jBakeSite</src.dir>
-		<jbake.inputDirectory>${project.basedir}/${src.dir}</jbake.inputDirectory>
-		<jbake.outputDirectory>${jbake.inputDirectory}/output</jbake.outputDirectory>
+		<!-- JBake build using Maven **filtered** files produced by build::plugins::plugin[maven-resources-plugin]::configuration::outputDirectory -->
+		<jbake.inputDirectory>jBakeMavenData</jbake.inputDirectory>
+		<!-- to produce webSite in "maven build directory" : ${jbake.inputDirectory}/output, 
+			to use the "default Jbake Folder" : ${project.basedir}/${src.dir}/output -->
+		<jbake.outputDirectory>${project.basedir}/website</jbake.outputDirectory>
+
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
 	<dependencies>
@@ -26,14 +31,65 @@
 	</dependencies>
 
 	<build>
+		<filters>
+			<filter>ecoWeb-build.properties</filter>
+		</filters>
+
 		<plugins>
+			<!-- Clean and (re) create output folder -->
+			<plugin>
+				<artifactId>maven-antrun-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>clean-output-folder</id>
+						<!-- enable "run" to be launch before "install" phase -->
+						<phase>initialize</phase>
+						<configuration>
+							<tasks>
+								<delete dir="${jbake.inputDirectory}" />
+								<mkdir dir="${jbake.inputDirectory}" />
+							</tasks>
+						</configuration>
+						<goals>
+							<goal>run</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>3.1.0</version>
+
+				<configuration>
+					<outputDirectory>${jbake.inputDirectory}</outputDirectory>
+					<resources>
+						<resource>
+							<directory>${project.basedir}/jBakeSite</directory>
+							<exclude>output/**</exclude>
+							<filtering>true</filtering>
+						</resource>
+					</resources>
+				</configuration>
+				<executions>
+					<execution>
+						<id>copy-filtered-ressources-before-jbake-build</id>
+						<!-- enable "resources:resources" to be launch before "install" phase -->
+						<phase>generate-resources</phase>
+						<goals>
+							<goal>resources</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			
 			<plugin>
 				<groupId>org.jbake</groupId>
 				<artifactId>jbake-maven-plugin</artifactId>
 				<version>0.3.1</version>
 				<configuration>
-					<!-- <inputDirectory>${project.basedir}/src/main/resources</inputDirectory> 
-						<outputDirectory>${project.build.directory}/classes</outputDirectory> -->
+					<inputDirectory>${jbake.inputDirectory}</inputDirectory>
+					<outputDirectory>${jbake.outputDirectory}</outputDirectory>
 				</configuration>
 				<executions>
 					<execution>
@@ -87,16 +143,6 @@
 			</plugin>
 		</plugins>
 
-		<filters>
-			<filter>ecoWeb-build.properties</filter>
-		</filters>
-		
-		<resources>
-			<resource>
-				<directory>jBakeSite/jbake.properties</directory>
-				<filtering>true</filtering>
-			</resource>
-		</resources>
 	</build>
 
 </project>
