@@ -11,11 +11,12 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
+          	<#-- <li><a href="${ecoWeb.buildRootPathAwareURL("index.html")}">Home</a></li> -->
 			<#if (config.site_menu_includeBlock == "true")>
 				<#list org_openCiLife_blocks?sort_by("order") as block_menu>
 					<#if   (ecoWeb.seq_containsOne(block_menu.category, config.site_menu_tags_include))>
 						<#if (block_menu.anchorId)??>
-							<li><a href="${ecoWeb.buildRootPathAwareURL("#"+block_menu.anchorId)}">${block_menu.title}</a></li>
+							<li><a href="${ecoWeb.buildRootPathAwareURL("index.html#"+block_menu.anchorId)}">${block_menu.title}</a></li>
 						<#else></#if>
 					</#if>
 				</#list>
@@ -29,7 +30,6 @@
 					</#if>
 				</#list>
 			</#if>
-            <#-- <li><a href="${ecoWeb.buildRootPathAwareURL("/")}">Home</a></li> -->
            <#--
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>

@@ -7,27 +7,26 @@
 	<artifactId>website</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
-	<name>MarkDownEditor</name>
+	<name>EcoWeb</name>
 
 	<url>http://maven.apache.org</url>
 
 	<properties>
 		<src.dir>jBakeSite</src.dir>
-		<!-- JBake build using Maven **filtered** files produced by build::plugins::plugin[maven-resources-plugin]::configuration::outputDirectory -->
+		<!-- JBake build using Maven **filtered** files produced by
+		build::plugins::plugin[maven-resources-plugin]::configuration::outputDirectory -->
 		<jbake.inputDirectory>jBakeMavenData</jbake.inputDirectory>
-		<!-- to produce webSite in "maven build directory" : ${jbake.inputDirectory}/output, 
+		<!-- to produce webSite in "maven build directory" :
+		${jbake.inputDirectory}/output, 
 			to use the "default Jbake Folder" : ${project.basedir}/${src.dir}/output -->
 		<jbake.outputDirectory>${project.basedir}/website</jbake.outputDirectory>
+		<jbake.plugin.version>2.7.0-rc.7</jbake.plugin.version>
 
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
 	<dependencies>
-		<dependency>
-			<groupId>com.vladsch.flexmark</groupId>
-			<artifactId>flexmark-all</artifactId>
-			<version>0.40.8</version>
-		</dependency>
+
 	</dependencies>
 
 	<build>
@@ -39,16 +38,19 @@
 			<!-- Clean and (re) create output folder -->
 			<plugin>
 				<artifactId>maven-antrun-plugin</artifactId>
+				<version>1.8</version>
 				<executions>
 					<execution>
 						<id>clean-output-folder</id>
 						<!-- enable "run" to be launch before "install" phase -->
 						<phase>initialize</phase>
 						<configuration>
-							<tasks>
+							<target>
 								<delete dir="${jbake.inputDirectory}" />
 								<mkdir dir="${jbake.inputDirectory}" />
-							</tasks>
+								<delete dir="${jbake.outputDirectory}" />
+								<mkdir dir="${jbake.outputDirectory}" />
+							</target>
 						</configuration>
 						<goals>
 							<goal>run</goal>
@@ -74,7 +76,8 @@
 				<executions>
 					<execution>
 						<id>copy-filtered-ressources-before-jbake-build</id>
-						<!-- enable "resources:resources" to be launch before "install" phase -->
+						<!-- enable "resources:resources" to be launch before
+						"install" phase -->
 						<phase>generate-resources</phase>
 						<goals>
 							<goal>resources</goal>
@@ -82,11 +85,11 @@
 					</execution>
 				</executions>
 			</plugin>
-			
+
 			<plugin>
 				<groupId>org.jbake</groupId>
 				<artifactId>jbake-maven-plugin</artifactId>
-				<version>0.3.1</version>
+				<version>${jbake.plugin.version}</version>
 				<configuration>
 					<inputDirectory>${jbake.inputDirectory}</inputDirectory>
 					<outputDirectory>${jbake.outputDirectory}</outputDirectory>
@@ -101,44 +104,23 @@
 					</execution>
 				</executions>
 				<dependencies>
-					<!-- AsciiDoc content support -->
-					<dependency>
-						<groupId>org.asciidoctor</groupId>
-						<artifactId>asciidoctorj</artifactId>
-						<version>1.5.6</version>
-					</dependency>
-
-					<!-- Markdown content support -->
 					<dependency>
 						<groupId>com.vladsch.flexmark</groupId>
 						<artifactId>flexmark</artifactId>
-						<version>0.32.18</version>
+						<version>0.62.2</version>
 					</dependency>
+
 					<dependency>
 						<groupId>com.vladsch.flexmark</groupId>
 						<artifactId>flexmark-profile-pegdown</artifactId>
-						<version>0.32.18</version>
+						<version>0.62.2</version>
 					</dependency>
 
-					<!-- Freemarker template support -->
 					<dependency>
 						<groupId>org.freemarker</groupId>
 						<artifactId>freemarker</artifactId>
-						<version>2.3.29</version>
+						<version>2.3.31</version>
 					</dependency>
-
-					<!-- Groovy template support -->
-					<!--<dependency> <groupId>org.codehaus.groovy</groupId> <artifactId>groovy</artifactId> 
-						<version>2.4.7</version> </dependency> <dependency> <groupId>org.codehaus.groovy</groupId> 
-						<artifactId>groovy-templates</artifactId> <version>2.4.7</version> </dependency> -->
-
-					<!-- Thymeleaf template support -->
-					<!--<dependency> <groupId>org.thymeleaf</groupId> <artifactId>thymeleaf</artifactId> 
-						<version>3.0.2.RELEASE</version> </dependency> -->
-
-					<!-- Jade4J template support -->
-					<!--<dependency> <groupId>de.neuland-bfi</groupId> <artifactId>jade4j</artifactId> 
-						<version>1.2.3</version> </dependency> -->
 				</dependencies>
 			</plugin>
 		</plugins>

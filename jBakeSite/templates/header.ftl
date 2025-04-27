@@ -44,7 +44,7 @@
     <div id="wrap">
     	<div id="up" class="header">
 			<div id="pageTitle">
-				<img src="${ecoWeb.buildRootPathAwareURL(config.site_logoLeft_file)}" alt="${ecoWeb.displayConfigText(config.site_logoLeft_description)}" id="logoLeft"/>
+				<a href="/index.html"><img src="${ecoWeb.buildRootPathAwareURL(config.site_logoLeft_file)}" alt="${ecoWeb.displayConfigText(config.site_logoLeft_description)}" id="logoLeft"/></a>
 				<h1 id="headerTitle">${ecoWeb.displayConfigText(config.site_headline)}</h1>
 				<img src="${ecoWeb.buildRootPathAwareURL(config.site_logoRight_file)}" alt="${ecoWeb.displayConfigText(config.site_logoRight_description)}" id="logoRight"/>
 			</div>
